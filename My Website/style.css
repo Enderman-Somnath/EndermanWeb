@@ -1,0 +1,56 @@
+body{
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+  background-repeat: no-repeat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 20px;
+    list-style: none;
+    position: sticky;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    size: 10;
+    border-radius: 20px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(14, 136, 192);
+    border-radius: 20px;
+  }
+  
+  /* Create a right-aligned (split) link inside the navigation bar */
+  .topnav a.split {
+    float: right;
+    background-color: #04aa8e;
+    border-radius: 20px;
+  }
+.curves{
+  border-radius: 20px;
+}
+#home{
+  border-radius: 20px;
+  background-color: #b71ffdce;
+  width: 900px;
+  font-family: verdana;
+  color: white;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 99%;
+}
+.gapLabel{
+  padding-top: 50px;
+}
