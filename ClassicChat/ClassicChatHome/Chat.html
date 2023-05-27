@@ -1,0 +1,48 @@
+    <html>
+        <head>
+            <link rel="icon" type="image/x-icon" href="ChatIcon.png">
+            <title> EndermanWeb </title>
+            <link rel="stylesheet" href="Chat.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/live/4.9/firebase.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.3/dist/purify.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        </head>
+    <body><h9>
+    </h9>
+        <br>
+        <div style="background-color: rgba(0, 0, 0, 0.603); color: white; border-radius: 15px; width: 90%; margin: 0 auto;">
+            <div id="ChatIcon" style="background-color: rgba(17, 17, 17, 0); color: white; border-radius: 20px; padding-top: 10px;">
+                <center><img id="ChatIcon" src="ChatIcon.png" height="20%"></center>
+        </div>
+    <div class="body">
+        <div class="container">
+            <div class="header" style="text-align: center; margin-bottom: 5px;">
+                <button id="ChatID" class="btn btn-primary" title="Click to copy" onclick="copyText()"></button>
+            </div>
+            <center>
+                <span> <button id="exit" class="btn btn-danger" style=" margin-bottom: 5px;" onclick="logout()"> Exit Room </button> <i style="margin-left: 5px; margin-right: 5px;"></i> <button id="autoscroll" onclick="autoscroll()" class="btn btn-success" style=" margin-bottom: 5px;"> Auto Scroll Chat: On </button> </span>
+            </center>
+            <div id="ChatViewer" style="overflow: auto; -ms-overflow-style: non">
+            </div>
+            <div class="footer">
+                <div>
+                    <center>
+                <input id="msg" style="height: 5%; width:60%; background-color: #333; border-width: 0px; border-radius: 20px; padding: 10px; color:white; margin-bottom:5px; margin-top: 5px;" placeholder="Enter Your Message">
+                <button id="send" onclick="send()" style="background-color:rgb(2, 158, 106); color:white; text-align: center; border-radius: 10px; border-width: 0px; height: 36px; width: 60px;"> Send </button>
+                </center>
+    </div>
+    </div>
+    </center>
+    <div id="sendingElement" style="position:relative; text-align: center; background-color: rgba(0, 0, 0, 0.61); border-radius: 20px;">
+    </div>
+        </div>
+    </body>
+    <script src="Chat.js"></script>
+    <script src="/EndermanWeb/Functions/functions.js"></script>
+    </html>

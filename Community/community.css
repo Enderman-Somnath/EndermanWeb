@@ -1,0 +1,115 @@
+html{
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+  background-repeat: no-repeat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+  background-repeat: no-repeat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.topnav {
+    background-color: #000000a9;
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    border-radius: 20px;
+    list-style: none;
+    position: sticky;
+    margin-inline-start: 0.5%;
+  }
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    size: 10;
+    border-radius: 20px;
+    margin-right: 5px;
+    transition: background 0.2s ease;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(112, 14, 192);
+    border-radius: 20px;
+  }
+  .topnav a.split {
+    float: right;
+    background-color: #6c33a3;
+    background-image: linear-gradient(316deg, #6c33a3 0%, #8241b8 74%);
+    border-radius: 20px;
+    margin-right: 0%;
+    margin-left: 5px;
+  }
+  .topnav a.account{
+    margin-top: 5px;
+    margin-bottom: auto;
+    float: right;
+    background-color: rgb(0, 119, 255);
+    background-repeat: no-repeat;
+  }
+.curves{
+  border-radius: 20px;
+}
+.desktop{
+  position: fixed;
+  top: 10px;
+  width: 99%;
+}
+.mobile_nav_button{
+  position: fixed;
+  bottom: 0%;
+  background-color: #000000a9;
+  backdrop-filter: blur(10px);
+  border-width: 0px;
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  padding-top:5px;
+  padding-bottom: 5px;
+}
+.hover_mobile_nav_button button:hover{
+  background-color: #181818cc;
+}
+.mobile_nav{
+  position: fixed;
+  background-color: #000000a9;
+  backdrop-filter: blur(50px);
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  overflow: auto;
+}
+.mobile_nav a{
+text-decoration: none;
+color: white;
+font-weight: bolder;
+transition: color 0.5s ease;
+}
+.mobile_nav a:hover{
+  color: rgb(67, 67, 255);
+}
+.mobile_nav li{
+  margin-top: 5%;
+}
+.hidden{
+  display: none;
+}
+.gapLabel{
+  margin-top: 70px;
+}
+#CommunityRoomsViewer{
+  background-color: #00000073;
+  backdrop-filter: blur(5px);
+  height: 45%;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  z-index: 1;
+}

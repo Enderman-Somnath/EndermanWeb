@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title> Error </title>
+        <link rel="icon" type="image/x-icon" href="/EndermanWeb/icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            html{
+                background-color: rgba(0, 0, 0, 0.500);
+                backdrop-filter: blur(20px);
+                font-family: Verdana;
+            }
+            .center {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100vh;
+              text-align: center;
+              color: white;
+            }
+            div button{
+              background-color: rgb(39, 184, 39);
+              position: fixed; 
+              width: 10%; 
+              height: 10%; 
+              color: white; 
+              border-radius: 20px; 
+              border: 0px; 
+              transition: color 0.5s ease;
+            }
+            div button:hover{
+              background-color: rgb(56, 161, 56);
+              cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+            <div class="center">
+              <div>
+                <img src="ErrorIcon.png">
+                <h1 style="width: fit-content;"> Error loading content/An Error occurred </h1>
+                <button class="btn btn-success" onclick="Reload()"> Refresh </button>
+              </div>
+            </div>
+          </body>
+</html>
