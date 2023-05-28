@@ -22,17 +22,24 @@
         </div>
         <!--Mobile-->
         <div id="topnav_mobile" class="mobile_nav hidden">
-            <li class="curves"><a href="#home" onclick="homeWeb()"> <i class="bi bi-house-door-fill"></i> Home</a></li>
+            <li class="curves"><a href="#home" onclick="homeWeb()"> <i class="bi bi-house-door-fill"></i> Home </a></li>
             <li class="curves"><a href="#about" onclick="PopUp('/EndermanWeb/aboutEndermanweb.html')"> <i class="bi bi-info-circle-fill"></i> About </a></li>
             <li class="curves"><a href="#signout" onclick="signout()" class="signout"> Sign out </a></li>
         </div>
         <a class="hover_mobile_nav_button"><button id="mobile_nav_button" class="mobile_nav_button hidden" onclick="showorhidemobilenav()">
             ☰ Navigation
         </button></a>
-        <div>
-            
-        </div>
+        <div class="container">
+            <div class="userinfo" id="userinfo">
+              <h2>User Info</h2>
+              <label id="Name"> Name: </label> 
+              <label id="Username"> Username:  </label> 
+              <label id="password"> Password State: ENCRYPTED <button class="btn btn-primary" onclick="showpass()">Show Password</button></label>
+            </div>
+          </div>
+<div class="loading-animation" id="loading-animation"></div>
 </body>
 <script src="/EndermanWeb/Functions/functions.js"></script>
 <script src="UserInfo.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
 </html>
