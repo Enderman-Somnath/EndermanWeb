@@ -68,18 +68,12 @@ function signout() {
     window.alert("An error occurred while retrieving user data. Please try again later.");
     console.error("Error: ", error);
   });
-passhown = 0;
 function showpass(){
-  if(passhown === 0){
-    var userInput = prompt("Type Password to decrypt and show");
+  var userInput = prompt("Type Password to decrypt and show");
     if(userInput === decryptedPassword){
-      document.getElementById("password").innerHTML = "Password: " + decryptedPassword + " <button class='btn btn-primary' onclick='showpass()'>Show Password</button>";
-      passhown = 1;
+      document.getElementById("password").innerHTML = "Password: " + decryptedPassword;
     } else if(userInput !== decryptedPassword){
       alert("Wrong Password");
     }
-} else if(passhown === 1){
-  document.getElementById("password").innerHTML = "Password State: ENCRYPTED <button class='btn btn-primary' onclick='showpass()'>Show Password</button>"
-}
 }
 
