@@ -26,12 +26,10 @@ function getData() {
     });
 }
 
-getData();
-
 function RedirectToCommunityRoom(CommRoom){
     console.log("Redirecting to " + CommRoom);
     localStorage.setItem("CommRoom",CommRoom);
-    window.open("about:blank");
+    window.open("CommunityRoom/communityroom.html");
 }
 
 localStorage.setItem("WhereIsUser","/EndermanWeb/Community/community.html");
@@ -39,10 +37,8 @@ var w = document.documentElement.clientWidth || window.innerWidth;
 if (w <= 480) {
     document.getElementById("topnav").className = "hidden";
     document.getElementById("mobile_nav_button").className = "mobile_nav_button";
-    document.getElementById("GAP").className = "";
 } else {
     document.getElementById("topnav").className = "topnav desktop";
-    document.getElementById("GAP").className = "gapLabel";
 }
 
 mobilenav = false
