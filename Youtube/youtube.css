@@ -96,9 +96,6 @@ transition: color 0.5s ease;
 .mobile_nav li{
   margin-top: 5%;
 }
-  .gapLabel{
-    margin-top: 70px;
-  }
   #youtube{
     background-color: rgba(17, 17, 17, 0.801);
     width: fit-content;

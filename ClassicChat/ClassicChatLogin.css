@@ -96,12 +96,6 @@ transition: color 0.5s ease;
 .mobile_nav li{
   margin-top: 5%;
 }
-.gapLabel{
-  margin-top: 70px;
-}
-.gapLabel2{
-  margin-top: 10px;
-}
 #inputChatID{
   background-color: #333;
   color: white;
