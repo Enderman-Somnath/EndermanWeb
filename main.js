@@ -15,8 +15,6 @@ function getData() { firebase.database().ref("/UpdatesENDERMANWEBSHOW/").on('val
   firebase_message_id = childKey;
   message_data = childData;
 //Start code
-console.log(firebase_message_id);
-console.log(message_data);
 Name = message_data['Name'];
 message = message_data['message'];
 name_with_tag = "<div class='message'><h4 class='Name' style='margin-left: 5px; margin-right: 5px; text-align:left;'> By: " + Name + "</h4>";

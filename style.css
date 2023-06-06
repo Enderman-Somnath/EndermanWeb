@@ -44,12 +44,9 @@ body{
     margin-right: 0%;
     margin-left: 5px;
   }
-  .topnav a.account{
-    margin-top: 5px;
-    margin-bottom: auto;
+  #account{
     float: right;
-    background-color: rgb(0, 119, 255);
-    background-repeat: no-repeat;
+    margin-top: 8px;
   }
 .curves{
   border-radius: 20px;

@@ -55,7 +55,7 @@ function signout() {
     const encryptedPassword = userData.password;
     decryptedPassword = decryptText(encryptedPassword, "EWEBECRYPT");
     setTimeout(function(){
-      document.getElementById("Name").innerHTML += userData['name'];
+      document.getElementById("Name").innerHTML += userData['name'] + ", Badges:" + userData['badges'];
       setTimeout(function(){
         document.getElementById("Username").innerHTML += userData['username'];
         setTimeout(function(){
