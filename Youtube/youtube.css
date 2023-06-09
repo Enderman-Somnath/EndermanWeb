@@ -18,6 +18,7 @@ body{
     list-style: none;
     position: sticky;
     margin-inline-start: 0.5%;
+    z-index: 1;
   }
   .topnav a {
     float: left;
@@ -67,6 +68,7 @@ body{
   padding: 10px;
   padding-top:5px;
   padding-bottom: 5px;
+  z-index: 1;
 }
 .hover_mobile_nav_button button:hover{
   background-color: #181818cc;
@@ -80,6 +82,7 @@ body{
   width: 100%;
   text-align: center;
   overflow: auto;
+  z-index: 1;
 }
 .mobile_nav a{
 text-decoration: none;
@@ -94,7 +97,7 @@ transition: color 0.5s ease;
   margin-top: 5%;
 }
   #youtube{
-    background-color: rgba(17, 17, 17, 0.801);
+    background-color: rgba(0, 0, 0, 0.5);
     width: fit-content;
     text-align: center;
     padding-left: 10px;
@@ -104,16 +107,18 @@ transition: color 0.5s ease;
 }
 .ytChannelButton{
     list-style: none;
-    background-color: rgb(77, 77, 77);
+    background-color: rgba(0,0,0,0.473);
+    border: rgb(20, 20, 20);
     text-align: center;
     height: 30px;
     width: 100px;
     color:white;
     border-radius: 10px;
-    border-width: 0;
+    border-width: 1;
     margin-top: 10;
     margin-bottom: 10;
-    cursor: pointer
+    cursor: pointer;
+    transition: background 0.5s;
 }
 .ytChannelLabel{
     color: white;
@@ -122,7 +127,7 @@ transition: color 0.5s ease;
     padding-right: 10px;
 }
 span button:hover{
-  background-color: rgb(95, 95, 95);
+  background-color: rgb(29, 29, 29);
 }
 .hidden{
   display: none;

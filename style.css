@@ -18,6 +18,7 @@ body{
     list-style: none;
     position: sticky;
     margin-inline-start: 0.5%;
+    z-index: 1;
   }
   .topnav a {
     float: left;
@@ -67,6 +68,7 @@ body{
   padding: 10px;
   padding-top:5px;
   padding-bottom: 5px;
+  z-index: 1;
 }
 .hover_mobile_nav_button button:hover{
   background-color: #181818cc;
@@ -80,6 +82,7 @@ body{
   width: 100%;
   text-align: center;
   overflow: auto;
+  z-index: 1;
 }
 .mobile_nav a{
 text-decoration: none;
@@ -117,7 +120,7 @@ transition: color 0.5s ease;
 #ChatViewer{
   flex:1;
   color:white;
-  background-color: rgba(0, 0, 0, 0.527);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 30px;
   height: 50%;
   margin: 0 auto;
