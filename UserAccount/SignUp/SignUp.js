@@ -31,7 +31,7 @@ function checkUsernameExists(username) {
   }
   function validateInput(input) {
     // Regular expression pattern to allow specific symbols
-    var pattern = /^[a-zA-Z0-9@\-\/#!]+$/;
+    var pattern = /^[a-zA-Z0-9@\-!]+$/;
     
     return pattern.test(input);
   }
@@ -73,11 +73,11 @@ function checkUsernameExists(username) {
       });
       } else {
         console.log("Input contains disallowed symbols");
-        window.alert("Please use valid symbols for Username '@','1-9','#','!','all letters'")
+        window.alert("Please use valid symbols for Username '@','1-9','-','!','+','all letters'")
       }
     } else {
       console.log("Input contains disallowed symbols");
-      window.alert("Please use valid symbols for Name '@','1-9','#','!','all letters'")
+      window.alert("Please use valid symbols for Name '@','1-9','-','!','+','all letters'")
     }
   }
 

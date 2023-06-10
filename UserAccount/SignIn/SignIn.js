@@ -26,12 +26,18 @@ function decryptText(encryptedText, key) {
   const decrypted = CryptoJS.AES.decrypt(encryptedText, key).toString(CryptoJS.enc.Utf8);
   return decrypted;
 }
-
+function validateInput(input) {
+  // Regular expression pattern to allow specific symbols
+  var pattern = /^[a-zA-Z0-9@\-!]+$/;
+  
+  return pattern.test(input);
+}
 function Login(username, password) {
   const inputUsername = document.getElementById("Username").value;
   const inputPassword = document.getElementById("password").value;
   const encryptionKey = 'EWEBECRYPT';
-  checkUsernameExists(inputUsername)
+  if(validateInput(inputUsername)){
+    checkUsernameExists(inputUsername)
     .then((exists) => {
       if (!exists) {
         window.alert("The username does not exist. Please enter a valid username.");
@@ -60,7 +66,10 @@ function Login(username, password) {
     .catch((error) => {
       window.alert("Sorry, but an error occurred during the username check. Please try again later.");
       console.error("Error: ", error);
-    });
+    });   
+  } else {
+    alert("Use valid symbols like 'a-z','A-Z','-','+','!','1-9'")
+  }
 }
 
   

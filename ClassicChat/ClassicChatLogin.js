@@ -3,7 +3,7 @@ localStorage.setItem("WhereIsUser","/EndermanWeb/ClassicChat/");
 IsUserPresent = localStorage.getItem("UserPresent");
 if (IsUserPresent === null) {
 window.alert("Sign in to use ClassicChat");
-window.location = "/EndermanWeb/UserAccount/SignIn/SignIn.html";
+window.location = "/EndermanWeb/UserAccount/SignIn/";
 }
 const firebaseConfig = {
     apiKey: "AIzaSyBAJgNXiQ7j0-Jly8hwtkhnSSuKPgQhZj0",
@@ -16,24 +16,29 @@ const firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+function validateInput(input) {
+    // Regular expression pattern to allow specific symbols
+    var pattern = /^[a-zA-Z0-9@\-!]+$/;
+    
+    return pattern.test(input);
+  }
     function addUser() {
-        if(document.getElementById("inputChatID").value == ""){
-            window.alert("Cant Use Blank ChatID");
-        }
-        else{
-        document.getElementById("EnterChatID").innerHTML="Please Wait"
-        document.getElementById("EnterChatID").disabled = true;
         RoomID = document.getElementById("inputChatID").value;
-        setTimeout(function(){
+        if(validateInput(RoomID)){
+            document.getElementById("EnterChatID").innerHTML="Please Wait"
+            document.getElementById("EnterChatID").onclick = null;
+            console.log("Creating/Loading room with ChatID: ","")
             firebase.database().ref("/ClassicChat/").child(RoomID).update({
                 "Room(CHATID)" : "Created By ClassicChat"
           });
-          setTimeout(function(){
-        localStorage.setItem("RoomID", RoomID);
-        localStorage.setItem("UsernameCCHAT", localStorage.getItem("Name"));
-        window.location = "/EndermanWeb/ClassicChat/ClassicChatHome/";
+            setTimeout(function(){
+            localStorage.setItem("RoomID", RoomID);
+            localStorage.setItem("UsernameCCHAT", localStorage.getItem("Name"));
+            window.location = "/EndermanWeb/ClassicChat/ClassicChatHome/";
           }, 900);
-        }, 2000)
+        }
+        else{
+            alert("Use valid symbols like 'a-z','A-Z','-','+','!','1-9'")
         }
         
         
