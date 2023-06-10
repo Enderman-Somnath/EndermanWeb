@@ -1,4 +1,4 @@
-localStorage.setItem("WhereIsUser","/EndermanWeb/UserAccount/UserInfo/UserInfo.html");
+localStorage.setItem("WhereIsUser","/EndermanWeb/UserAccount/UserInfo/");
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyBAJgNXiQ7j0-Jly8hwtkhnSSuKPgQhZj0",
@@ -19,7 +19,7 @@ function signout() {
         localStorage.removeItem("Username");
         localStorage.removeItem("Name");
         window.alert("Signed out successfully");
-        window.location = "/EndermanWeb/UserAccount/SignIn/SignIn.html";
+        window.location = "/EndermanWeb/UserAccount/SignIn/";
     } else {
     }
   }

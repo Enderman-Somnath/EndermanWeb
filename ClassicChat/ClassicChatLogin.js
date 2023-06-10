@@ -1,4 +1,4 @@
-localStorage.setItem("WhereIsUser","/EndermanWeb/ClassicChat/ClassicChatLogin.html");
+localStorage.setItem("WhereIsUser","/EndermanWeb/ClassicChat/");
 // Your web app's Firebase configuration
 IsUserPresent = localStorage.getItem("UserPresent");
 if (IsUserPresent === null) {
@@ -31,7 +31,7 @@ firebase.initializeApp(firebaseConfig);
           setTimeout(function(){
         localStorage.setItem("RoomID", RoomID);
         localStorage.setItem("UsernameCCHAT", localStorage.getItem("Name"));
-        window.location = "/EndermanWeb/ClassicChat/ClassicChatHome/Chat.html";
+        window.location = "/EndermanWeb/ClassicChat/ClassicChatHome/";
           }, 900);
         }, 2000)
         }

@@ -1,5 +1,4 @@
-
-localStorage.setItem("WhereIsUser","/EndermanWeb/UserAccount/SignUp/SignUp.html");
+localStorage.setItem("WhereIsUser","/EndermanWeb/UserAccount/SignUp/");
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyBAJgNXiQ7j0-Jly8hwtkhnSSuKPgQhZj0",

@@ -1,4 +1,4 @@
-localStorage.setItem("WhereIsUser","/EndermanWeb/Youtube/youtube.html");
+localStorage.setItem("WhereIsUser","/EndermanWeb/Youtube/");
 const firebaseConfig = {
     apiKey: "AIzaSyBAJgNXiQ7j0-Jly8hwtkhnSSuKPgQhZj0",
     authDomain: "classicchat-cfb87.firebaseapp.com",

@@ -126,13 +126,13 @@ transition: color 0.5s ease;
   border-radius: 20px;
   overflow: auto;
 }
-#commrooms{
+.commrooms{
   background-color: rgb(37, 37, 37);
   border-radius: 20px;
   padding: 5px;
   transition: background 0.5s;
 }
-#commrooms:hover{
+.commrooms:hover{
   background-color: rgb(24, 24, 24);
   cursor: pointer;
 }

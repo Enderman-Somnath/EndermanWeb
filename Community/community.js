@@ -1,4 +1,4 @@
-localStorage.setItem("WhereIsUser","/EndermanWeb/Community/community.html");
+localStorage.setItem("WhereIsUser","/EndermanWeb/Community/");
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyBAJgNXiQ7j0-Jly8hwtkhnSSuKPgQhZj0",
@@ -14,23 +14,22 @@ const firebaseConfig = {
 
 function getData() {
     firebase.database().ref("/Community/").on('value', function (snapshot) {
-          document.getElementById("CommunityRoomsViewer").innerHTML = "";
+          document.getElementById("communityroomsviewer").innerHTML = "";
           snapshot.forEach(function (childSnapshot) {
                 childKey = childSnapshot.key;
                 CommRoomNames = childKey;
                 if (CommRoomNames != "Community"){
-                console.log("Community Rooms: " + CommRoomNames);
-                row = "<div class='room_name' style='overflow:auto; background-color:#333; cursor:pointer; padding: 15px; text-align: center; color:white; margin-top: 5px; border-radius:20px;' id=" + CommRoomNames + " onclick='RedirectToCommunityRoom(this.id)'>" + CommRoomNames + "</div>";
-                document.getElementById("CommunityRoomsViewer").innerHTML += row;
+                row = "<h1 class='commrooms' id=" + CommRoomNames + " onclick='RedirectToCommunityRoom(this.id)'>" + CommRoomNames + "</h1>";
+                document.getElementById("communityroomsviewer").innerHTML += row;
             }
           });
     });
 }
-
+getData();
 function RedirectToCommunityRoom(CommRoom){
     console.log("Redirecting to " + CommRoom);
     localStorage.setItem("CommRoom",CommRoom);
-    window.open("CommunityRoom/communityroom.html");
+    window.open("CommunityRoom/");
 }
 var w = document.documentElement.clientWidth || window.innerWidth;
 if (w <= 480) {

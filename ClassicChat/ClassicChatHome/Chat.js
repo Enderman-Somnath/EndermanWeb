@@ -110,7 +110,7 @@ function copyText() {
 function logout() {
     localStorage.removeItem("UsernameCCHAT");   
     localStorage.removeItem("RoomID");
-    window.location = "/EndermanWeb/ClassicChat/ClassicChatLogin.html";
+    window.location = "/EndermanWeb/ClassicChat/";
 }
 $("#msg").keyup(function(event) {
     if (event.keyCode === 13) {

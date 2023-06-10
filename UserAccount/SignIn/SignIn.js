@@ -46,7 +46,7 @@ function Login(username, password) {
               localStorage.setItem("Username",inputUsername)
               localStorage.setItem("Password",encryptedPassword)
               localStorage.setItem("Name",userData['name'])
-              window.location = "/EndermanWeb/UserAccount/UserInfo/UserInfo.html"
+              window.location = "/EndermanWeb/UserAccount/UserInfo/"
             } else {
               window.alert("Incorrect password. Please try again.");
             }
