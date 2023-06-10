@@ -27,7 +27,7 @@ function validateInput(input) {
         if(validateInput(RoomID)){
             document.getElementById("EnterChatID").innerHTML="Please Wait"
             document.getElementById("EnterChatID").onclick = null;
-            console.log("Creating/Loading room with ChatID: ","")
+            console.log("Creating/Loading room with ChatID: ",RoomID)
             firebase.database().ref("/ClassicChat/").child(RoomID).update({
                 "Room(CHATID)" : "Created By ClassicChat"
           });
@@ -69,3 +69,31 @@ $("#inputChatID").keyup(function(event) {
         addUser();
     }
 });
+
+const myKeysValues = window.location.search;
+const urlParams = new URLSearchParams(myKeysValues);
+const chatid = urlParams.get('id')
+console.log(chatid);
+const islinktrue = urlParams.get('link')
+console.log(islinktrue)
+if(islinktrue === "true"){
+    if(validateInput(chatid)){
+        document.getElementById("EnterChatID").innerHTML="Please Wait"
+        document.getElementById("EnterChatID").onclick = null;
+        console.log("Creating/Loading room with ChatID: ",chatid)
+        firebase.database().ref("/ClassicChat/").child(chatid).update({
+            "Room(CHATID)" : "Created By ClassicChat"
+      });
+        setTimeout(function(){
+        localStorage.setItem("RoomID", chatid);
+        localStorage.setItem("UsernameCCHAT", localStorage.getItem("Name"));
+        window.location = "/EndermanWeb/ClassicChat/ClassicChatHome/";
+      }, 900);
+    }
+    else{
+        alert("Use valid symbols like 'a-z','A-Z','-','+','!','1-9'")
+    }
+}
+    
+    
+

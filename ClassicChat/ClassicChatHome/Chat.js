@@ -99,9 +99,9 @@ database.ref("/ClassicChat/"+RoomID).on('value', function(snapshot) {
 })}
 getData();
 function copyText() {
-    navigator.clipboard.writeText(RoomID)
+        navigator.clipboard.writeText("https://enderman-somnath.github.io/ClassicChat/?id="+RoomID+"&link=true")
         .then(function() {
-            alert("Text copied to clipboard: " + RoomID);
+            alert("Text copied to clipboard: " + "https://enderman-somnath.github.io/ClassicChat/?id="+RoomID+"&link=true");
         })
         .catch(function(error) {
             console.error("Unable to copy text: ", error);
