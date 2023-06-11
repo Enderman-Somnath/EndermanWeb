@@ -7,11 +7,6 @@ body{
 #ChatIcon{
     margin: 0 auto;
 }
-
-#send:hover{
-    background-color:rgb(102, 173, 106);
-    cursor: pointer;
-}
 .gap{
     height: 10px;
     width: 100%;
@@ -29,13 +24,15 @@ body{
 #ChatViewer{
     flex:1;
     color:white;
-    background-color: rgba(0, 0, 0, 0.527);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px 30px;
-    height: 50%;
+    height: 54%;
     margin: 0 auto;
     backdrop-filter: blur(5px);
     border-radius: 20px;
     overflow: auto;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .message{
     background: linear-gradient(315deg, #4d5dfb 0%, #08c8f6 74%);
@@ -59,3 +56,41 @@ div::-webkit-scrollbar {
     width: 0%;
     background-color: #F5F5F5;
   }
+#CLASSICCHAT{
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    border-radius: 15px; 
+    width: 99%; 
+    margin: 0 auto; 
+    margin-top: 8px;
+}
+#MessagingElement{
+    background-color: rgba(0, 0, 0, 0.52);
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#msg{
+    background-color: #0000005e;
+    border-radius: 10px;
+    border: 0px;
+    width: 50%;
+    padding: 5px;
+    height: 36px;
+    color: white;
+}
+#send{
+    background-color: #0070fa;
+    border: 0px;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    transition: background 0.5s;
+}
+#send:hover{
+    background-color: #005ac9;
+}

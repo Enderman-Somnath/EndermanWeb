@@ -32,7 +32,6 @@ function autoscroll(){
 }
 function send(){
     if(document.getElementById("msg").value == ""){
-        window.alert("Cant send Blank Message");
     }
     else{
       msg = document.getElementById("msg").value;
