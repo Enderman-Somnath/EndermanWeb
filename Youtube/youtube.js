@@ -1,16 +1,4 @@
 localStorage.setItem("WhereIsUser","/EndermanWeb/Youtube/");
-const firebaseConfig = {
-    apiKey: "AIzaSyBAJgNXiQ7j0-Jly8hwtkhnSSuKPgQhZj0",
-    authDomain: "classicchat-cfb87.firebaseapp.com",
-    databaseURL: "https://classicchat-cfb87-default-rtdb.firebaseio.com",
-    projectId: "classicchat-cfb87",
-    storageBucket: "classicchat-cfb87.appspot.com",
-    messagingSenderId: "481166683980",
-    appId: "1:481166683980:web:a865253f257369395329e9"
-  };
-  
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
 var w = document.documentElement.clientWidth || window.innerWidth;
 if (w <= 480) {
     document.getElementById("topnav").className = "hidden";
@@ -32,3 +20,17 @@ function showorhidemobilenav(){
         mobilenav = false;
     }
 }
+document.getElementById("youtube").innerHTML = "<h1 style='color:white; padding: 5px;'>Loading Channels...</h1>";
+setTimeout(function(){
+    database.ref("/Youtube/").on('value', function(snapshot) { 
+        const data = snapshot.val();
+        snapshot.forEach((childSnapshot) => {
+        const childKey = childSnapshot.key;
+        const childData = childSnapshot.val();
+            document.getElementById("youtube").innerHTML = childData
+            if(document.getElementById("youtube").innerHTML == "") {
+                document.getElementById("youtube").innerHTML = "<h1 style='color:white; padding: 5px;'>There are no channels here :(</h1>";
+            }
+    });
+    })
+},3000)

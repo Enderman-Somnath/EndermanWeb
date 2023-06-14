@@ -1,17 +1,5 @@
 localStorage.setItem("WhereIsUser","/EndermanWeb/Community/");
 // Your web app's Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyBAJgNXiQ7j0-Jly8hwtkhnSSuKPgQhZj0",
-    authDomain: "classicchat-cfb87.firebaseapp.com",
-    databaseURL: "https://classicchat-cfb87-default-rtdb.firebaseio.com",
-    projectId: "classicchat-cfb87",
-    storageBucket: "classicchat-cfb87.appspot.com",
-    messagingSenderId: "481166683980",
-    appId: "1:481166683980:web:a865253f257369395329e9"
-  };
-
-  firebase.initializeApp(firebaseConfig);
-
 function getData() {
     firebase.database().ref("/Community/").on('value', function (snapshot) {
           document.getElementById("communityroomsviewer").innerHTML = "";

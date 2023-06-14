@@ -1,17 +1,4 @@
 localStorage.setItem("WhereIsUser","/EndermanWeb/ClassicChat/ClassicChatHome/Chat.html");
-// Your web app's Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyBAJgNXiQ7j0-Jly8hwtkhnSSuKPgQhZj0",
-    authDomain: "classicchat-cfb87.firebaseapp.com",
-    databaseURL: "https://classicchat-cfb87-default-rtdb.firebaseio.com",
-    projectId: "classicchat-cfb87",
-    storageBucket: "classicchat-cfb87.appspot.com",
-    messagingSenderId: "481166683980",
-    appId: "1:481166683980:web:a865253f257369395329e9"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const database = firebase.database();
 MessagerUsername = localStorage.getItem("UsernameCCHAT");
 firebase.database().ref("/USERS/").child(localStorage.getItem("Username")).once('value')
           .then((snapshot) => {
@@ -57,11 +44,12 @@ document.getElementById("ChatViewer").innerHTML = "Loading...";
 function getData(){
 database.ref("/ClassicChat/"+RoomID).on('value', function(snapshot) { 
         document.getElementById("ChatViewer").innerHTML = null;
+        document.getElementById("ChatViewer").innerHTML = "Messages are encrypted --- This the start of the messages";
         const data = snapshot.val();
         snapshot.forEach((childSnapshot) => {
         const childKey = childSnapshot.key;
         const childData = childSnapshot.val();
-        if(childKey != "Room(CHATID)"){
+        if(childKey != "Room(CHATID)" && childKey != "CREATED BY USER"){
             document.getElementById("ChatID").innerHTML="ChatID: " + RoomID
             chatkey = childKey; 
             chatdata = childData;
@@ -83,11 +71,8 @@ database.ref("/ClassicChat/"+RoomID).on('value', function(snapshot) {
             }
             ChatMessages = ChatUserName + ChatUserMessage;
             document.getElementById("ChatViewer").innerHTML += ChatMessages
-            console.log(document.getElementById("ChatViewer").value);
-            if(document.getElementById("ChatViewer").value === null){
-            document.getElementById("ChatViewer").innerHTML = "There are no messages";
-            } else if(document.getElementById("ChatViewer").value === "") {
-            document.getElementById("ChatViewer").innerHTML = "There are no messages";
+            if(document.getElementById("ChatViewer").innerHTML == "") {
+                document.getElementById("ChatViewer").innerHTML = "There are no messages";
             }
             if (autoscrollchat === 1){
                 const element = document.getElementById("ChatViewer");
