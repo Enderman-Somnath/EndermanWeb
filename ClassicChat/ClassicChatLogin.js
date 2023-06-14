@@ -45,7 +45,7 @@ function validateInput(input) {
                 console.log("Creating/Loading room with ChatID: ",RoomID)
                 firebase.database().ref("/ClassicChat/").child(RoomID).update({
                     "Room(CHATID)" : "Created By ClassicChat",
-                    "CREATED BY USER": localStorage.getItem("Username"),
+                    "CREATEDBYUSER": localStorage.getItem("Username"),
               });
                 setTimeout(function(){
                 localStorage.setItem("RoomID", RoomID);
@@ -115,7 +115,7 @@ if(islinktrue === "true"){
             console.log("Creating/Loading room with ChatID: ",chatid)
             firebase.database().ref("/ClassicChat/").child(chatid).update({
                 "Room(CHATID)" : "Created By ClassicChat",
-                "CREATED BY USER": localStorage.getItem("Username"),
+                "CREATEDBYUSER": localStorage.getItem("Username"),
           });
             setTimeout(function(){
             localStorage.setItem("RoomID", chatid);

@@ -1,5 +1,13 @@
 localStorage.setItem("WhereIsUser","/EndermanWeb/ClassicChat/ClassicChatHome/Chat.html");
 MessagerUsername = localStorage.getItem("UsernameCCHAT");
+function encryptText(text, key) {
+    const encrypted = CryptoJS.AES.encrypt(text, key).toString();
+    return encrypted;
+  }
+  function decryptText(encryptedText, key) {
+    const decrypted = CryptoJS.AES.decrypt(encryptedText, key).toString(CryptoJS.enc.Utf8);
+    return decrypted;
+  }
 firebase.database().ref("/USERS/").child(localStorage.getItem("Username")).once('value')
           .then((snapshot) => {
             const userData = snapshot.val();
@@ -30,7 +38,7 @@ function send(){
         const ISTTime = date.toLocaleString('en-US', options);
       firebase.database().ref("/ClassicChat/" + RoomID).push({
             Name: MessagerUsername,
-            Message: msg,
+            Message: encryptText(msg, "CCHATECRYPT"),
             badge: badge,
             time: "<i class='bi bi-clock'></i> " + "<i>" + ISTTime + "</i>",
       });
@@ -41,35 +49,44 @@ RoomID = localStorage.getItem("RoomID");
 const sanitizedName = DOMPurify.sanitize(RoomID);
 document.getElementById("ChatID").innerHTML="ChatID: " + RoomID
 document.getElementById("ChatViewer").innerHTML = "Loading...";
+database.ref("/ClassicChat/"+RoomID).on('value', function(snapshot) { 
+    const data = snapshot.val();
+    snapshot.forEach((childSnapshot) => {
+    const childKey = childSnapshot.key;
+    const childData = childSnapshot.val();
+    if(childKey == "CREATEDBYUSER"){
+        createdbyuser = childData;
+    }
+});
+});
 function getData(){
 database.ref("/ClassicChat/"+RoomID).on('value', function(snapshot) { 
         document.getElementById("ChatViewer").innerHTML = null;
-        document.getElementById("ChatViewer").innerHTML = "Messages are encrypted --- This the start of the messages";
+        document.getElementById("ChatViewer").innerHTML = "Messages are encrypted --- This the start of the messages. Room created by user: " + createdbyuser;
         const data = snapshot.val();
         snapshot.forEach((childSnapshot) => {
         const childKey = childSnapshot.key;
         const childData = childSnapshot.val();
-        if(childKey != "Room(CHATID)" && childKey != "CREATED BY USER"){
-            document.getElementById("ChatID").innerHTML="ChatID: " + RoomID
+        document.getElementById("ChatID").innerHTML="ChatID: " + RoomID;
+        if(childKey != "Room(CHATID)" && childKey != "CREATEDBYUSER"){
             chatkey = childKey; 
             chatdata = childData;
-            console.log(chatkey);
-            console.log(chatdata);
             Name = chatdata['Name'];
-            Message = chatdata['Message'];
+            MessageEncrypted = chatdata['Message'];
+            Message = decryptText(MessageEncrypted, "CCHATECRYPT");
             Badge = chatdata['badge'];
             time = chatdata['time'];
             const sanitizedName = DOMPurify.sanitize(Name);
             const sanitizedMessage = DOMPurify.sanitize(Message);
-            ChatUserName = "<div class='message'><h4 class='Name' style='margin-left: 5px; margin-right: 5px; text-align:left;'> " + sanitizedName + Badge + "</h4>";
-            ChatUserMessage = "<h4 class='message_h4' style='text-align:left; margin-left: 5px; margin-right: 5px;'>" + sanitizedMessage + "<br> <br>" + time + " IST" + "</h4></div>";
-            gap = "<h4 class='gap'></h4> <br>";
+            ChatUserName = "<div class='messagedata'><h4 class='name'> " + sanitizedName + Badge + "</h4>";
+            ChatUserMessage = "<h4 class='message'>" + sanitizedMessage + "</h4>";
+            Time = "<p class='time'>" + time + " IST" + "</p>" + "</div>";
             if(Name == MessagerUsername){
-                ChatUserName = "<div class='message user_message'><h4 class='Name' style='text-align: right; margin-left: 5px; margin-right: 5px;'> " + sanitizedName + Badge + "</h4>";
-                ChatUserMessage = "<h4 class='message_h4' style='text-align: right; margin-left: 5px; margin-right: 5px;'>" + sanitizedMessage + "<br> <br>" + time + " IST" + "</h4></div>";
-                gap = "<h4 class='gap'></h4> <br>";
+                ChatUserName = "<div class='usermessagedata'><h4 class='userName'> " + sanitizedName + Badge + "</h4>";
+                ChatUserMessage = "<h4 class='usermessage'>" + sanitizedMessage + "</h4>";
+                Time = "<p class='userTime'>" + time + " IST" + "</p>" + "</div>";
             }
-            ChatMessages = ChatUserName + ChatUserMessage;
+            ChatMessages = ChatUserName + ChatUserMessage + Time;
             document.getElementById("ChatViewer").innerHTML += ChatMessages
             if(document.getElementById("ChatViewer").innerHTML == "") {
                 document.getElementById("ChatViewer").innerHTML = "There are no messages";
