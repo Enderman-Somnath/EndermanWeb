@@ -131,7 +131,8 @@ if(islinktrue === "true"){
 function checkforexistingroomoninput(){
   const button = document.getElementById("EnterChatID");
   button.innerHTML = "...";
-  checkRoomExists(document.getElementById("inputChatID").value)
+  if(validateInput(document.getElementById("inputChatID").value)){
+    checkRoomExists(document.getElementById("inputChatID").value)
   .then((exists) => {
     if (exists) {
       button.innerHTML = "Join Room";
@@ -139,9 +140,10 @@ function checkforexistingroomoninput(){
     } else {
       button.innerHTML = "Create Room";
     }
-
+    });
+  } else {
     if(document.getElementById("inputChatID").value == "") {
       button.innerHTML = "Enter Room/Create Room(if new)";
     }
-    });
+  }
   }
