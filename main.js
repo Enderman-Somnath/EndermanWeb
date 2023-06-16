@@ -1,4 +1,4 @@
-function getData() { firebase.database().ref("/UpdatesENDERMANWEBSHOW/").on('value', function(snapshot) { document.getElementById("ChatViewer").innerHTML = ""; snapshot.forEach(function(childSnapshot) { childKey  = childSnapshot.key; childData = childSnapshot.val(); if(childKey != "Updates") {
+function getData() { firebase.database().ref("/UpdatesENDERMANWEBSHOW/").on('value', function(snapshot) { document.getElementById("Updates").innerHTML = ""; snapshot.forEach(function(childSnapshot) { childKey  = childSnapshot.key; childData = childSnapshot.val(); if(childKey != "Updates") {
   firebase_message_id = childKey;
   message_data = childData;
 //Start code
@@ -8,9 +8,9 @@ name_with_tag = "<div class='message'><h4 class='Name' style='margin-left: 5px; 
 message_with_tag = "<h4 class='message_h4' style='text-align:left; margin-left: 5px; margin-right: 5px;'>" + message + "</h4></div>";
 gap = "<h4 class='gap'></h4> <br>";
 row = name_with_tag + message_with_tag + "<br>";
-document.getElementById("ChatViewer").innerHTML += row;
+document.getElementById("Updates").innerHTML += row;
 //End code
-const element = document.getElementById("ChatViewer");
+const element = document.getElementById("Updates");
   element.scrollTop = element.scrollHeight;
 } });  }); }
 getData();
