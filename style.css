@@ -168,3 +168,15 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to right, #0d7bc4, #23aaa3);
 }
+
+#AboutME{
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 10px;
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  margin-bottom: 30px;
+}

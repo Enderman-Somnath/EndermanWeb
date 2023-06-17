@@ -7,6 +7,7 @@ firebase.database().ref("/USERS/").child(localStorage.getItem("Username")).once(
     localStorage.setItem("UserPresent",true)
     localStorage.setItem("Username",userData['username'])
     localStorage.setItem("Name",userData['name'])
+    localStorage.setItem("Password",userData['password'])
   })
   .catch((error) => {
     window.alert("An error occured while fetching account details");
