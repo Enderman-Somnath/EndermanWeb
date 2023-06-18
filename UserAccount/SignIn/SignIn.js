@@ -24,7 +24,6 @@ function validateInput(input) {
 function Login(username, password) {
   const inputUsername = document.getElementById("Username").value;
   const inputPassword = document.getElementById("password").value;
-  const encryptionKey = 'EWEBECRYPT';
   if(validateInput(inputUsername)){
     checkUsernameExists(inputUsername)
     .then((exists) => {
@@ -35,6 +34,7 @@ function Login(username, password) {
           .then((snapshot) => {
             const userData = snapshot.val();
             const encryptedPassword = userData.password;
+            const encryptionKey = userData.encryptionkey;
             const decryptedPassword = decryptText(encryptedPassword, encryptionKey);
             if (inputPassword === decryptedPassword) {
               localStorage.setItem("UserPresent",true)

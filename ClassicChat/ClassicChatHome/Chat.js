@@ -25,6 +25,17 @@ function autoscroll(){
         document.getElementById("autoscroll").innerHTML = "Auto Scroll Chat: On"
     }
 }
+function generateRandomCharacters(count) {
+    var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+    var randomCharacters = "";
+  
+    while (randomCharacters.length < count) {
+      var randomIndex = Math.floor(Math.random() * characters.length);
+      randomCharacters += characters.charAt(randomIndex);
+    }
+  
+    return randomCharacters;
+  }
 function send(){
     if(document.getElementById("msg").value == ""){
     }
@@ -36,9 +47,11 @@ function send(){
             hour12: false,
             };
         const ISTTime = date.toLocaleString('en-US', options);
+        const encryptionKey = generateRandomCharacters(30);
       firebase.database().ref("/ClassicChat/" + RoomID).push({
             Name: MessagerUsername,
-            Message: encryptText(msg, "CCHATECRYPT"),
+            Message: encryptText(msg,encryptionKey),
+            encryptionkey: encryptionKey,
             badge: badge,
             time: "<i class='bi bi-clock'></i> " + "<i>" + ISTTime + "</i>",
       });
@@ -73,7 +86,7 @@ database.ref("/ClassicChat/"+RoomID).on('value', function(snapshot) {
             chatdata = childData;
             Name = chatdata['Name'];
             MessageEncrypted = chatdata['Message'];
-            Message = decryptText(MessageEncrypted, "CCHATECRYPT");
+            Message = decryptText(MessageEncrypted,chatdata['encryptionkey']);
             Badge = chatdata['badge'];
             time = chatdata['time'];
             const sanitizedName = DOMPurify.sanitize(Name);

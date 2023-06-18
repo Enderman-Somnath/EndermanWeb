@@ -22,6 +22,15 @@ function checkUsernameExists(username) {
     
     return pattern.test(input);
   }
+  function generateRandomCharacters(count) {
+    var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+    var randomCharacters = "";
+    while (randomCharacters.length < count) {
+      var randomIndex = Math.floor(Math.random() * characters.length);
+      randomCharacters += characters.charAt(randomIndex);
+    }
+    return randomCharacters;
+  }
   function SignUp(name,username, password) {
     const inputName = document.getElementById("Name").value;
     const inputUsername = document.getElementById("Username").value;
@@ -34,7 +43,7 @@ function checkUsernameExists(username) {
       console.log("Input is valid");
       if (validateInput(inputUsername)) {
         console.log("Input is valid");
-        const encryptionKey = 'EWEBECRYPT';
+        const encryptionKey = generateRandomCharacters(10);
         const encryptedPassword = encryptText(inputPassword, encryptionKey);
         checkUsernameExists(inputUsername)
       .then((exists) => {
@@ -45,13 +54,14 @@ function checkUsernameExists(username) {
             name: inputName,
             username: inputUsername,
             password: encryptedPassword,
+            encryptionkey: encryptionKey,
             badges:"",
           });
           localStorage.setItem("UserPresent",true)
           localStorage.setItem("Name",inputName)
           localStorage.setItem("Username",inputUsername)
           localStorage.setItem("Password",encryptedPassword)
-          window.location = "/EndermanWeb/UserAccount/UserInfo/UserInfo.html"
+          window.location = "/EndermanWeb/UserAccount/UserInfo/"
         }
       })
       .catch((error) => {

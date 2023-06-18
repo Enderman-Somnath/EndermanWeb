@@ -46,7 +46,7 @@ function signout() {
     localStorage.setItem("Username",userData['username'])
     localStorage.setItem("Password",encryptedPassword)
     localStorage.setItem("Name",userData['name'])
-    decryptedPassword = decryptText(encryptedPassword, "EWEBECRYPT");
+    decryptedPassword = decryptText(encryptedPassword,userData['encryptionkey']);
     setTimeout(function(){
       document.getElementById("Name").innerHTML += userData['name'] + ", Badges:" + userData['badges'];
       setTimeout(function(){
