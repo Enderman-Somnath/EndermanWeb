@@ -3,6 +3,7 @@
         <link rel="icon" type="image/x-icon" href="icon2.png">
         <title> EndermanWeb </title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/EndermanWeb/Functions/style.css">
         <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/live/4.9/firebase.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -14,12 +15,12 @@
 <body>
     <!--Desktop-->
     <div id="topnav" class="topnav desktop">
-        <li class="curves"><a href="#home" onclick="homeWeb()"> <i class="bi bi-house-door-fill"></i> Home</a></li>
-        <li class="curves"><a href="#chat" onclick="classicChatWeb()"> <i class="bi bi-chat-left-fill"></i> Chat</a></li>
-        <li class="curves"><a href="#youtube" onclick="youtubeWeb()"> <i class="bi bi-youtube"></i> Youtube Channels </a></li>
-        <li class="curves"><a href="#community" onclick="community()"> <i class="bi bi-people-fill"></i> Community </a></li>
-        <li class="curves"><a href="#about" onclick="PopUp('/EndermanWeb/aboutEndermanweb.html')" class="split"> <i class="bi bi-info-circle-fill"></i> About </a></li>
+        <a href="#home" onclick="homeWeb()"> <i class="bi bi-house-door-fill"></i> Home</a>
+        <a href="#chat" onclick="classicChatWeb()"> <i class="bi bi-chat-left-fill"></i> Chat</a>
+        <a href="#youtube" onclick="youtubeWeb()"> <i class="bi bi-youtube"></i> Youtube Channels </a>
+        <a href="#community" onclick="community()"> <i class="bi bi-people-fill"></i> Community </a>
         <button class="btn btn-primary" id="account" onclick="window.location = '/EndermanWeb/UserAccount/'"><i class="bi bi-person-circle"></i> Loading</button>
+        <a href="#about" onclick="PopUp('/EndermanWeb/aboutEndermanweb.html')" class="split"> <i class="bi bi-info-circle-fill"></i> About </a>
     </div>
     <!--Mobile-->
     <div id="topnav_mobile" class="mobile_nav hidden">

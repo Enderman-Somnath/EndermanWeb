@@ -1,12 +1,12 @@
 localStorage.setItem("WhereIsUser","/EndermanWeb/Youtube/");
 var w = document.documentElement.clientWidth || window.innerWidth;
-if (w <= 480) {
+if (w <= 765) {
     document.getElementById("topnav").className = "hidden";
     document.getElementById("mobile_nav_button").className = "mobile_nav_button";
     document.getElementById("youtube").style = "margin-top: 10px;"
 } else {
     document.getElementById("topnav").className = "topnav desktop";
-    document.getElementById("youtube").style = "margin-top: 75px;"
+    document.getElementById("youtube").style = "margin-top: 80px;"
 }
 
 mobilenav = false

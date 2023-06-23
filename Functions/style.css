@@ -1,0 +1,153 @@
+html{
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  body{
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .topnav {
+    background-color: #000000a9;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    list-style: none;
+    position: sticky;
+    overflow-x: auto;
+    margin-inline-start: 0.5%;
+    z-index: 1;
+    padding: 15px;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Align items with space between */
+  }
+  
+  .topnav a {
+    background-color: rgba(0, 0, 0, 0.39);
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    size: 10;
+    border-radius: 10px;
+    margin-right: 5px;
+    transition: background 0.2s ease;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(112, 14, 192);
+  }
+  
+  .topnav a.split {
+    background-color: #6c33a3;
+    background-image: linear-gradient(316deg, #6c33a3 0%, #8241b8 74%);
+    margin-left: auto;
+    margin-left: 5px;
+    margin-right: 0px;
+  }
+  
+  #account {
+    margin-left: auto; /* Push the account element to the right */
+  }
+  
+  .curves {
+    border-radius: 20px;
+  }
+  
+  .desktop {
+    position: fixed;
+    top: 40; /* Adjust the vertical position as needed */
+    left: 0;
+    right: 0;
+    transform: translateY(-50%); /* Center vertically */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .mobile_nav_button{
+    position: fixed;
+    bottom: 0%;
+    background-color: #000000a9;
+    backdrop-filter: blur(10px);
+    border-width: 0px;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    z-index: 1;
+  }
+  .hover_mobile_nav_button button:hover{
+    background-color: #181818cc;
+  }
+  .mobile_nav{
+    position: fixed;
+    background-color: #000000a9;
+    backdrop-filter: blur(50px);
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+    z-index: 1;
+  }
+  .mobile_nav a{
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  transition: color 0.5s ease;
+  }
+  .mobile_nav a:hover{
+    color: rgb(67, 67, 255);
+  }
+  .mobile_nav li{
+    margin-top: 5%;
+  }
+  .hidden{
+    display: none;
+  }
+
+  /* Custom Scrollbar */
+
+  div::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  div::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+  }
+  
+  div::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #0099ff, #2ee5dc);
+    border-radius: 20px;
+    border: 3px solid white;
+  }
+  
+  div::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #0d7bc4, #23aaa3);
+  }
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #0099ff, #2ee5dc);
+    border-radius: 20px;
+    border: 3px solid white;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #0d7bc4, #23aaa3);
+  }
