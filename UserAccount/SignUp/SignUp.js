@@ -1,86 +1,75 @@
 localStorage.setItem("WhereIsUser","/EndermanWeb/UserAccount/SignUp/");
-function checkUsernameExists(username) {
-    return firebase
-      .database()
-      .ref("/USERS/" + username)
-      .once("value")
-      .then((snapshot) => {
-        return snapshot.exists();
-      });
+function validateInput(input) {
+  const regex = /^[a-zA-Z0-9@+\-]+$/;
+  return regex.test(input);
+}
+
+function SignUp() {
+  const inputEmail = document.getElementById('Email').value;
+  const inputPassword = document.getElementById('password').value;
+  const inputName = document.getElementById("Name").value;
+  if (inputPassword.length < 6) {
+    window.alert("Password should be at least 6 characters long.");
+    return;
   }
-  function encryptText(text, key) {
-    const encrypted = CryptoJS.AES.encrypt(text, key).toString();
-    return encrypted;
+
+  if (!validateInput(inputName)) {
+    window.alert("Please use valid symbols for Name: '@', '1-9','-',, '+', all letters");
+    return;
   }
-  function decryptText(encryptedText, key) {
-    const decrypted = CryptoJS.AES.decrypt(encryptedText, key).toString(CryptoJS.enc.Utf8);
-    return decrypted;
-  }
-  function validateInput(input) {
-    // Regular expression pattern to allow specific symbols
-    var pattern = /^[a-zA-Z0-9@\-!]+$/;
-    
-    return pattern.test(input);
-  }
-  function generateRandomCharacters(count) {
-    var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-    var randomCharacters = "";
-    while (randomCharacters.length < count) {
-      var randomIndex = Math.floor(Math.random() * characters.length);
-      randomCharacters += characters.charAt(randomIndex);
-    }
-    return randomCharacters;
-  }
-  function SignUp(name,username, password) {
-    const inputName = document.getElementById("Name").value;
-    const inputUsername = document.getElementById("Username").value;
-    const inputPassword = document.getElementById("password").value;
-    if (inputPassword.length < 6) {
-      window.alert("Password should be at least 6 characters long.");
-      return;
-    }
-    if (validateInput(inputName)) {
-      console.log("Input is valid");
-      if (validateInput(inputUsername)) {
-        console.log("Input is valid");
-        const encryptionKey = generateRandomCharacters(10);
-        const encryptedPassword = encryptText(inputPassword, encryptionKey);
-        checkUsernameExists(inputUsername)
-      .then((exists) => {
-        if (exists) {
-          window.alert("The username already exists. Please choose another username.");
-        } else {
-          firebase.database().ref("/USERS/").child(inputUsername).update({
-            name: inputName,
-            username: inputUsername,
-            password: encryptedPassword,
-            encryptionkey: encryptionKey,
-            badges:"",
-          });
-          localStorage.setItem("UserPresent",true)
-          localStorage.setItem("Name",inputName)
-          localStorage.setItem("Username",inputUsername)
-          localStorage.setItem("Password",encryptedPassword)
-          window.location = "/EndermanWeb/UserAccount/UserInfo/"
-        }
-      })
-      .catch((error) => {
-        window.alert("Sorry, but an error occurred during the creation/checking of the username. Make sure you have entered a valid password/username.");
-        console.error("Error: ", error);
-      });
+  const auth = firebase.auth();
+  checkEmailExists(inputEmail)
+    .then((exists) => {
+      if (exists) {
+        window.alert("The email already exists. Please choose another email.");
       } else {
-        console.log("Input contains disallowed symbols");
-        window.alert("Please use valid symbols for Username '@','1-9','-','!','+','all letters'")
+        auth.createUserWithEmailAndPassword(inputEmail, inputPassword)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            const displayName = document.getElementById("Name").value;
+            firebase.auth().onAuthStateChanged((user) => {
+              const displayName = document.getElementById("Name").value;
+              if(user){
+                user.updateProfile({
+                  displayName: displayName
+                }).then(() => {
+                  // Send email verification
+                  user.sendEmailVerification()
+                    .then(() => {
+                      window.alert("Verification email sent. Please check your email to verify your account.");
+                      window.location = "Verify/";
+                    })
+              }); 
+              }else if(!user){
+                window.alert("ERROR OCCURED")
+              }
+            })
+            .catch((error) => {
+              window.alert("Failed to update user profile. Please try again later.");
+              console.error("Error updating user profile:", error);
+            });
+          })
+          .catch((error) => {
+            window.alert("An error occurred during user creation. Make sure you have entered a valid email/password.");
+            console.error("Error creating user:", error);
+          });
       }
-    } else {
-      console.log("Input contains disallowed symbols");
-      window.alert("Please use valid symbols for Name '@','1-9','-','!','+','all letters'")
-    }
-  }
-
-  
-
-
+    })
+    .catch((error) => {
+      window.alert("An error occurred during the creation/checking of the email. Make sure you have entered a valid email.");
+      console.error("Error: ", error);
+    });
+}
+function checkEmailExists(email) {
+  return firebase.auth().fetchProvidersForEmail(email)
+    .then((providers) => {
+      return providers.length > 0;
+    })
+    .catch((error) => {
+      console.error("Error checking email existence:", error);
+      throw error;
+    });
+}
 var w = document.documentElement.clientWidth || window.innerWidth;
     if (w <= 480) {
     document.getElementById("topnav").className = "hidden";

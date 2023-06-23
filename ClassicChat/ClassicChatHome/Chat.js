@@ -1,5 +1,24 @@
 localStorage.setItem("WhereIsUser","/EndermanWeb/ClassicChat/ClassicChatHome/Chat.html");
-MessagerUsername = localStorage.getItem("UsernameCCHAT");
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    usersnamecchat = user.displayName;
+    togetbadgeneeduid = user.uid;
+    MessagerUsername = usersnamecchat;
+    firebase.database().ref("/USERS/").child(togetbadgeneeduid).once('value')
+          .then((snapshot) => {
+            const userData = snapshot.val();
+            badge = userData['badges'];
+          });
+  } else {
+    localStorage.removeItem("UserPresent");
+  window.location = "/EndermanWeb/UserAccount/SignIn/";
+  }
+});
+IsUserPresent = localStorage.getItem("UserPresent");
+if (IsUserPresent === null) {
+window.alert("Sign in to use ClassicChat");
+window.location = "/EndermanWeb/UserAccount/SignIn/";
+}
 function encryptText(text, key) {
     const encrypted = CryptoJS.AES.encrypt(text, key).toString();
     return encrypted;
@@ -8,11 +27,6 @@ function encryptText(text, key) {
     const decrypted = CryptoJS.AES.decrypt(encryptedText, key).toString(CryptoJS.enc.Utf8);
     return decrypted;
   }
-firebase.database().ref("/USERS/").child(localStorage.getItem("Username")).once('value')
-          .then((snapshot) => {
-            const userData = snapshot.val();
-            badge = userData['badges'];
-          });
 autoscrollchat = 1;
 function autoscroll(){
     if(autoscrollchat === 1){

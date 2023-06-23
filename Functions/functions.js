@@ -25,7 +25,4 @@ function community(){
 function PopUp(url){
     popupWindow = window.open(url,'popUpWindow','height=600,width=800,');
 }
-var DEV = document.createElement('div');
-DEV.innerHTML = "<div style='position: fixed; background-color: black; bottom: 0; left: 0; width: 100%; height: 3%; text-align: center; color: white;'> <h1 style='font-size: 18px;'> DEV Version - EndermanWEB </h1> </div>";
-document.body.appendChild(DEV);
 

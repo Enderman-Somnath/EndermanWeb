@@ -30,13 +30,15 @@
   <div class="container">
     <div class="signin" id="signin">
       <h2>Sign In</h2>
-      <input class="input" id="Username" type="text" placeholder="Username">
+      <input class="input" id="Email" type="text" placeholder="Email">
       <input class="input" id="password" type="password" placeholder="Password">
-      <button class="button" onclick="Login(document.getElementById('Username').value,document.getElementById('password').value)">Sign In</button>
+      <button class="button" onclick="signInWithEmailPassword()">Sign In</button>
       <br>
       <br>
       <div style="text-decoration: underline; color:#fff; background-color: #2c69e1; padding: 10px; border-radius: 20px; text-align: center;">
       <a href="/EndermanWeb/UserAccount/SignUp/" style="text-decoration: underline; color:#fff;" title="Create Account"> If new user, Click here to create account </a>
+      <br>
+      <button class="btn btn-primary" onclick="resetPassword()">Forgot Password</button>
     </div>
     </div>
   </div>

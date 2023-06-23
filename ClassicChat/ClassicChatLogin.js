@@ -1,5 +1,13 @@
 localStorage.setItem("WhereIsUser","/EndermanWeb/ClassicChat/");
 // Your web app's Firebase configuration
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    usersnamecchat = user.displayName;
+  } else {
+    localStorage.removeItem("UserPresent");
+    window.location = "/EndermanWeb/UserAccount/SignIn/";
+  }
+});
 IsUserPresent = localStorage.getItem("UserPresent");
 if (IsUserPresent === null) {
 window.alert("Sign in to use ClassicChat");
@@ -31,7 +39,7 @@ function validateInput(input) {
                 console.log("Loading room with ChatID: ",RoomID)
                 setTimeout(function(){
                 localStorage.setItem("RoomID", RoomID);
-                localStorage.setItem("UsernameCCHAT", localStorage.getItem("Name"));
+                localStorage.setItem("UsernameCCHAT", usersnamecchat);
                 window.location = "/EndermanWeb/ClassicChat/ClassicChatHome/";
               }, 900);
             }
@@ -45,11 +53,11 @@ function validateInput(input) {
                 console.log("Creating/Loading room with ChatID: ",RoomID)
                 firebase.database().ref("/ClassicChat/").child(RoomID).update({
                     "Room(CHATID)" : "Created By ClassicChat",
-                    "CREATEDBYUSER": localStorage.getItem("Username"),
+                    "CREATEDBYUSER": usersnamecchat,
               });
                 setTimeout(function(){
                 localStorage.setItem("RoomID", RoomID);
-                localStorage.setItem("UsernameCCHAT", localStorage.getItem("Name"));
+                localStorage.setItem("UsernameCCHAT", usersnamecchat);
                 window.location = "/EndermanWeb/ClassicChat/ClassicChatHome/";
               }, 900);
             }
@@ -101,7 +109,7 @@ if(islinktrue === "true"){
             console.log("Loading room with ChatID: ",chatid)
             setTimeout(function(){
             localStorage.setItem("RoomID", chatid);
-            localStorage.setItem("UsernameCCHAT", localStorage.getItem("Name"));
+            localStorage.setItem("UsernameCCHAT", usersnamecchat);
             window.location = "/EndermanWeb/ClassicChat/ClassicChatHome/";
           }, 900);
         }
@@ -115,11 +123,11 @@ if(islinktrue === "true"){
             console.log("Creating/Loading room with ChatID: ",chatid)
             firebase.database().ref("/ClassicChat/").child(chatid).update({
                 "Room(CHATID)" : "Created By ClassicChat",
-                "CREATEDBYUSER": localStorage.getItem("Username"),
+                "CREATEDBYUSER": usersnamecchat,
           });
             setTimeout(function(){
             localStorage.setItem("RoomID", chatid);
-            localStorage.setItem("UsernameCCHAT", localStorage.getItem("Name"));
+            localStorage.setItem("UsernameCCHAT", usersnamecchat);
             window.location = "/EndermanWeb/ClassicChat/ClassicChatHome/";
           }, 900);
         }
@@ -128,9 +136,12 @@ if(islinktrue === "true"){
         }
     }}); 
 }
-function checkforexistingroomoninput(){
+function checkforexistingroomoninput(event){
   const button = document.getElementById("EnterChatID");
   button.innerHTML = "...";
+  if (event.keyCode === 13) {
+    return;
+  }
   if(validateInput(document.getElementById("inputChatID").value)){
     checkRoomExists(document.getElementById("inputChatID").value)
   .then((exists) => {

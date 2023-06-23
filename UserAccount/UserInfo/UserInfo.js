@@ -1,17 +1,82 @@
 localStorage.setItem("WhereIsUser","/EndermanWeb/UserAccount/UserInfo/");
-function signout() {
-    var result = window.confirm("Do you want to sign out?");
-    
-    if (result) {
-        localStorage.removeItem("UserPresent");
-        localStorage.removeItem("Password");
-        localStorage.removeItem("Username");
-        localStorage.removeItem("Name");
-        window.alert("Signed out successfully");
-        window.location = "/EndermanWeb/UserAccount/SignIn/";
-    } else {
-    }
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    // User is signed in
+    const nameElement = document.getElementById("Name");
+    const emailElement = document.getElementById("Email");
+    const uidElement = document.getElementById("uid");
+    // Set user info in the labels
+    nameElement.textContent = "Name: " + user.displayName;
+    emailElement.textContent = "Email: " + user.email;
+    uidElement.textContent = "User UID: " + user.uid;
+    firebase.database().ref("/USERS/").child(user.uid).once('value')
+          .then((snapshot) => {
+            const userData = snapshot.val();
+            nameElement.innerHTML += ",  Badges: " +  userData['badges']  + " <button class='btn btn-primary' onclick='updateDisplayName()'> Change Name </button>";
+          });
+  } else {
+    // No user is signed in
+    window.alert("No user is signed in. Please sign in.");
+    localStorage.removeItem("UserPresent");
+    window.location = "/EndermanWeb/UserAccount/SignIn/";
   }
+});
+function validateInput(input) {
+  const regex = /^[a-zA-Z0-9@+\-]+$/;
+  return regex.test(input);
+}
+function updateDisplayName() {
+  const displayName = prompt("Please enter your new name you want");
+  if(displayName == null){
+    window.alert("Name is not changed");
+    return
+  }
+  if(validateInput(displayName)){
+    const user = firebase.auth().currentUser;
+  user.updateProfile({
+    displayName: displayName
+  })
+    .then(() => {
+      window.alert("Display name updated successfully.");
+    })
+    .catch((error) => {
+      window.alert("Failed to update display name. Please try again later.");
+      console.error("Error updating display name:", error);
+    });
+  } else {
+    alert("Use valid symbols for name such as @,+,-");
+  }
+}
+
+function resetPassword() {
+  const user = firebase.auth().currentUser;
+  const email = user.email;
+  firebase.auth().sendPasswordResetEmail(email)
+    .then(() => {
+      window.alert("Password reset email sent. Please check your email to reset your password.");
+    })
+    .catch((error) => {
+      window.alert("Failed to send password reset email. Please make sure the email is valid and try again.");
+      console.error("Error sending password reset email:", error);
+    });
+}
+function signout() {
+  const confirmed = window.confirm("Are you sure you want to sign out?");
+  if (!confirmed) {
+    return;
+  }
+  firebase.auth().signOut()
+    .then(() => {
+      localStorage.removeItem("UserPresent");
+      localStorage.clear();
+      window.alert("Signed out successfully!");
+      window.location = "/EndermanWeb/UserAccount/SignIn/";
+    })
+    .catch((error) => {
+      console.error("Error signing out:", error);
+    });
+}
+
   var w = document.documentElement.clientWidth || window.innerWidth;
   if (w <= 480) {
   document.getElementById("topnav").className = "hidden";
@@ -29,44 +94,4 @@ function signout() {
     document.getElementById("topnav_mobile").className = "mobile_nav hidden";
     mobilenav = false;
   }
-  }
-  function encryptText(text, key) {
-    const encrypted = CryptoJS.AES.encrypt(text, key).toString();
-    return encrypted;
-  }
-  function decryptText(encryptedText, key) {
-    const decrypted = CryptoJS.AES.decrypt(encryptedText, key).toString(CryptoJS.enc.Utf8);
-    return decrypted;
-  }
-  firebase.database().ref("/USERS/").child(localStorage.getItem("Username")).once('value')
-  .then((snapshot) => {
-    const userData = snapshot.val();
-    const encryptedPassword = userData.password;
-    localStorage.setItem("UserPresent",true)
-    localStorage.setItem("Username",userData['username'])
-    localStorage.setItem("Password",encryptedPassword)
-    localStorage.setItem("Name",userData['name'])
-    decryptedPassword = decryptText(encryptedPassword,userData['encryptionkey']);
-    setTimeout(function(){
-      document.getElementById("Name").innerHTML += userData['name'] + ", Badges:" + userData['badges'];
-      setTimeout(function(){
-        document.getElementById("Username").innerHTML += userData['username'];
-        setTimeout(function(){
-          document.getElementById("loading-animation").className = "hidden"
-        },500)
-      },1000)
-    },1000)
-  })
-  .catch((error) => {
-    window.alert("An error occurred while retrieving user data. Please try again later.");
-    console.error("Error: ", error);
-  });
-function showpass(){
-  var userInput = prompt("Type Password to decrypt and show");
-    if(userInput === decryptedPassword){
-      document.getElementById("password").innerHTML = "Password: " + decryptedPassword;
-    } else if(userInput !== decryptedPassword){
-      alert("Wrong Password");
-    }
 }
-
