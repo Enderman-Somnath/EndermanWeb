@@ -27,7 +27,7 @@ if (w <= 765) {
   document.getElementById("communitycreate").style = "margin-top: 10px;"
 } else {
   document.getElementById("topnav").className = "topnav desktop";
-  document.getElementById("community").style = "margin-top: 80px;"
+  document.getElementById("community").style = "margin-top: 95px;"
   document.getElementById("communitycreate").style = "margin-top: 10px;"
 }
 mobilenav = false
@@ -41,3 +41,17 @@ function showorhidemobilenav(){
       mobilenav = false;
   }
 }
+window.addEventListener('resize', function() {
+  const w = document.documentElement.clientWidth || window.innerWidth;
+if (w <= 765) {
+  document.getElementById("topnav").className = "hidden";
+  document.getElementById("mobile_nav_button").className = "mobile_nav_button";
+  document.getElementById("community").style = "margin-top: 10px;"
+  document.getElementById("communitycreate").style = "margin-top: 10px;"
+} else {
+  document.getElementById("topnav").className = "topnav desktop";
+  document.getElementById("mobile_nav_button").className = "hidden";
+  document.getElementById("community").style = "margin-top: 95px;"
+  document.getElementById("communitycreate").style = "margin-top: 10px;"
+}
+});

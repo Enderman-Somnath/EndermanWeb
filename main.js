@@ -14,7 +14,6 @@ const element = document.getElementById("Updates");
   element.scrollTop = element.scrollHeight;
 } });  }); }
 getData();
-
 var w = document.documentElement.clientWidth || window.innerWidth;
 if (w <= 765) {
   document.getElementById("topnav").className = "hidden";
@@ -22,7 +21,7 @@ if (w <= 765) {
   document.getElementById("home").style = "margin-top: 10px;"
 } else {
   document.getElementById("topnav").className = "topnav desktop";
-  document.getElementById("home").style = "margin-top: 80px;"
+  document.getElementById("home").style = "margin-top: 95px;"
 }
 mobilenav = false
 function showorhidemobilenav(){
@@ -35,3 +34,16 @@ function showorhidemobilenav(){
       mobilenav = false;
   }
 }
+window.addEventListener('resize', function() {
+  const  w = document.documentElement.clientWidth || window.innerWidth;
+  if (w <= 765) {
+  document.getElementById("topnav").className = "hidden";
+  document.getElementById("mobile_nav_button").className = "mobile_nav_button";
+  document.getElementById("home").style = "margin-top: 10px;"
+  } else {
+  document.getElementById("topnav").className = "topnav desktop";
+  document.getElementById("mobile_nav_button").className = "hidden";
+  document.getElementById("home").style = "margin-top: 95px;"
+  }
+});
+

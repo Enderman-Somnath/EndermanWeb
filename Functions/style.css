@@ -60,7 +60,7 @@ html{
   
   .desktop {
     position: fixed;
-    top: 40; /* Adjust the vertical position as needed */
+    top: 45; /* Adjust the vertical position as needed */
     left: 0;
     right: 0;
     transform: translateY(-50%); /* Center vertically */

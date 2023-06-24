@@ -67,26 +67,6 @@ function validateInput(input) {
         }}); 
   }
 
-  var w = document.documentElement.clientWidth || window.innerWidth;
-  if (w <= 765) {
-    document.getElementById("topnav").className = "hidden";
-    document.getElementById("mobile_nav_button").className = "mobile_nav_button";
-    document.getElementById("CLASSICCHAT").style = "margin-top: 10px;"
-} else {
-    document.getElementById("topnav").className = "topnav desktop";
-    document.getElementById("CLASSICCHAT").style = "margin-top: 80px;"
-}
-mobilenav = false
-function showorhidemobilenav(){
-    if(mobilenav == false){
-        document.getElementById("topnav_mobile").className = "mobile_nav";
-        mobilenav = true;
-    }
-    else if(mobilenav == true){
-        document.getElementById("topnav_mobile").className = "mobile_nav hidden";
-        mobilenav = false;
-    }
-}
 $("#inputChatID").keyup(function(event) {
     if (event.keyCode === 13) {
         addUser();
@@ -158,3 +138,36 @@ function checkforexistingroomoninput(event){
     }
   }
   }
+
+  var w = document.documentElement.clientWidth || window.innerWidth;
+  if (w <= 765) {
+    document.getElementById("topnav").className = "hidden";
+    document.getElementById("mobile_nav_button").className = "mobile_nav_button";
+    document.getElementById("CLASSICCHAT").style = "margin-top: 10px;"
+} else {
+    document.getElementById("topnav").className = "topnav desktop";
+    document.getElementById("CLASSICCHAT").style = "margin-top: 95px;"
+}
+mobilenav = false
+function showorhidemobilenav(){
+    if(mobilenav == false){
+        document.getElementById("topnav_mobile").className = "mobile_nav";
+        mobilenav = true;
+    }
+    else if(mobilenav == true){
+        document.getElementById("topnav_mobile").className = "mobile_nav hidden";
+        mobilenav = false;
+    }
+}
+window.addEventListener('resize', function() {
+  const w = document.documentElement.clientWidth || window.innerWidth;
+  if (w <= 765) {
+    document.getElementById("topnav").className = "hidden";
+    document.getElementById("mobile_nav_button").className = "mobile_nav_button";
+    document.getElementById("CLASSICCHAT").style = "margin-top: 10px;"
+} else {
+    document.getElementById("topnav").className = "topnav desktop";
+    document.getElementById("mobile_nav_button").className = "hidden";
+    document.getElementById("CLASSICCHAT").style = "margin-top: 95px;"
+}
+});
