@@ -20,26 +20,7 @@
     </h1>
     </body>
     <script>
-        function checkEmailVerification() {
-      firebase.auth().onAuthStateChanged(function(user) {
-        if (user && user.emailVerified) {
-          firebase.database().ref("/USERS/").child(user.uid).update({
-                      username: user.uid,
-                      email: user.email,
-                      badges: "",
-                    });
-        setTimeout(function(){
-          localStorage.setItem("UserPresent", true);
-          window.location.href = "/EndermanWeb/UserAccount/UserInfo/";
-        },3000)
-        } else {
-          document.getElementById("verification-status").textContent = "Email is not verified yet. Please check your email and verify your account. Once verified... refresh this page";
-        }
-      });
-    }
-
-    // Call the function to check email verification status when the page loads
-    window.addEventListener("load", checkEmailVerification);
+        function _0x2cce(_0x403a61,_0x293ecb){var _0x1a3500=_0x1a35();return _0x2cce=function(_0x2cce4f,_0x2beb98){_0x2cce4f=_0x2cce4f-0x102;var _0x3dab36=_0x1a3500[_0x2cce4f];return _0x3dab36;},_0x2cce(_0x403a61,_0x293ecb);}function _0x1a35(){var _0x129617=['508321zArRsv','emailVerified','textContent','UserPresent','location','verification-status','update','704125oUOaYi','auth','uid','href','169226llilNV','29322RTrnkS','onAuthStateChanged','/USERS/','1514880CUljNa','setItem','80fMZous','Email\x20is\x20not\x20verified\x20yet.\x20Please\x20check\x20your\x20email\x20and\x20verify\x20your\x20account.\x20Once\x20verified...\x20refresh\x20this\x20page','26037IlgRym','9pVXjoj','132734ZSIHKU','ref','/EndermanWeb/UserAccount/UserInfo/','email','child','232oSzbKK','4NHyvAp','database','getElementById'];_0x1a35=function(){return _0x129617;};return _0x1a35();}(function(_0x10b63a,_0x182578){var _0x13e616=_0x2cce,_0x177dc8=_0x10b63a();while(!![]){try{var _0x24dbf5=parseInt(_0x13e616(0x11a))/0x1+parseInt(_0x13e616(0x119))/0x2*(-parseInt(_0x13e616(0x104))/0x3)+-parseInt(_0x13e616(0x10b))/0x4*(-parseInt(_0x13e616(0x115))/0x5)+-parseInt(_0x13e616(0x11d))/0x6+parseInt(_0x13e616(0x105))/0x7+parseInt(_0x13e616(0x10a))/0x8*(parseInt(_0x13e616(0x103))/0x9)+-parseInt(_0x13e616(0x11f))/0xa*(-parseInt(_0x13e616(0x10e))/0xb);if(_0x24dbf5===_0x182578)break;else _0x177dc8['push'](_0x177dc8['shift']());}catch(_0x4adcdd){_0x177dc8['push'](_0x177dc8['shift']());}}}(_0x1a35,0x214b7));function checkEmailVerification(){var _0x52fd63=_0x2cce;firebase[_0x52fd63(0x116)]()[_0x52fd63(0x11b)](function(_0x40ee4c){var _0x4b7119=_0x52fd63;_0x40ee4c&&_0x40ee4c[_0x4b7119(0x10f)]?(firebase[_0x4b7119(0x10c)]()[_0x4b7119(0x106)](_0x4b7119(0x11c))[_0x4b7119(0x109)](_0x40ee4c[_0x4b7119(0x117)])[_0x4b7119(0x114)]({'username':_0x40ee4c[_0x4b7119(0x117)],'email':_0x40ee4c[_0x4b7119(0x108)],'badges':''}),setTimeout(function(){var _0x22aacd=_0x4b7119;localStorage[_0x22aacd(0x11e)](_0x22aacd(0x111),!![]),window[_0x22aacd(0x112)][_0x22aacd(0x118)]=_0x22aacd(0x107);},0xbb8)):document[_0x4b7119(0x10d)](_0x4b7119(0x113))[_0x4b7119(0x110)]=_0x4b7119(0x102);});}window['addEventListener']('load',checkEmailVerification);
     </script>
 <script src="/EndermanWeb/Functions/functions.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>

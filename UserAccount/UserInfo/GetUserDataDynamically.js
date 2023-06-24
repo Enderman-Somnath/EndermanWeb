@@ -1,10 +1,1 @@
-firebase.auth().onAuthStateChanged((user) => {
-    if (user) {
-      document.getElementById("account").innerHTML = "<i class='bi bi-person-circle'></i> " + "Account";
-    } else {
-      // No user is signed in
-      window.alert("No user is signed in. Please sign in.");
-      localStorage.removeItem("UserPresent");
-      window.location = "/EndermanWeb/UserAccount/SignIn/";
-    }
-  });
+var _0x5151df=_0x3607;function _0x3607(_0x17c08b,_0x27b8f0){var _0x5539f7=_0x5539();return _0x3607=function(_0x36073f,_0x20535b){_0x36073f=_0x36073f-0x13e;var _0x5cefc3=_0x5539f7[_0x36073f];return _0x5cefc3;},_0x3607(_0x17c08b,_0x27b8f0);}(function(_0x57bc6d,_0xdd1b97){var _0x1ce929=_0x3607,_0x5ba2a9=_0x57bc6d();while(!![]){try{var _0x44b765=-parseInt(_0x1ce929(0x145))/0x1*(parseInt(_0x1ce929(0x14b))/0x2)+parseInt(_0x1ce929(0x13f))/0x3+parseInt(_0x1ce929(0x143))/0x4*(-parseInt(_0x1ce929(0x149))/0x5)+parseInt(_0x1ce929(0x144))/0x6+parseInt(_0x1ce929(0x13e))/0x7+-parseInt(_0x1ce929(0x14f))/0x8*(parseInt(_0x1ce929(0x148))/0x9)+parseInt(_0x1ce929(0x146))/0xa*(-parseInt(_0x1ce929(0x14a))/0xb);if(_0x44b765===_0xdd1b97)break;else _0x5ba2a9['push'](_0x5ba2a9['shift']());}catch(_0x4c88b6){_0x5ba2a9['push'](_0x5ba2a9['shift']());}}}(_0x5539,0xd51be),firebase[_0x5151df(0x151)]()[_0x5151df(0x140)](_0x34c595=>{var _0x489a58=_0x5151df;_0x34c595?document[_0x489a58(0x14e)](_0x489a58(0x14c))['innerHTML']='<i\x20class=\x27bi\x20bi-person-circle\x27></i>\x20'+_0x489a58(0x147):(window[_0x489a58(0x141)](_0x489a58(0x150)),localStorage[_0x489a58(0x14d)]('UserPresent'),window[_0x489a58(0x152)]=_0x489a58(0x142));}));function _0x5539(){var _0x5bc1d1=['1762101hufGSn','196165aWsZyY','1562pQhkQw','554VWOtBc','account','removeItem','getElementById','8gKaccP','No\x20user\x20is\x20signed\x20in.\x20Please\x20sign\x20in.','auth','location','1859669BwPzRW','2988192CkbSSi','onAuthStateChanged','alert','/EndermanWeb/UserAccount/SignIn/','28LJCvzn','7860072nChFKQ','2213sRfcbp','43340TJZgTb','Account'];_0x5539=function(){return _0x5bc1d1;};return _0x5539();}
