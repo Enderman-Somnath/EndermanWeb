@@ -76,7 +76,7 @@ div::-webkit-scrollbar {
   div::-webkit-scrollbar-thumb {
     background: linear-gradient(to right, #ff8a00, #e52e71);
     border-radius: 20px;
-    transition: background;
+    border: 3px solid white;
   }
   
   div::-webkit-scrollbar-thumb:hover {
