@@ -126,7 +126,7 @@ html{
   }
   
   div::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
+    background-color: white;
     border-radius: 20px;
   }
   
@@ -145,7 +145,7 @@ html{
   }
   
   ::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
+    background-color: white;
     border-radius: 20px;
   }
   
