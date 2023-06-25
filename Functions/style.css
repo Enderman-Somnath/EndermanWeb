@@ -100,8 +100,15 @@ html{
     text-align: center;
     overflow: auto;
     z-index: 1;
-    opacity: 0; /* Start with element invisible */
-    transition: opacity 1s; /* Define transition property and duration */
+    animation: fadein 0.2s;
+  }
+  @keyframes fadein {
+    from{
+      opacity: 0;
+    } 
+    to {
+      opacity: 1;
+    }
   }
   .mobile_nav a{
   text-decoration: none;
