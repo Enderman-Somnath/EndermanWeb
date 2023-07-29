@@ -1,12 +1,11 @@
   #youtube{
     background-color: rgba(0, 0, 0, 0.5);
-    width: fit-content;
+    width: 40%;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    transition: background 1s;
+    transition: all 1s ease;
 }
 .ytChannelButton{
     list-style: none;

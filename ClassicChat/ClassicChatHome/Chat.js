@@ -1,1 +1,146 @@
-const _0x557418=_0x44d8;(function(_0x3ae8cc,_0x4082cf){const _0x1fefa1=_0x44d8,_0x2bc2bb=_0x3ae8cc();while(!![]){try{const _0x4ebbb1=parseInt(_0x1fefa1(0x1f8))/0x1*(-parseInt(_0x1fefa1(0x1fa))/0x2)+-parseInt(_0x1fefa1(0x1c7))/0x3*(-parseInt(_0x1fefa1(0x1ab))/0x4)+parseInt(_0x1fefa1(0x1d3))/0x5*(parseInt(_0x1fefa1(0x201))/0x6)+-parseInt(_0x1fefa1(0x1df))/0x7*(parseInt(_0x1fefa1(0x1c1))/0x8)+parseInt(_0x1fefa1(0x1b5))/0x9+parseInt(_0x1fefa1(0x1ce))/0xa+-parseInt(_0x1fefa1(0x1bb))/0xb*(parseInt(_0x1fefa1(0x1c6))/0xc);if(_0x4ebbb1===_0x4082cf)break;else _0x2bc2bb['push'](_0x2bc2bb['shift']());}catch(_0x851e2f){_0x2bc2bb['push'](_0x2bc2bb['shift']());}}}(_0x7618,0x43f95),localStorage[_0x557418(0x1b9)](_0x557418(0x1d9),'/EndermanWeb/ClassicChat/ClassicChatHome/Chat.html'),firebase[_0x557418(0x1f2)]()[_0x557418(0x1fe)](_0x569dfe=>{const _0x287460=_0x557418;_0x569dfe?(usersnamecchat=_0x569dfe[_0x287460(0x1c8)],togetbadgeneeduid=_0x569dfe[_0x287460(0x1e2)],MessagerUsername=usersnamecchat,firebase[_0x287460(0x203)]()[_0x287460(0x1c9)](_0x287460(0x1ec))['child'](togetbadgeneeduid)[_0x287460(0x1ae)](_0x287460(0x1b1))[_0x287460(0x1b2)](_0x53da55=>{const _0x17c2c0=_0x287460,_0x1f8181=_0x53da55[_0x17c2c0(0x1f3)]();badge=_0x1f8181[_0x17c2c0(0x1c0)];})):(localStorage['removeItem'](_0x287460(0x1bc)),window[_0x287460(0x1fd)]='/EndermanWeb/UserAccount/SignIn/');}),IsUserPresent=localStorage[_0x557418(0x1b8)](_0x557418(0x1bc)));function _0x7618(){const _0x147017=['sanitize','2wdhlUp','abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890','</h4>','location','onAuthStateChanged','AES','innerHTML','1074aQnEEu','There\x20are\x20no\x20messages','database','Asia/Kolkata','Messages\x20are\x20encrypted\x20---\x20This\x20the\x20start\x20of\x20the\x20messages.\x20Room\x20created\x20by\x20user:\x20','#msg','CREATEDBYUSER','time','ChatID:\x20','4BlnFol','</i>','charAt','once','Loading...','push','value','then','<div\x20class=\x27usermessagedata\x27><h4\x20class=\x27userName\x27>\x20','Auto\x20Scroll\x20Chat:\x20Off','1551492RnKZoE','/EndermanWeb/ClassicChat/','/EndermanWeb/UserAccount/SignIn/','getItem','setItem','random','292787fzjRMd','UserPresent','/ClassicChat/','catch','Text\x20copied\x20to\x20clipboard:\x20','badges','16QcoVoq','btn\x20btn-danger','RoomID','encryptionkey','<h4\x20class=\x27message\x27>','276sYNkhP','1541517GZfnLj','displayName','ref','toLocaleString','keyup','badge','scrollTop','5106490hQnnJR','Message','</div>','&link=true','en-US','7195ZfcoTK','ChatViewer','className','floor','removeItem','Name','WhereIsUser','autoscroll','length','alert','toString','writeText','411019KUMAiU','Sign\x20in\x20to\x20use\x20ClassicChat','scrollHeight','uid','\x20IST','decrypt','error','Auto\x20Scroll\x20Chat:\x20On','https://enderman-somnath.github.io/EndermanWeb/ClassicChat/?id=','ChatID','<p\x20class=\x27userTime\x27>','UsernameCCHAT','Utf8','/USERS/','clipboard','</p>','keyCode','<div\x20class=\x27messagedata\x27><h4\x20class=\x27name\x27>\x20','Room(CHATID)','auth','val','enc','forEach','msg','getElementById','446411zAstSn'];_0x7618=function(){return _0x147017;};return _0x7618();}IsUserPresent===null&&(window[_0x557418(0x1dc)](_0x557418(0x1e0)),window['location']=_0x557418(0x1b7));function _0x44d8(_0x552d66,_0x204552){const _0x7618f5=_0x7618();return _0x44d8=function(_0x44d8a0,_0x1f8d47){_0x44d8a0=_0x44d8a0-0x1a9;let _0x285d53=_0x7618f5[_0x44d8a0];return _0x285d53;},_0x44d8(_0x552d66,_0x204552);}function encryptText(_0x40b8ab,_0x5477ca){const _0x577659=_0x557418,_0x1b89e6=CryptoJS[_0x577659(0x1ff)]['encrypt'](_0x40b8ab,_0x5477ca)['toString']();return _0x1b89e6;}function decryptText(_0x543cff,_0x59a8ae){const _0x2c30d9=_0x557418,_0x1c6aa3=CryptoJS[_0x2c30d9(0x1ff)][_0x2c30d9(0x1e4)](_0x543cff,_0x59a8ae)[_0x2c30d9(0x1dd)](CryptoJS[_0x2c30d9(0x1f4)][_0x2c30d9(0x1eb)]);return _0x1c6aa3;}autoscrollchat=0x1;function autoscroll(){const _0x51e838=_0x557418;if(autoscrollchat===0x1)autoscrollchat=0x0,document['getElementById'](_0x51e838(0x1da))[_0x51e838(0x1d5)]=_0x51e838(0x1c2),document[_0x51e838(0x1f7)](_0x51e838(0x1da))[_0x51e838(0x200)]=_0x51e838(0x1b4);else autoscrollchat===0x0&&(autoscrollchat=0x1,document[_0x51e838(0x1f7)](_0x51e838(0x1da))['className']='btn\x20btn-success',document[_0x51e838(0x1f7)](_0x51e838(0x1da))[_0x51e838(0x200)]=_0x51e838(0x1e6));}function generateRandomCharacters(_0x1cc409){const _0x19fb7e=_0x557418;var _0x218a28=_0x19fb7e(0x1fb),_0x2c01e0='';while(_0x2c01e0[_0x19fb7e(0x1db)]<_0x1cc409){var _0x43021e=Math[_0x19fb7e(0x1d6)](Math[_0x19fb7e(0x1ba)]()*_0x218a28['length']);_0x2c01e0+=_0x218a28[_0x19fb7e(0x1ad)](_0x43021e);}return _0x2c01e0;}function send(){const _0x1f7808=_0x557418;if(document['getElementById'](_0x1f7808(0x1f6))['value']==''){}else{msg=document[_0x1f7808(0x1f7)](_0x1f7808(0x1f6))[_0x1f7808(0x1b1)];const _0x55cae1=new Date(),_0x127aca={'timeZone':_0x1f7808(0x204),'hour12':![]},_0x258e5c=_0x55cae1[_0x1f7808(0x1ca)](_0x1f7808(0x1d2),_0x127aca),_0x6c02c3=generateRandomCharacters(0x1e);firebase['database']()[_0x1f7808(0x1c9)](_0x1f7808(0x1bd)+RoomID)[_0x1f7808(0x1b0)]({'Name':MessagerUsername,'Message':encryptText(msg,_0x6c02c3),'encryptionkey':_0x6c02c3,'badge':badge,'time':'<i\x20class=\x27bi\x20bi-clock\x27></i>\x20'+'<i>'+_0x258e5c+_0x1f7808(0x1ac)}),document[_0x1f7808(0x1f7)](_0x1f7808(0x1f6))[_0x1f7808(0x1b1)]='';}}RoomID=localStorage[_0x557418(0x1b8)](_0x557418(0x1c3));const sanitizedName=DOMPurify['sanitize'](RoomID);document[_0x557418(0x1f7)](_0x557418(0x1e8))['innerHTML']=_0x557418(0x1aa)+RoomID,document[_0x557418(0x1f7)](_0x557418(0x1d4))[_0x557418(0x200)]=_0x557418(0x1af),database[_0x557418(0x1c9)]('/ClassicChat/'+RoomID)['on'](_0x557418(0x1b1),function(_0x1184ec){const _0x116cc2=_0x557418,_0x2eb3f6=_0x1184ec[_0x116cc2(0x1f3)]();_0x1184ec[_0x116cc2(0x1f5)](_0x364c0c=>{const _0x461e52=_0x116cc2,_0x403997=_0x364c0c['key'],_0x4eabd7=_0x364c0c[_0x461e52(0x1f3)]();_0x403997==_0x461e52(0x207)&&(createdbyuser=_0x4eabd7);});});function getData(){const _0x88c0c9=_0x557418;database['ref'](_0x88c0c9(0x1bd)+RoomID)['on']('value',function(_0x174aea){const _0x42afca=_0x88c0c9;document[_0x42afca(0x1f7)]('ChatViewer')[_0x42afca(0x200)]=null,document[_0x42afca(0x1f7)](_0x42afca(0x1d4))[_0x42afca(0x200)]=_0x42afca(0x205)+createdbyuser;const _0x2a3bf9=_0x174aea[_0x42afca(0x1f3)]();_0x174aea[_0x42afca(0x1f5)](_0x513a77=>{const _0x5307a7=_0x42afca,_0x4b1709=_0x513a77['key'],_0x278b20=_0x513a77[_0x5307a7(0x1f3)]();document[_0x5307a7(0x1f7)]('ChatID')['innerHTML']=_0x5307a7(0x1aa)+RoomID;if(_0x4b1709!=_0x5307a7(0x1f1)&&_0x4b1709!='CREATEDBYUSER'){chatkey=_0x4b1709,chatdata=_0x278b20,Name=chatdata[_0x5307a7(0x1d8)],MessageEncrypted=chatdata[_0x5307a7(0x1cf)],Message=decryptText(MessageEncrypted,chatdata[_0x5307a7(0x1c4)]),Badge=chatdata[_0x5307a7(0x1cc)],time=chatdata[_0x5307a7(0x1a9)];const _0x3cce2b=DOMPurify[_0x5307a7(0x1f9)](Name),_0x43dcd0=DOMPurify[_0x5307a7(0x1f9)](Message);ChatUserName=_0x5307a7(0x1f0)+_0x3cce2b+Badge+_0x5307a7(0x1fc),ChatUserMessage=_0x5307a7(0x1c5)+_0x43dcd0+_0x5307a7(0x1fc),Time='<p\x20class=\x27time\x27>'+time+_0x5307a7(0x1e3)+_0x5307a7(0x1ee)+_0x5307a7(0x1d0);Name==MessagerUsername&&(ChatUserName=_0x5307a7(0x1b3)+_0x3cce2b+Badge+_0x5307a7(0x1fc),ChatUserMessage='<h4\x20class=\x27usermessage\x27>'+_0x43dcd0+_0x5307a7(0x1fc),Time=_0x5307a7(0x1e9)+time+_0x5307a7(0x1e3)+_0x5307a7(0x1ee)+_0x5307a7(0x1d0));ChatMessages=ChatUserName+ChatUserMessage+Time,document[_0x5307a7(0x1f7)]('ChatViewer')[_0x5307a7(0x200)]+=ChatMessages;document[_0x5307a7(0x1f7)](_0x5307a7(0x1d4))[_0x5307a7(0x200)]==''&&(document[_0x5307a7(0x1f7)]('ChatViewer')['innerHTML']=_0x5307a7(0x202));if(autoscrollchat===0x1){const _0xb2bb43=document[_0x5307a7(0x1f7)]('ChatViewer');_0xb2bb43[_0x5307a7(0x1cd)]=_0xb2bb43[_0x5307a7(0x1e1)];}}});});}getData();function copyText(){const _0x321601=_0x557418;navigator[_0x321601(0x1ed)][_0x321601(0x1de)](_0x321601(0x1e7)+RoomID+_0x321601(0x1d1))[_0x321601(0x1b2)](function(){const _0x443fd0=_0x321601;alert(_0x443fd0(0x1bf)+_0x443fd0(0x1e7)+RoomID+_0x443fd0(0x1d1));})[_0x321601(0x1be)](function(_0x32f10b){const _0x43a6ef=_0x321601;console[_0x43a6ef(0x1e5)]('Unable\x20to\x20copy\x20text:\x20',_0x32f10b);});}function logout(){const _0x5f2943=_0x557418;localStorage[_0x5f2943(0x1d7)](_0x5f2943(0x1ea)),localStorage[_0x5f2943(0x1d7)](_0x5f2943(0x1c3)),window[_0x5f2943(0x1fd)]=_0x5f2943(0x1b6);}$(_0x557418(0x206))[_0x557418(0x1cb)](function(_0x2e545c){const _0x3c4998=_0x557418;_0x2e545c[_0x3c4998(0x1ef)]===0xd&&send();});
+localStorage.setItem("WhereIsUser","/EndermanWeb/ClassicChat/ClassicChatHome/Chat.html");
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    usersnamecchat = user.displayName;
+    togetbadgeneeduid = user.uid;
+    MessagerUsername = usersnamecchat;
+    firebase.database().ref("/USERS/").child(togetbadgeneeduid).once('value')
+          .then((snapshot) => {
+            const userData = snapshot.val();
+            badge = userData['badges'];
+          });
+  } else {
+    localStorage.removeItem("UserPresent");
+  window.location = "/EndermanWeb/UserAccount/SignIn/";
+  }
+});
+IsUserPresent = localStorage.getItem("UserPresent");
+if (IsUserPresent === null) {
+window.alert("Sign in to use ClassicChat");
+window.location = "/EndermanWeb/UserAccount/SignIn/";
+}
+function encryptText(text, key) {
+    const encrypted = CryptoJS.AES.encrypt(text, key).toString();
+    return encrypted;
+  }
+  function decryptText(encryptedText, key) {
+    const decrypted = CryptoJS.AES.decrypt(encryptedText, key).toString(CryptoJS.enc.Utf8);
+    return decrypted;
+  }
+autoscrollchat = 1;
+function autoscroll(){
+    if(autoscrollchat === 1){
+        autoscrollchat = 0;
+        document.getElementById("autoscroll").className = "btn btn-danger";
+        document.getElementById("autoscroll").innerHTML = "Auto Scroll Chat: Off"
+    } else if(autoscrollchat === 0){
+        autoscrollchat = 1;
+        document.getElementById("autoscroll").className = "btn btn-success";
+        document.getElementById("autoscroll").innerHTML = "Auto Scroll Chat: On"
+    }
+}
+function generateRandomCharacters(count) {
+    var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+    var randomCharacters = "";
+  
+    while (randomCharacters.length < count) {
+      var randomIndex = Math.floor(Math.random() * characters.length);
+      randomCharacters += characters.charAt(randomIndex);
+    }
+  
+    return randomCharacters;
+  }
+function send(){
+    if(document.getElementById("msg").value == ""){
+    }
+    else{
+      msg = document.getElementById("msg").value;
+      const date = new Date();
+            const options = {
+              timeZone: 'Asia/Kolkata',
+            hour12: false,
+            };
+        const ISTTime = date.toLocaleString('en-US', options);
+        const encryptionKey = generateRandomCharacters(30);
+      firebase.database().ref("/ClassicChat/" + RoomID).push({
+            Name: MessagerUsername,
+            Message: encryptText(msg,encryptionKey),
+            encryptionkey: encryptionKey,
+            badge: badge,
+            time: "<i class='bi bi-clock'></i> " + "<i>" + ISTTime + "</i>",
+      });
+      document.getElementById("msg").value="";
+    }
+}
+RoomID = localStorage.getItem("RoomID");
+const sanitizedName = DOMPurify.sanitize(RoomID);
+document.getElementById("ChatID").innerHTML="ChatID: " + RoomID
+database.ref("/ClassicChat/"+RoomID).on('value', function(snapshot) { 
+    const data = snapshot.val();
+    snapshot.forEach((childSnapshot) => {
+    const childKey = childSnapshot.key;
+    const childData = childSnapshot.val();
+    if(childKey == "CREATEDBYUSER"){
+        createdbyuser = childData;
+    }
+});
+});
+function getData(){
+database.ref("/ClassicChat/"+RoomID).on('value', function(snapshot) { 
+        document.getElementById("ChatViewer").innerHTML = null;
+        document.getElementById("ChatViewer").innerHTML = "Messages are encrypted --- This the start of the messages. Room created by user: " + createdbyuser;
+        const data = snapshot.val();
+        snapshot.forEach((childSnapshot) => {
+        const childKey = childSnapshot.key;
+        const childData = childSnapshot.val();
+        document.getElementById("ChatID").innerHTML="ChatID: " + RoomID;
+        if(childKey != "Room(CHATID)" && childKey != "CREATEDBYUSER"){
+            chatkey = childKey; 
+            chatdata = childData;
+            Name = chatdata['Name'];
+            MessageEncrypted = chatdata['Message'];
+            Message = decryptText(MessageEncrypted,chatdata['encryptionkey']);
+            Badge = chatdata['badge'];
+            time = chatdata['time'];
+            const sanitizedName = DOMPurify.sanitize(Name);
+            const sanitizedMessage = DOMPurify.sanitize(Message);
+            ChatUserName = "<div class='messagedata'><h4 class='name'> " + sanitizedName + Badge + "</h4>";
+            ChatUserMessage = "<h4 class='message'>" + sanitizedMessage + "</h4>";
+            Time = "<p class='time'>" + time + " IST" + "</p>" + "</div>";
+            if(Name == MessagerUsername){
+                ChatUserName = "<div class='usermessagedata'><h4 class='userName'> " + sanitizedName + Badge + "</h4>";
+                ChatUserMessage = "<h4 class='usermessage'>" + sanitizedMessage + "</h4>";
+                Time = "<p class='userTime'>" + time + " IST" + "</p>" + "</div>";
+            }
+            ChatMessages = ChatUserName + ChatUserMessage + Time;
+            document.getElementById("ChatViewer").innerHTML += ChatMessages
+            if(document.getElementById("ChatViewer").innerHTML == "") {
+                document.getElementById("ChatViewer").innerHTML = "There are no messages";
+            }
+            if (autoscrollchat === 1){
+                const element = document.getElementById("ChatViewer");
+                element.scrollTop = element.scrollHeight;
+            }
+        }
+    });
+})}
+getData();
+function copyText() {
+        navigator.clipboard.writeText("https://enderman-somnath.github.io/EndermanWeb/ClassicChat/?id="+RoomID+"&link=true")
+        .then(function() {
+            alert("Text copied to clipboard: " + "https://enderman-somnath.github.io/EndermanWeb/ClassicChat/?id="+RoomID+"&link=true");
+        })
+        .catch(function(error) {
+            console.error("Unable to copy text: ", error);
+        });
+}
+function logout() {
+    localStorage.removeItem("UsernameCCHAT");   
+    localStorage.removeItem("RoomID");
+    window.location = "/EndermanWeb/ClassicChat/";
+}
+$("#msg").keyup(function(event) {
+    if (event.keyCode === 13) {
+        send();
+    }
+});

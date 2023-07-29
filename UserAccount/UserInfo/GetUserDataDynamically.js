@@ -1,1 +1,10 @@
-var _0x3745a2=_0x4fcb;function _0x4fcb(_0x1754e2,_0x2806b1){var _0x46d799=_0x46d7();return _0x4fcb=function(_0x4fcbfa,_0xc9ff92){_0x4fcbfa=_0x4fcbfa-0xee;var _0xdd5026=_0x46d799[_0x4fcbfa];return _0xdd5026;},_0x4fcb(_0x1754e2,_0x2806b1);}(function(_0x56f22d,_0x58dba5){var _0x4ea91e=_0x4fcb,_0x26c472=_0x56f22d();while(!![]){try{var _0x5bb9fe=parseInt(_0x4ea91e(0xfc))/0x1*(-parseInt(_0x4ea91e(0xf4))/0x2)+parseInt(_0x4ea91e(0xf2))/0x3*(parseInt(_0x4ea91e(0xfd))/0x4)+parseInt(_0x4ea91e(0xff))/0x5*(parseInt(_0x4ea91e(0x100))/0x6)+-parseInt(_0x4ea91e(0xf6))/0x7+parseInt(_0x4ea91e(0xfb))/0x8*(-parseInt(_0x4ea91e(0xf5))/0x9)+-parseInt(_0x4ea91e(0xf9))/0xa+parseInt(_0x4ea91e(0xf0))/0xb;if(_0x5bb9fe===_0x58dba5)break;else _0x26c472['push'](_0x26c472['shift']());}catch(_0x1b50a0){_0x26c472['push'](_0x26c472['shift']());}}}(_0x46d7,0x5502f),firebase[_0x3745a2(0xf7)]()[_0x3745a2(0xf3)](_0x5d4167=>{var _0x4b8dec=_0x3745a2;_0x5d4167?document[_0x4b8dec(0xee)](_0x4b8dec(0xfe))[_0x4b8dec(0xf1)]='<i\x20class=\x27bi\x20bi-person-circle\x27></i>\x20'+_0x4b8dec(0xfa):(window[_0x4b8dec(0xf8)]('No\x20user\x20is\x20signed\x20in.\x20Please\x20sign\x20in.'),localStorage[_0x4b8dec(0xef)]('UserPresent'),window['location']='/EndermanWeb/UserAccount/SignIn/');}));function _0x46d7(){var _0xc689d0=['3456740cMAhgk','Account','1232856lczBRk','1LFUmiq','304588rWyDjj','account','110fqEWNg','11112qMnTmK','getElementById','removeItem','9153397hnWgLZ','innerHTML','18rFHZHA','onAuthStateChanged','7498IjdnzY','9lTfiAL','3346112lZvJYE','auth','alert'];_0x46d7=function(){return _0xc689d0;};return _0x46d7();}
+firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      document.getElementById("account").innerHTML = "<i class='bi bi-person-circle'></i> " + "Account";
+    } else {
+      // No user is signed in
+      window.alert("No user is signed in. Please sign in.");
+      localStorage.removeItem("UserPresent");
+      window.location = "/EndermanWeb/UserAccount/SignIn/";
+    }
+  });

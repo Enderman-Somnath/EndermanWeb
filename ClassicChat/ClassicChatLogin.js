@@ -1,1 +1,175 @@
-function _0x1028(_0x473914,_0x4873eb){const _0x2ee3bb=_0x2ee3();return _0x1028=function(_0x10287a,_0x1ad8ba){_0x10287a=_0x10287a-0x1a2;let _0x5aa839=_0x2ee3bb[_0x10287a];return _0x5aa839;},_0x1028(_0x473914,_0x4873eb);}const _0xb488a2=_0x1028;(function(_0x4f5122,_0x36e678){const _0x32cd72=_0x1028,_0xf5f955=_0x4f5122();while(!![]){try{const _0x5cc25e=parseInt(_0x32cd72(0x1dd))/0x1*(-parseInt(_0x32cd72(0x1cb))/0x2)+-parseInt(_0x32cd72(0x1d4))/0x3+parseInt(_0x32cd72(0x1d6))/0x4*(-parseInt(_0x32cd72(0x1ea))/0x5)+parseInt(_0x32cd72(0x1ba))/0x6+parseInt(_0x32cd72(0x1b8))/0x7+-parseInt(_0x32cd72(0x1d1))/0x8*(-parseInt(_0x32cd72(0x1b9))/0x9)+parseInt(_0x32cd72(0x1d3))/0xa;if(_0x5cc25e===_0x36e678)break;else _0xf5f955['push'](_0xf5f955['shift']());}catch(_0x48be8f){_0xf5f955['push'](_0xf5f955['shift']());}}}(_0x2ee3,0x3d16c),localStorage[_0xb488a2(0x1b6)](_0xb488a2(0x1d7),_0xb488a2(0x1a7)),firebase[_0xb488a2(0x1b1)]()[_0xb488a2(0x1ee)](_0x2d766f=>{const _0x2351a7=_0xb488a2;_0x2d766f?usersnamecchat=_0x2d766f[_0x2351a7(0x1b3)]:(localStorage[_0x2351a7(0x1da)](_0x2351a7(0x1ce)),window[_0x2351a7(0x1de)]=_0x2351a7(0x1d2));}),IsUserPresent=localStorage[_0xb488a2(0x1b0)](_0xb488a2(0x1ce)));IsUserPresent===null&&(window[_0xb488a2(0x1ab)](_0xb488a2(0x1e5)),window[_0xb488a2(0x1de)]='/EndermanWeb/UserAccount/SignIn/');function validateInput(_0x55c5e9){const _0xfd2869=_0xb488a2;var _0x346946=/^[a-zA-Z0-9@\-!]+$/;return _0x346946[_0xfd2869(0x1b7)](_0x55c5e9);}function checkRoomExists(_0x3875bd){const _0x162c5d=_0xb488a2;return firebase[_0x162c5d(0x1a8)]()[_0x162c5d(0x1ae)](_0x162c5d(0x1b5)+_0x3875bd)[_0x162c5d(0x1af)](_0x162c5d(0x1c8))['then'](_0x4bedf2=>{const _0x1cfc97=_0x162c5d;return _0x4bedf2[_0x1cfc97(0x1dc)]();});}function addUser(){const _0x4e2561=_0xb488a2;RoomID=document['getElementById']('inputChatID')[_0x4e2561(0x1c8)],checkRoomExists(RoomID)[_0x4e2561(0x1c7)](_0x118a3c=>{const _0x2bae47=_0x4e2561;_0x118a3c?validateInput(RoomID)?(document[_0x2bae47(0x1b2)](_0x2bae47(0x1cc))['innerHTML']=_0x2bae47(0x1d9),document[_0x2bae47(0x1b2)](_0x2bae47(0x1cc))[_0x2bae47(0x1a9)]=null,console[_0x2bae47(0x1cf)](_0x2bae47(0x1c5),RoomID),setTimeout(function(){const _0x18e4c3=_0x2bae47;localStorage[_0x18e4c3(0x1b6)]('RoomID',RoomID),localStorage['setItem'](_0x18e4c3(0x1ed),usersnamecchat),window[_0x18e4c3(0x1de)]=_0x18e4c3(0x1c9);},0x384)):alert('Use\x20valid\x20symbols\x20like\x20\x27a-z\x27,\x27A-Z\x27,\x27-\x27,\x27+\x27,\x27!\x27,\x271-9\x27'):validateInput(RoomID)?(document['getElementById'](_0x2bae47(0x1cc))[_0x2bae47(0x1e9)]=_0x2bae47(0x1e0),document[_0x2bae47(0x1b2)](_0x2bae47(0x1cc))[_0x2bae47(0x1a9)]=null,console[_0x2bae47(0x1cf)](_0x2bae47(0x1bf),RoomID),firebase['database']()[_0x2bae47(0x1ae)]('/ClassicChat/')[_0x2bae47(0x1ad)](RoomID)['update']({'Room(CHATID)':_0x2bae47(0x1a2),'CREATEDBYUSER':usersnamecchat}),setTimeout(function(){const _0x4e0c13=_0x2bae47;localStorage['setItem'](_0x4e0c13(0x1a6),RoomID),localStorage[_0x4e0c13(0x1b6)](_0x4e0c13(0x1ed),usersnamecchat),window[_0x4e0c13(0x1de)]='/EndermanWeb/ClassicChat/ClassicChatHome/';},0x384)):alert('Use\x20valid\x20symbols\x20like\x20\x27a-z\x27,\x27A-Z\x27,\x27-\x27,\x27+\x27,\x27!\x27,\x271-9\x27');});}$(_0xb488a2(0x1c1))[_0xb488a2(0x1ac)](function(_0x59f14a){const _0x2d295f=_0xb488a2;_0x59f14a[_0x2d295f(0x1df)]===0xd&&addUser();});const myKeysValues=window[_0xb488a2(0x1de)][_0xb488a2(0x1c3)],urlParams=new URLSearchParams(myKeysValues),chatid=urlParams[_0xb488a2(0x1e2)]('id');console['log'](chatid);const islinktrue=urlParams[_0xb488a2(0x1e2)](_0xb488a2(0x1cd));console[_0xb488a2(0x1cf)](islinktrue);islinktrue===_0xb488a2(0x1e4)&&checkRoomExists(chatid)['then'](_0x14fbbc=>{const _0x34ee41=_0xb488a2;_0x14fbbc?validateInput(chatid)?(document[_0x34ee41(0x1b2)](_0x34ee41(0x1cc))[_0x34ee41(0x1e9)]='Joining\x20Room',document[_0x34ee41(0x1b2)]('EnterChatID')[_0x34ee41(0x1a9)]=null,console[_0x34ee41(0x1cf)](_0x34ee41(0x1c5),chatid),setTimeout(function(){const _0x31e85e=_0x34ee41;localStorage[_0x31e85e(0x1b6)](_0x31e85e(0x1a6),chatid),localStorage[_0x31e85e(0x1b6)](_0x31e85e(0x1ed),usersnamecchat),window[_0x31e85e(0x1de)]=_0x31e85e(0x1c9);},0x384)):alert(_0x34ee41(0x1c6)):validateInput(chatid)?(document[_0x34ee41(0x1b2)](_0x34ee41(0x1cc))['innerHTML']='Creating\x20Room',document['getElementById']('EnterChatID')['onclick']=null,console[_0x34ee41(0x1cf)]('Creating/Loading\x20room\x20with\x20ChatID:\x20',chatid),firebase['database']()[_0x34ee41(0x1ae)](_0x34ee41(0x1b5))[_0x34ee41(0x1ad)](chatid)[_0x34ee41(0x1d5)]({'Room(CHATID)':_0x34ee41(0x1a2),'CREATEDBYUSER':usersnamecchat}),setTimeout(function(){const _0x69f45e=_0x34ee41;localStorage['setItem'](_0x69f45e(0x1a6),chatid),localStorage[_0x69f45e(0x1b6)](_0x69f45e(0x1ed),usersnamecchat),window[_0x69f45e(0x1de)]=_0x69f45e(0x1c9);},0x384)):alert(_0x34ee41(0x1c6));});function checkforexistingroomoninput(_0x534377){const _0x45f117=_0xb488a2,_0x1ba5e2=document[_0x45f117(0x1b2)](_0x45f117(0x1cc));_0x1ba5e2[_0x45f117(0x1e9)]='...';if(_0x534377[_0x45f117(0x1df)]===0xd)return;validateInput(document[_0x45f117(0x1b2)](_0x45f117(0x1c0))['value'])?checkRoomExists(document['getElementById'](_0x45f117(0x1c0))[_0x45f117(0x1c8)])[_0x45f117(0x1c7)](_0x5bc907=>{const _0x20a9df=_0x45f117;_0x5bc907?(_0x1ba5e2['innerHTML']='Join\x20Room',console[_0x20a9df(0x1cf)](document['getElementById']('inputChatID')['value'])):_0x1ba5e2['innerHTML']=_0x20a9df(0x1e3);}):document[_0x45f117(0x1b2)](_0x45f117(0x1c0))[_0x45f117(0x1c8)]==''&&(_0x1ba5e2['innerHTML']=_0x45f117(0x1eb));}var w=document[_0xb488a2(0x1c2)][_0xb488a2(0x1e8)]||window['innerWidth'];w<=0x2fd?(document['getElementById'](_0xb488a2(0x1aa))['className']=_0xb488a2(0x1a5),document[_0xb488a2(0x1b2)](_0xb488a2(0x1ca))[_0xb488a2(0x1ec)]=_0xb488a2(0x1ca),document[_0xb488a2(0x1b2)](_0xb488a2(0x1e7))['style']='margin-top:\x2010px;'):(document[_0xb488a2(0x1b2)](_0xb488a2(0x1aa))['className']=_0xb488a2(0x1a3),document[_0xb488a2(0x1b2)]('CLASSICCHAT')[_0xb488a2(0x1d8)]='margin-top:\x2095px;');function _0x2ee3(){const _0x2cb6c5=['onAuthStateChanged','Created\x20By\x20ClassicChat','topnav\x20desktop','addEventListener','hidden','RoomID','/EndermanWeb/ClassicChat/','database','onclick','topnav','alert','keyup','child','ref','once','getItem','auth','getElementById','displayName','topnav\x20desktop\x20desknavloaded','/ClassicChat/','setItem','test','565950RuTSiJ','1141083RsqYre','929262aqjUaG','mobile_nav','mobile_nav\x20hidden','topnav_mobile','desknavloaded','Creating/Loading\x20room\x20with\x20ChatID:\x20','inputChatID','#inputChatID','documentElement','search','add','Loading\x20room\x20with\x20ChatID:\x20','Use\x20valid\x20symbols\x20like\x20\x27a-z\x27,\x27A-Z\x27,\x27-\x27,\x27+\x27,\x27!\x27,\x271-9\x27','then','value','/EndermanWeb/ClassicChat/ClassicChatHome/','mobile_nav_button','279646nLEytk','EnterChatID','link','UserPresent','log','margin-top:\x2010px;','8Erlimr','/EndermanWeb/UserAccount/SignIn/','8074150JmoDal','1487121WLpqvQ','update','1912WRfDCh','WhereIsUser','style','Joining\x20Room','removeItem','resize','exists','2plzZlW','location','keyCode','Creating\x20Room','margin-top:\x2095px;','get','Create\x20Room','true','Sign\x20in\x20to\x20use\x20ClassicChat','classList','CLASSICCHAT','clientWidth','innerHTML','1510foUPHy','Enter\x20Room/Create\x20Room(if\x20new)','className','UsernameCCHAT'];_0x2ee3=function(){return _0x2cb6c5;};return _0x2ee3();}mobilenav=![];function showorhidemobilenav(){const _0x10cc00=_0xb488a2;if(mobilenav==![])document[_0x10cc00(0x1b2)]('topnav_mobile')[_0x10cc00(0x1ec)]=_0x10cc00(0x1bb),mobilenav=!![];else mobilenav==!![]&&(document['getElementById'](_0x10cc00(0x1bd))[_0x10cc00(0x1ec)]=_0x10cc00(0x1bc),mobilenav=![]);}window[_0xb488a2(0x1a4)](_0xb488a2(0x1db),function(){const _0x4a9531=_0xb488a2,_0x28b605=document[_0x4a9531(0x1c2)][_0x4a9531(0x1e8)]||window['innerWidth'];_0x28b605<=0x2fd?(document[_0x4a9531(0x1b2)]('topnav')['className']='topnav\x20desktop',document['getElementById']('mobile_nav_button')[_0x4a9531(0x1ec)]=_0x4a9531(0x1ca),document[_0x4a9531(0x1b2)]('CLASSICCHAT')[_0x4a9531(0x1d8)]=_0x4a9531(0x1d0)):(document[_0x4a9531(0x1b2)](_0x4a9531(0x1aa))[_0x4a9531(0x1ec)]=_0x4a9531(0x1b4),document['getElementById']('mobile_nav_button')['className']='hidden',document[_0x4a9531(0x1b2)](_0x4a9531(0x1e7))['style']=_0x4a9531(0x1e1));});var topnav=document['querySelector']('#topnav');topnav[_0xb488a2(0x1e6)][_0xb488a2(0x1c4)](_0xb488a2(0x1be));
+localStorage.setItem("WhereIsUser","/EndermanWeb/ClassicChat/");
+// Your web app's Firebase configuration
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    usersnamecchat = user.displayName;
+  } else {
+    localStorage.removeItem("UserPresent");
+    window.location = "/EndermanWeb/UserAccount/SignIn/";
+  }
+});
+IsUserPresent = localStorage.getItem("UserPresent");
+if (IsUserPresent === null) {
+window.alert("Sign in to use ClassicChat");
+window.location = "/EndermanWeb/UserAccount/SignIn/";
+}
+function validateInput(input) {
+    // Regular expression pattern to allow specific symbols
+    var pattern = /^[a-zA-Z0-9@\-!]+$/;
+    
+    return pattern.test(input);
+  }
+  function checkRoomExists(roomID) {
+    return firebase
+      .database()
+      .ref("/ClassicChat/" + roomID)
+      .once("value")
+      .then((snapshot) => {
+        return snapshot.exists();
+      });
+  }
+    function addUser() {
+        RoomID = document.getElementById("inputChatID").value;
+        checkRoomExists(RoomID)
+      .then((exists) => {
+        if (exists) {
+            if(validateInput(RoomID)){
+                document.getElementById("EnterChatID").innerHTML="Joining Room"
+                document.getElementById("EnterChatID").onclick = null;
+                console.log("Loading room with ChatID: ",RoomID)
+                setTimeout(function(){
+                localStorage.setItem("RoomID", RoomID);
+                localStorage.setItem("UsernameCCHAT", usersnamecchat);
+                window.location = "/EndermanWeb/ClassicChat/ClassicChatHome/";
+              }, 900);
+            }
+            else{
+                alert("Use valid symbols like 'a-z','A-Z','-','+','!','1-9'")
+            }
+        } else {
+            if(validateInput(RoomID)){
+                document.getElementById("EnterChatID").innerHTML="Creating Room"
+                document.getElementById("EnterChatID").onclick = null;
+                console.log("Creating/Loading room with ChatID: ",RoomID)
+                firebase.database().ref("/ClassicChat/").child(RoomID).update({
+                    "Room(CHATID)" : "Created By ClassicChat",
+                    "CREATEDBYUSER": usersnamecchat,
+              });
+                setTimeout(function(){
+                localStorage.setItem("RoomID", RoomID);
+                localStorage.setItem("UsernameCCHAT", usersnamecchat);
+                window.location = "/EndermanWeb/ClassicChat/ClassicChatHome/";
+              }, 900);
+            }
+            else{
+                alert("Use valid symbols like 'a-z','A-Z','-','+','!','1-9'")
+            }
+        }}); 
+  }
+
+$("#inputChatID").keyup(function(event) {
+    if (event.keyCode === 13) {
+        addUser();
+    }
+});
+
+const myKeysValues = window.location.search;
+const urlParams = new URLSearchParams(myKeysValues);
+const chatid = urlParams.get('id')
+console.log(chatid);
+const islinktrue = urlParams.get('link')
+console.log(islinktrue)
+if(islinktrue === "true"){
+  checkRoomExists(chatid)
+  .then((exists) => {
+    if (exists) {
+        if(validateInput(chatid)){
+            document.getElementById("EnterChatID").innerHTML="Joining Room"
+            document.getElementById("EnterChatID").onclick = null;
+            console.log("Loading room with ChatID: ",chatid)
+            setTimeout(function(){
+            localStorage.setItem("RoomID", chatid);
+            localStorage.setItem("UsernameCCHAT", usersnamecchat);
+            window.location = "/EndermanWeb/ClassicChat/ClassicChatHome/";
+          }, 900);
+        }
+        else{
+            alert("Use valid symbols like 'a-z','A-Z','-','+','!','1-9'")
+        }
+    } else {
+        if(validateInput(chatid)){
+            document.getElementById("EnterChatID").innerHTML="Creating Room"
+            document.getElementById("EnterChatID").onclick = null;
+            console.log("Creating/Loading room with ChatID: ",chatid)
+            firebase.database().ref("/ClassicChat/").child(chatid).update({
+                "Room(CHATID)" : "Created By ClassicChat",
+                "CREATEDBYUSER": usersnamecchat,
+          });
+            setTimeout(function(){
+            localStorage.setItem("RoomID", chatid);
+            localStorage.setItem("UsernameCCHAT", usersnamecchat);
+            window.location = "/EndermanWeb/ClassicChat/ClassicChatHome/";
+          }, 900);
+        }
+        else{
+            alert("Use valid symbols like 'a-z','A-Z','-','+','!','1-9'")
+        }
+    }}); 
+}
+function checkforexistingroomoninput(event){
+  const button = document.getElementById("EnterChatID");
+  button.innerHTML = "...";
+  if (event.keyCode === 13) {
+    return;
+  }
+  if(validateInput(document.getElementById("inputChatID").value)){
+    checkRoomExists(document.getElementById("inputChatID").value)
+  .then((exists) => {
+    if (exists) {
+      button.innerHTML = "Join Room";
+  console.log(document.getElementById("inputChatID").value);
+    } else {
+      button.innerHTML = "Create Room";
+    }
+    });
+  } else {
+    if(document.getElementById("inputChatID").value == "") {
+      button.innerHTML = "Enter Room/Create Room(if new)";
+    }
+  }
+  }
+
+  var w = document.documentElement.clientWidth || window.innerWidth;
+  if (w <= 765) {
+    document.getElementById("topnav").className = "hidden";
+    document.getElementById("mobile_nav_button").className = "mobile_nav_button";
+    document.getElementById("CLASSICCHAT").style = "margin-top: 10px;"
+} else {
+    document.getElementById("topnav").className = "topnav desktop";
+    document.getElementById("CLASSICCHAT").style = "margin-top: 95px;"
+}
+mobilenav = false
+function showorhidemobilenav(){
+    if(mobilenav == false){
+        document.getElementById("topnav_mobile").className = "mobile_nav";
+        mobilenav = true;
+    }
+    else if(mobilenav == true){
+        document.getElementById("topnav_mobile").className = "mobile_nav hidden";
+        mobilenav = false;
+    }
+}
+window.addEventListener('resize', function() {
+  const w = document.documentElement.clientWidth || window.innerWidth;
+  if (w <= 765) {
+    document.getElementById("topnav").className = "topnav desktop";
+    document.getElementById("mobile_nav_button").className = "mobile_nav_button";
+    document.getElementById("CLASSICCHAT").style = "margin-top: 10px;"
+} else {
+    document.getElementById("topnav").className = "topnav desktop desknavloaded";
+    document.getElementById("mobile_nav_button").className = "hidden";
+    document.getElementById("CLASSICCHAT").style = "margin-top: 95px;"
+}
+});
+var topnav = document.querySelector('#topnav');
+topnav.classList.add('desknavloaded');

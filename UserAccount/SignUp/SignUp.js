@@ -1,1 +1,90 @@
-const _0xb35fd9=_0x8e3e;(function(_0x477cd8,_0x310427){const _0x22a679=_0x8e3e,_0x4d8b96=_0x477cd8();while(!![]){try{const _0x5876ab=-parseInt(_0x22a679(0x19c))/0x1*(-parseInt(_0x22a679(0x184))/0x2)+parseInt(_0x22a679(0x16f))/0x3+parseInt(_0x22a679(0x16d))/0x4+-parseInt(_0x22a679(0x191))/0x5*(parseInt(_0x22a679(0x187))/0x6)+-parseInt(_0x22a679(0x193))/0x7*(parseInt(_0x22a679(0x17b))/0x8)+parseInt(_0x22a679(0x192))/0x9*(parseInt(_0x22a679(0x181))/0xa)+-parseInt(_0x22a679(0x16b))/0xb*(parseInt(_0x22a679(0x18d))/0xc);if(_0x5876ab===_0x310427)break;else _0x4d8b96['push'](_0x4d8b96['shift']());}catch(_0xc0c7a2){_0x4d8b96['push'](_0x4d8b96['shift']());}}}(_0x445a,0xa993a),localStorage[_0xb35fd9(0x16e)](_0xb35fd9(0x190),_0xb35fd9(0x170)));function _0x445a(){const _0x9976cc=['innerWidth','Name','error','mobile_nav_button','3542096hTQjQv','topnav_mobile','className','value','The\x20email\x20already\x20exists.\x20Please\x20choose\x20another\x20email.','user','10TRSrFr','topnav','test','975678TBtUyt','Please\x20use\x20valid\x20symbols\x20for\x20Name:\x20\x27@\x27,\x20\x271-9\x27,\x27-\x27,,\x20\x27+\x27,\x20all\x20letters','alert','78WWoshl','getElementById','clientWidth','password','onAuthStateChanged','auth','24883356AweRhw','Verification\x20email\x20sent.\x20Please\x20check\x20your\x20email\x20to\x20verify\x20your\x20account.','length','WhereIsUser','355310BLSeTH','6838380AZlZPS','7MYbpAu','then','Email','An\x20error\x20occurred\x20during\x20the\x20creation/checking\x20of\x20the\x20email.\x20Make\x20sure\x20you\x20have\x20entered\x20a\x20valid\x20email.','Error:\x20','Error\x20checking\x20email\x20existence:','location','topnav\x20desktop','documentElement','2cWxOLZ','catch','11HqcLTU','Verify/','4516072mmXYnm','setItem','3810753DAbHnI','/EndermanWeb/UserAccount/SignUp/','Password\x20should\x20be\x20at\x20least\x206\x20characters\x20long.','fetchProvidersForEmail','Error\x20creating\x20user:','mobile_nav','updateProfile','Error\x20updating\x20user\x20profile:'];_0x445a=function(){return _0x9976cc;};return _0x445a();}function _0x8e3e(_0x499d8b,_0x49fe52){const _0x445a18=_0x445a();return _0x8e3e=function(_0x8e3e05,_0x5dbb4d){_0x8e3e05=_0x8e3e05-0x16b;let _0x1919d4=_0x445a18[_0x8e3e05];return _0x1919d4;},_0x8e3e(_0x499d8b,_0x49fe52);}function validateInput(_0x4efb83){const _0x56fa45=_0xb35fd9,_0x2f7271=/^[a-zA-Z0-9@+\-]+$/;return _0x2f7271[_0x56fa45(0x183)](_0x4efb83);}function SignUp(){const _0x56c942=_0xb35fd9,_0x310402=document[_0x56c942(0x188)](_0x56c942(0x195))['value'],_0x6eb8f=document['getElementById'](_0x56c942(0x18a))[_0x56c942(0x17e)],_0x11f6b9=document['getElementById'](_0x56c942(0x178))[_0x56c942(0x17e)];if(_0x6eb8f[_0x56c942(0x18f)]<0x6){window[_0x56c942(0x186)](_0x56c942(0x171));return;}if(!validateInput(_0x11f6b9)){window[_0x56c942(0x186)](_0x56c942(0x185));return;}const _0x165e40=firebase[_0x56c942(0x18c)]();checkEmailExists(_0x310402)[_0x56c942(0x194)](_0x2d1052=>{const _0x2c5dd5=_0x56c942;_0x2d1052?window['alert'](_0x2c5dd5(0x17f)):_0x165e40['createUserWithEmailAndPassword'](_0x310402,_0x6eb8f)[_0x2c5dd5(0x194)](_0x141367=>{const _0x302eee=_0x2c5dd5,_0x2f5584=_0x141367[_0x302eee(0x180)],_0x252b04=document[_0x302eee(0x188)](_0x302eee(0x178))[_0x302eee(0x17e)];firebase[_0x302eee(0x18c)]()[_0x302eee(0x18b)](_0x5d9296=>{const _0x435008=_0x302eee,_0x2d550b=document[_0x435008(0x188)](_0x435008(0x178))[_0x435008(0x17e)];if(_0x5d9296)_0x5d9296[_0x435008(0x175)]({'displayName':_0x2d550b})['then'](()=>{const _0x281c3e=_0x435008;_0x5d9296['sendEmailVerification']()[_0x281c3e(0x194)](()=>{const _0x2d45c8=_0x281c3e;window[_0x2d45c8(0x186)](_0x2d45c8(0x18e)),window[_0x2d45c8(0x199)]=_0x2d45c8(0x16c);});});else!_0x5d9296&&window[_0x435008(0x186)]('ERROR\x20OCCURED');})['catch'](_0x342dc7=>{const _0x122982=_0x302eee;window[_0x122982(0x186)]('Failed\x20to\x20update\x20user\x20profile.\x20Please\x20try\x20again\x20later.'),console[_0x122982(0x179)](_0x122982(0x176),_0x342dc7);});})[_0x2c5dd5(0x19d)](_0x23b9bb=>{const _0x124592=_0x2c5dd5;window[_0x124592(0x186)]('An\x20error\x20occurred\x20during\x20user\x20creation.\x20Make\x20sure\x20you\x20have\x20entered\x20a\x20valid\x20email/password.'),console[_0x124592(0x179)](_0x124592(0x173),_0x23b9bb);});})[_0x56c942(0x19d)](_0x3bc31e=>{const _0x36c4a9=_0x56c942;window[_0x36c4a9(0x186)](_0x36c4a9(0x196)),console[_0x36c4a9(0x179)](_0x36c4a9(0x197),_0x3bc31e);});}function checkEmailExists(_0x2a862c){const _0x4e2e97=_0xb35fd9;return firebase[_0x4e2e97(0x18c)]()[_0x4e2e97(0x172)](_0x2a862c)['then'](_0x432ac6=>{const _0x1a2788=_0x4e2e97;return _0x432ac6[_0x1a2788(0x18f)]>0x0;})[_0x4e2e97(0x19d)](_0xc7f892=>{const _0x4e688a=_0x4e2e97;console[_0x4e688a(0x179)](_0x4e688a(0x198),_0xc7f892);throw _0xc7f892;});}var w=document[_0xb35fd9(0x19b)][_0xb35fd9(0x189)]||window[_0xb35fd9(0x177)];w<=0x1e0?(document[_0xb35fd9(0x188)](_0xb35fd9(0x182))[_0xb35fd9(0x17d)]='hidden',document[_0xb35fd9(0x188)](_0xb35fd9(0x17a))['className']=_0xb35fd9(0x17a)):document['getElementById'](_0xb35fd9(0x182))[_0xb35fd9(0x17d)]=_0xb35fd9(0x19a);mobilenav=![];function showorhidemobilenav(){const _0x50a579=_0xb35fd9;if(mobilenav==![])document[_0x50a579(0x188)](_0x50a579(0x17c))['className']=_0x50a579(0x174),mobilenav=!![];else mobilenav==!![]&&(document[_0x50a579(0x188)](_0x50a579(0x17c))[_0x50a579(0x17d)]='mobile_nav\x20hidden',mobilenav=![]);}
+localStorage.setItem("WhereIsUser","/EndermanWeb/UserAccount/SignUp/");
+function validateInput(input) {
+  const regex = /^[a-zA-Z0-9@+\-]+$/;
+  return regex.test(input);
+}
+
+function SignUp() {
+  const inputEmail = document.getElementById('Email').value;
+  const inputPassword = document.getElementById('password').value;
+  const inputName = document.getElementById("Name").value;
+  if (inputPassword.length < 6) {
+    window.alert("Password should be at least 6 characters long.");
+    return;
+  }
+
+  if (!validateInput(inputName)) {
+    window.alert("Please use valid symbols for Name: '@', '1-9','-',, '+', all letters");
+    return;
+  }
+  const auth = firebase.auth();
+  checkEmailExists(inputEmail)
+    .then((exists) => {
+      if (exists) {
+        window.alert("The email already exists. Please choose another email.");
+      } else {
+        auth.createUserWithEmailAndPassword(inputEmail, inputPassword)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            const displayName = document.getElementById("Name").value;
+            firebase.auth().onAuthStateChanged((user) => {
+              const displayName = document.getElementById("Name").value;
+              if(user){
+                user.updateProfile({
+                  displayName: displayName
+                }).then(() => {
+                  // Send email verification
+                  user.sendEmailVerification()
+                    .then(() => {
+                      window.alert("Verification email sent. Please check your email to verify your account.");
+                      window.location = "Verify/";
+                    })
+              }); 
+              }else if(!user){
+                window.alert("ERROR OCCURED")
+              }
+            })
+            .catch((error) => {
+              window.alert("Failed to update user profile. Please try again later.");
+              console.error("Error updating user profile:", error);
+            });
+          })
+          .catch((error) => {
+            window.alert("An error occurred during user creation. Make sure you have entered a valid email/password.");
+            console.error("Error creating user:", error);
+          });
+      }
+    })
+    .catch((error) => {
+      window.alert("An error occurred during the creation/checking of the email. Make sure you have entered a valid email.");
+      console.error("Error: ", error);
+    });
+}
+function checkEmailExists(email) {
+  return firebase.auth().fetchProvidersForEmail(email)
+    .then((providers) => {
+      return providers.length > 0;
+    })
+    .catch((error) => {
+      console.error("Error checking email existence:", error);
+      throw error;
+    });
+}
+var w = document.documentElement.clientWidth || window.innerWidth;
+    if (w <= 480) {
+    document.getElementById("topnav").className = "hidden";
+    document.getElementById("mobile_nav_button").className = "mobile_nav_button";
+    } else {
+    document.getElementById("topnav").className = "topnav desktop";
+    }
+    mobilenav = false
+    function showorhidemobilenav(){
+    if(mobilenav == false){
+      document.getElementById("topnav_mobile").className = "mobile_nav";
+      mobilenav = true;
+    }
+    else if(mobilenav == true){
+      document.getElementById("topnav_mobile").className = "mobile_nav hidden";
+      mobilenav = false;
+    }
+    }

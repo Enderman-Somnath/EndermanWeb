@@ -1,1 +1,51 @@
-const _0x4966d5=_0x5b2e;(function(_0x7438e2,_0x2d7c64){const _0x3d3b9c=_0x5b2e,_0x25716c=_0x7438e2();while(!![]){try{const _0x58f3f8=parseInt(_0x3d3b9c(0x194))/0x1+-parseInt(_0x3d3b9c(0x190))/0x2*(parseInt(_0x3d3b9c(0x184))/0x3)+parseInt(_0x3d3b9c(0x187))/0x4+parseInt(_0x3d3b9c(0x1a0))/0x5*(parseInt(_0x3d3b9c(0x1a1))/0x6)+-parseInt(_0x3d3b9c(0x1a4))/0x7*(-parseInt(_0x3d3b9c(0x18f))/0x8)+-parseInt(_0x3d3b9c(0x18b))/0x9+-parseInt(_0x3d3b9c(0x18e))/0xa;if(_0x58f3f8===_0x2d7c64)break;else _0x25716c['push'](_0x25716c['shift']());}catch(_0x3ff19c){_0x25716c['push'](_0x25716c['shift']());}}}(_0x356b,0x5dc07),localStorage['setItem'](_0x4966d5(0x195),_0x4966d5(0x189)),document[_0x4966d5(0x1a3)](_0x4966d5(0x17e))['innerHTML']='<h1\x20style=\x27color:white;\x20padding:\x205px;\x27>Loading\x20Channels...</h1>',setTimeout(function(){const _0x15e4ae=_0x4966d5;database[_0x15e4ae(0x19b)](_0x15e4ae(0x192))['on'](_0x15e4ae(0x196),function(_0x398b2c){const _0x2d02ed=_0x15e4ae,_0x2c79b0=_0x398b2c['val']();_0x398b2c[_0x2d02ed(0x197)](_0x50c94b=>{const _0x90f8e9=_0x2d02ed,_0x284bba=_0x50c94b[_0x90f8e9(0x198)],_0x3a87b8=_0x50c94b[_0x90f8e9(0x18d)]();document[_0x90f8e9(0x1a3)]('youtube')[_0x90f8e9(0x181)]=_0x3a87b8,document[_0x90f8e9(0x1a3)](_0x90f8e9(0x17e))['innerHTML']==''&&(document[_0x90f8e9(0x1a3)](_0x90f8e9(0x17e))[_0x90f8e9(0x181)]=_0x90f8e9(0x186));});});},0xbb8));function _0x5b2e(_0x6f4f73,_0x774127){const _0x356bd5=_0x356b();return _0x5b2e=function(_0x5b2ef0,_0x2cc77f){_0x5b2ef0=_0x5b2ef0-0x17e;let _0x2e0ae7=_0x356bd5[_0x5b2ef0];return _0x2e0ae7;},_0x5b2e(_0x6f4f73,_0x774127);}var w=document[_0x4966d5(0x19c)]['clientWidth']||window[_0x4966d5(0x18a)];w<=0x2fd?(document[_0x4966d5(0x1a3)](_0x4966d5(0x193))[_0x4966d5(0x1a5)]=_0x4966d5(0x185),document[_0x4966d5(0x1a3)](_0x4966d5(0x19d))[_0x4966d5(0x1a5)]=_0x4966d5(0x19d),document[_0x4966d5(0x1a3)]('youtube')[_0x4966d5(0x188)]=_0x4966d5(0x1a2)):(document['getElementById']('topnav')['className']=_0x4966d5(0x17f),document[_0x4966d5(0x1a3)](_0x4966d5(0x17e))[_0x4966d5(0x188)]='margin-top:\x2095px;');function _0x356b(){const _0x2f7f86=['className','youtube','topnav\x20desktop','mobile_nav\x20hidden','innerHTML','topnav_mobile','clientWidth','972zlnLLi','hidden','<h1\x20style=\x27color:white;\x20padding:\x205px;\x27>There\x20are\x20no\x20channels\x20here\x20:(</h1>','2207688IqAgGf','style','/EndermanWeb/Youtube/','innerWidth','4924053MgURMq','topnav\x20desktop\x20desknavloaded','val','12167450TGXiFD','8insdKc','2428fdCeaU','desknavloaded','/Youtube/','topnav','484766BCttdW','WhereIsUser','value','forEach','key','margin-top:\x2095px;','querySelector','ref','documentElement','mobile_nav_button','classList','add','5PczfVv','4518126hqBfRd','margin-top:\x2010px;','getElementById','5260472wCTkOh'];_0x356b=function(){return _0x2f7f86;};return _0x356b();}mobilenav=![];function showorhidemobilenav(){const _0x14092f=_0x4966d5;if(mobilenav==![])document['getElementById'](_0x14092f(0x182))[_0x14092f(0x1a5)]='mobile_nav',mobilenav=!![];else mobilenav==!![]&&(document[_0x14092f(0x1a3)](_0x14092f(0x182))[_0x14092f(0x1a5)]=_0x14092f(0x180),mobilenav=![]);}window['addEventListener']('resize',function(){const _0x4efb1f=_0x4966d5,_0x36a5bd=document['documentElement'][_0x4efb1f(0x183)]||window[_0x4efb1f(0x18a)];_0x36a5bd<=0x2fd?(document[_0x4efb1f(0x1a3)](_0x4efb1f(0x193))[_0x4efb1f(0x1a5)]=_0x4efb1f(0x17f),document['getElementById']('mobile_nav_button')['className']=_0x4efb1f(0x19d),document[_0x4efb1f(0x1a3)](_0x4efb1f(0x17e))[_0x4efb1f(0x188)]='margin-top:\x2010px;'):(document[_0x4efb1f(0x1a3)](_0x4efb1f(0x193))[_0x4efb1f(0x1a5)]=_0x4efb1f(0x18c),document[_0x4efb1f(0x1a3)](_0x4efb1f(0x19d))[_0x4efb1f(0x1a5)]=_0x4efb1f(0x185),document[_0x4efb1f(0x1a3)](_0x4efb1f(0x17e))['style']=_0x4efb1f(0x199));});var topnav=document[_0x4966d5(0x19a)]('#topnav');topnav[_0x4966d5(0x19e)][_0x4966d5(0x19f)](_0x4966d5(0x191));
+localStorage.setItem("WhereIsUser","/EndermanWeb/Youtube/");
+setTimeout(function(){
+    database.ref("/Youtube/").on('value', function(snapshot) { 
+        const data = snapshot.val();
+        snapshot.forEach((childSnapshot) => {
+        const childKey = childSnapshot.key;
+        const childData = childSnapshot.val();
+            document.getElementById("youtube").innerHTML = childData
+            if(document.getElementById("youtube").innerHTML == "") {
+                document.getElementById("youtube").innerHTML = "<h1 style='color:white; padding: 5px;'>There are no channels here :(</h1>";
+            }
+            document.getElementById("youtube").classList.remove("loadingAnimationSkeleton")
+    });
+    })
+},3000);
+
+var w = document.documentElement.clientWidth || window.innerWidth;
+if (w <= 765) {
+    document.getElementById("topnav").className = "hidden";
+    document.getElementById("mobile_nav_button").className = "mobile_nav_button";
+    document.getElementById("youtube").style = "margin-top: 10px;"
+} else {
+    document.getElementById("topnav").className = "topnav desktop";
+    document.getElementById("youtube").style = "margin-top: 95px;"
+}
+
+mobilenav = false
+function showorhidemobilenav(){
+    if(mobilenav == false){
+        document.getElementById("topnav_mobile").className = "mobile_nav";
+        mobilenav = true;
+    }
+    else if(mobilenav == true){
+        document.getElementById("topnav_mobile").className = "mobile_nav hidden";
+        mobilenav = false;
+    }
+}
+window.addEventListener('resize', function() {
+    const w = document.documentElement.clientWidth || window.innerWidth;
+    if (w <= 765) {
+    document.getElementById("topnav").className = "topnav desktop";
+    document.getElementById("mobile_nav_button").className = "mobile_nav_button";
+    document.getElementById("youtube").style = "margin-top: 10px;"
+    } else {
+    document.getElementById("topnav").className = "topnav desktop desknavloaded";
+    document.getElementById("mobile_nav_button").className = "hidden";
+    document.getElementById("youtube").style = "margin-top: 95px;"
+    }
+ });
+ var topnav = document.querySelector('#topnav');
+topnav.classList.add('desknavloaded');

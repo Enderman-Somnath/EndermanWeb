@@ -1,1 +1,51 @@
-const _0x252c68=_0xb2e0;(function(_0x19aac0,_0x3cc073){const _0x4ddd2e=_0xb2e0,_0x52f392=_0x19aac0();while(!![]){try{const _0x41b033=parseInt(_0x4ddd2e(0x82))/0x1+-parseInt(_0x4ddd2e(0x8c))/0x2*(parseInt(_0x4ddd2e(0x84))/0x3)+-parseInt(_0x4ddd2e(0x7e))/0x4*(-parseInt(_0x4ddd2e(0x86))/0x5)+parseInt(_0x4ddd2e(0x75))/0x6*(-parseInt(_0x4ddd2e(0x7f))/0x7)+parseInt(_0x4ddd2e(0x91))/0x8+parseInt(_0x4ddd2e(0x87))/0x9*(parseInt(_0x4ddd2e(0x8b))/0xa)+-parseInt(_0x4ddd2e(0x89))/0xb*(-parseInt(_0x4ddd2e(0x98))/0xc);if(_0x41b033===_0x3cc073)break;else _0x52f392['push'](_0x52f392['shift']());}catch(_0x57cc4d){_0x52f392['push'](_0x52f392['shift']());}}}(_0x419e,0xc4349));function getData(){const _0x1686c5=_0xb2e0;firebase[_0x1686c5(0x95)]()[_0x1686c5(0x9a)]('/UpdatesENDERMANWEBSHOW/')['on']('value',function(_0x1740d4){const _0x1a703e=_0x1686c5;document[_0x1a703e(0x8d)](_0x1a703e(0x7c))[_0x1a703e(0x9e)]='',_0x1740d4[_0x1a703e(0xa0)](function(_0x535a1f){const _0x4863f9=_0x1a703e;childKey=_0x535a1f['key'],childData=_0x535a1f[_0x4863f9(0x7b)]();if(childKey!=_0x4863f9(0x7c)){firebase_message_id=childKey,message_data=childData,Name=message_data[_0x4863f9(0x78)],message=message_data['message'],name_with_tag=_0x4863f9(0x7a)+Name+_0x4863f9(0x8e),message_with_tag='<h4\x20class=\x27message_h4\x27\x20style=\x27text-align:left;\x20margin-left:\x205px;\x20margin-right:\x205px;\x27>'+message+_0x4863f9(0x79),gap=_0x4863f9(0x99),row=name_with_tag+message_with_tag+_0x4863f9(0x9b),document[_0x4863f9(0x8d)]('Updates')[_0x4863f9(0x9e)]+=row;const _0x324223=document[_0x4863f9(0x8d)](_0x4863f9(0x7c));_0x324223['scrollTop']=_0x324223['scrollHeight'];}});});}function _0xb2e0(_0x1d12be,_0x5bfb6c){const _0x419e31=_0x419e();return _0xb2e0=function(_0xb2e0d9,_0xbd9331){_0xb2e0d9=_0xb2e0d9-0x74;let _0x3d32f2=_0x419e31[_0xb2e0d9];return _0x3d32f2;},_0xb2e0(_0x1d12be,_0x5bfb6c);}getData(),mobilenav=![];function showorhidemobilenav(){const _0x1b6031=_0xb2e0;if(mobilenav==![])document[_0x1b6031(0x8d)](_0x1b6031(0x88))[_0x1b6031(0x9d)][_0x1b6031(0x83)](_0x1b6031(0x9c)),mobilenav=!![];else mobilenav==!![]&&(document['getElementById']('topnav_mobile')[_0x1b6031(0x90)]=_0x1b6031(0x8f),mobilenav=![]);}var w=document[_0x252c68(0x8a)][_0x252c68(0x7d)]||window[_0x252c68(0x93)];w<=0x2fd?(document[_0x252c68(0x8d)](_0x252c68(0x77))[_0x252c68(0x90)]='hidden',document[_0x252c68(0x8d)](_0x252c68(0x74))[_0x252c68(0x90)]=_0x252c68(0x74),document['getElementById'](_0x252c68(0x81))[_0x252c68(0x9f)]=_0x252c68(0x92)):(document[_0x252c68(0x8d)](_0x252c68(0x77))['className']='topnav\x20desktop',document['getElementById'](_0x252c68(0x81))[_0x252c68(0x9f)]=_0x252c68(0x97));window[_0x252c68(0x96)](_0x252c68(0x76),function(){const _0x125e76=_0x252c68,_0x48428c=document[_0x125e76(0x8a)][_0x125e76(0x7d)]||window[_0x125e76(0x93)];_0x48428c<=0x2fd?(document['getElementById'](_0x125e76(0x77))['className']='topnav\x20desktop',document[_0x125e76(0x8d)](_0x125e76(0x74))[_0x125e76(0x90)]=_0x125e76(0x74),document['getElementById']('home')[_0x125e76(0x9f)]='margin-top:\x2010px;'):(document[_0x125e76(0x8d)]('topnav')['className']=_0x125e76(0x80),document['getElementById'](_0x125e76(0x74))['className']=_0x125e76(0x9c),document['getElementById'](_0x125e76(0x81))[_0x125e76(0x9f)]='margin-top:\x2095px;');});function _0x419e(){const _0x5499a0=['hidden','classList','innerHTML','style','forEach','mobile_nav_button','8639496aeZeOu','resize','topnav','Name','</h4></div>','<div\x20class=\x27message\x27><h4\x20class=\x27Name\x27\x20style=\x27margin-left:\x205px;\x20margin-right:\x205px;\x20text-align:left;\x27>\x20By:\x20','val','Updates','clientWidth','4vTYGle','7xGYOrb','topnav\x20desktop\x20desknavloaded','home','298928kOPLvh','remove','3nSMoFl','add','2496855VUeYjE','524070RKObKN','topnav_mobile','6513947YRNFQl','documentElement','110Devcsq','2499644IEtUzj','getElementById','</h4>','mobile_nav\x20hidden','className','11699112iMLsth','margin-top:\x2010px;','innerWidth','desknavloaded','database','addEventListener','margin-top:\x2095px;','12WTNREK','<h4\x20class=\x27gap\x27></h4>\x20<br>','ref','<br>'];_0x419e=function(){return _0x5499a0;};return _0x419e();}var topnav=document['querySelector']('#topnav');topnav['classList'][_0x252c68(0x85)](_0x252c68(0x94));
+function getData() { firebase.database().ref("/UpdatesENDERMANWEBSHOW/").on('value', function(snapshot) { document.getElementById("Updates").innerHTML = ""; snapshot.forEach(function(childSnapshot) { childKey  = childSnapshot.key; childData = childSnapshot.val(); if(childKey != "Updates") {
+  firebase_message_id = childKey;
+  message_data = childData;
+//Start code
+Name = message_data['Name'];
+message = message_data['message'];
+name_with_tag = "<div class='message'><h4 class='Name' style='margin-left: 5px; margin-right: 5px; text-align:left;'> By: " + Name + "</h4>";
+message_with_tag = "<h4 class='message_h4' style='text-align:left; margin-left: 5px; margin-right: 5px;'>" + message + "</h4></div>";
+gap = "<h4 class='gap'></h4> <br>";
+row = name_with_tag + message_with_tag + "<br>";
+document.getElementById("Updates").innerHTML += row;
+//End code
+const element = document.getElementById("Updates");
+element.scrollTop = element.scrollHeight;
+} });  }); }
+getData();
+mobilenav = false
+function showorhidemobilenav(){
+  if(mobilenav == false){
+      document.getElementById("topnav_mobile").classList.remove('hidden')
+      mobilenav = true;
+  }
+  else if(mobilenav == true){
+      document.getElementById("topnav_mobile").className = "mobile_nav hidden";
+      mobilenav = false;
+  }
+}
+var w = document.documentElement.clientWidth || window.innerWidth;
+if (w <= 765) {
+  document.getElementById("topnav").className = "hidden";
+  document.getElementById("mobile_nav_button").className = "mobile_nav_button";
+  document.getElementById("home").style = "margin-top: 10px;"
+} else {
+  document.getElementById("topnav").className = "topnav desktop";
+  document.getElementById("home").style = "margin-top: 95px;"
+}
+window.addEventListener('resize', function() {
+  const  w = document.documentElement.clientWidth || window.innerWidth;
+  if (w <= 765) {
+  document.getElementById("topnav").className = "topnav desktop";
+  document.getElementById("mobile_nav_button").className = "mobile_nav_button";
+  document.getElementById("home").style = "margin-top: 10px;"
+  } else {
+  document.getElementById("topnav").className = "topnav desktop desknavloaded";
+  document.getElementById("mobile_nav_button").className = "hidden";
+  document.getElementById("home").style = "margin-top: 95px;"
+  }
+});
+var topnav = document.querySelector('#topnav');
+topnav.classList.add('desknavloaded');
+

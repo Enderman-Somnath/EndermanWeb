@@ -1,1 +1,109 @@
-const _0x4a6eae=_0x32fe;(function(_0x557ff9,_0x56fbad){const _0x496c9a=_0x32fe,_0x1b3600=_0x557ff9();while(!![]){try{const _0x48c31a=-parseInt(_0x496c9a(0x1d7))/0x1*(-parseInt(_0x496c9a(0x1c0))/0x2)+parseInt(_0x496c9a(0x1a8))/0x3*(parseInt(_0x496c9a(0x1bf))/0x4)+parseInt(_0x496c9a(0x1e3))/0x5+-parseInt(_0x496c9a(0x1c9))/0x6*(-parseInt(_0x496c9a(0x1af))/0x7)+parseInt(_0x496c9a(0x1a4))/0x8*(parseInt(_0x496c9a(0x1b1))/0x9)+-parseInt(_0x496c9a(0x1ca))/0xa*(parseInt(_0x496c9a(0x1b4))/0xb)+-parseInt(_0x496c9a(0x1b9))/0xc;if(_0x48c31a===_0x56fbad)break;else _0x1b3600['push'](_0x1b3600['shift']());}catch(_0x48e72a){_0x1b3600['push'](_0x1b3600['shift']());}}}(_0x1edb,0x65afe),localStorage[_0x4a6eae(0x1bd)](_0x4a6eae(0x1cf),'/EndermanWeb/UserAccount/UserInfo/'),firebase[_0x4a6eae(0x1e1)]()[_0x4a6eae(0x1be)](_0xcf8373=>{const _0x5340c7=_0x4a6eae;if(_0xcf8373){const _0x5c43ac=document['getElementById'](_0x5340c7(0x1a5)),_0x465bec=document[_0x5340c7(0x1d3)](_0x5340c7(0x1ce)),_0x569498=document[_0x5340c7(0x1d3)](_0x5340c7(0x1b0));_0x5c43ac['textContent']=_0x5340c7(0x1e2)+_0xcf8373[_0x5340c7(0x1d6)],_0x465bec[_0x5340c7(0x1c1)]=_0x5340c7(0x1ad)+_0xcf8373[_0x5340c7(0x1a6)],_0x569498[_0x5340c7(0x1c1)]=_0x5340c7(0x1e0)+_0xcf8373[_0x5340c7(0x1b0)],firebase[_0x5340c7(0x1b7)]()[_0x5340c7(0x1b6)](_0x5340c7(0x1c4))['child'](_0xcf8373['uid'])[_0x5340c7(0x1d2)]('value')[_0x5340c7(0x1c3)](_0x5709e0=>{const _0x49783e=_0x5340c7,_0x3fb0a1=_0x5709e0['val']();_0x5c43ac[_0x49783e(0x1a7)]+=_0x49783e(0x1cd)+_0x3fb0a1[_0x49783e(0x1ba)]+_0x49783e(0x1df);});}else window[_0x5340c7(0x1d4)](_0x5340c7(0x1c7)),localStorage[_0x5340c7(0x1a3)](_0x5340c7(0x1cc)),window[_0x5340c7(0x1d1)]=_0x5340c7(0x1b3);}));function validateInput(_0x1e8916){const _0x200260=/^[a-zA-Z0-9@+\-]+$/;return _0x200260['test'](_0x1e8916);}function updateDisplayName(){const _0x2167c1=_0x4a6eae,_0x1f4d03=prompt('Please\x20enter\x20your\x20new\x20name\x20you\x20want');if(_0x1f4d03==null){window[_0x2167c1(0x1d4)](_0x2167c1(0x1c6));return;}if(validateInput(_0x1f4d03)){const _0x637c12=firebase[_0x2167c1(0x1e1)]()['currentUser'];_0x637c12[_0x2167c1(0x1d0)]({'displayName':_0x1f4d03})[_0x2167c1(0x1c3)](()=>{const _0x820520=_0x2167c1;window['alert'](_0x820520(0x1ae));})[_0x2167c1(0x1b5)](_0x271223=>{const _0x3bb7b4=_0x2167c1;window[_0x3bb7b4(0x1d4)](_0x3bb7b4(0x1ab)),console[_0x3bb7b4(0x1dc)](_0x3bb7b4(0x1b2),_0x271223);});}else alert(_0x2167c1(0x1d8));}function resetPassword(){const _0x1cd799=_0x4a6eae,_0x373669=firebase[_0x1cd799(0x1e1)]()['currentUser'],_0x4f92dc=_0x373669[_0x1cd799(0x1a6)];firebase[_0x1cd799(0x1e1)]()[_0x1cd799(0x1aa)](_0x4f92dc)[_0x1cd799(0x1c3)](()=>{const _0x59948d=_0x1cd799;window[_0x59948d(0x1d4)](_0x59948d(0x1a9));})[_0x1cd799(0x1b5)](_0x53f619=>{const _0x104151=_0x1cd799;window['alert']('Failed\x20to\x20send\x20password\x20reset\x20email.\x20Please\x20make\x20sure\x20the\x20email\x20is\x20valid\x20and\x20try\x20again.'),console[_0x104151(0x1dc)](_0x104151(0x1dd),_0x53f619);});}function signout(){const _0x1e9dca=_0x4a6eae,_0x2ab9e9=window[_0x1e9dca(0x1d9)](_0x1e9dca(0x1d5));if(!_0x2ab9e9)return;firebase[_0x1e9dca(0x1e1)]()[_0x1e9dca(0x1da)]()[_0x1e9dca(0x1c3)](()=>{const _0x52465d=_0x1e9dca;localStorage[_0x52465d(0x1a3)]('UserPresent'),localStorage['clear'](),window[_0x52465d(0x1d4)](_0x52465d(0x1bc)),window['location']='/EndermanWeb/UserAccount/SignIn/';})[_0x1e9dca(0x1b5)](_0xd0cda8=>{const _0x5e44a0=_0x1e9dca;console[_0x5e44a0(0x1dc)](_0x5e44a0(0x1c8),_0xd0cda8);});}function _0x1edb(){const _0x287d3e=['sendPasswordResetEmail','Failed\x20to\x20update\x20display\x20name.\x20Please\x20try\x20again\x20later.','mobile_nav','Email:\x20','Display\x20name\x20updated\x20successfully.','207536vTjTKk','uid','17685PstPID','Error\x20updating\x20display\x20name:','/EndermanWeb/UserAccount/SignIn/','22RTWKSd','catch','ref','database','documentElement','10397700OIhMfC','badges','mobile_nav_button','Signed\x20out\x20successfully!','setItem','onAuthStateChanged','4kvpkOs','29462SbJqJp','textContent','hidden','then','/USERS/','topnav\x20desktop','Name\x20is\x20not\x20changed','No\x20user\x20is\x20signed\x20in.\x20Please\x20sign\x20in.','Error\x20signing\x20out:','120BUfnrt','2534110dsYeQi','topnav_mobile','UserPresent',',\x20\x20Badges:\x20','Email','WhereIsUser','updateProfile','location','once','getElementById','alert','Are\x20you\x20sure\x20you\x20want\x20to\x20sign\x20out?','displayName','10GYFWMA','Use\x20valid\x20symbols\x20for\x20name\x20such\x20as\x20@,+,-','confirm','signOut','className','error','Error\x20sending\x20password\x20reset\x20email:','topnav','\x20<button\x20class=\x27btn\x20btn-primary\x27\x20onclick=\x27updateDisplayName()\x27>\x20Change\x20Name\x20</button>','User\x20UID:\x20','auth','Name:\x20','1430095jCLoyV','mobile_nav\x20hidden','removeItem','2856ZCUYuA','Name','email','innerHTML','186039SOZpOU','Password\x20reset\x20email\x20sent.\x20Please\x20check\x20your\x20email\x20to\x20reset\x20your\x20password.'];_0x1edb=function(){return _0x287d3e;};return _0x1edb();}function _0x32fe(_0x47a81d,_0x3cac5c){const _0x1edb48=_0x1edb();return _0x32fe=function(_0x32fe78,_0x2e12a3){_0x32fe78=_0x32fe78-0x1a3;let _0x3cb3fc=_0x1edb48[_0x32fe78];return _0x3cb3fc;},_0x32fe(_0x47a81d,_0x3cac5c);}var w=document[_0x4a6eae(0x1b8)]['clientWidth']||window['innerWidth'];w<=0x1e0?(document[_0x4a6eae(0x1d3)]('topnav')[_0x4a6eae(0x1db)]=_0x4a6eae(0x1c2),document[_0x4a6eae(0x1d3)](_0x4a6eae(0x1bb))['className']=_0x4a6eae(0x1bb)):document[_0x4a6eae(0x1d3)](_0x4a6eae(0x1de))[_0x4a6eae(0x1db)]=_0x4a6eae(0x1c5);mobilenav=![];function showorhidemobilenav(){const _0x41323b=_0x4a6eae;if(mobilenav==![])document[_0x41323b(0x1d3)](_0x41323b(0x1cb))[_0x41323b(0x1db)]=_0x41323b(0x1ac),mobilenav=!![];else mobilenav==!![]&&(document[_0x41323b(0x1d3)](_0x41323b(0x1cb))[_0x41323b(0x1db)]=_0x41323b(0x1e4),mobilenav=![]);}
+localStorage.setItem("WhereIsUser","/EndermanWeb/UserAccount/UserInfo/");
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    // User is signed in
+    const nameElement = document.getElementById("Name");
+    const emailElement = document.getElementById("Email");
+    const uidElement = document.getElementById("uid");
+    // Set user info in the labels
+    nameElement.textContent = "Name: " + user.displayName;
+    emailElement.textContent = "Email: " + user.email;
+    uidElement.textContent = "User UID: " + user.uid;
+    firebase.database().ref("/USERS/").child(user.uid).once('value')
+          .then((snapshot) => {
+            const userData = snapshot.val();
+            nameElement.innerHTML += ",  Badges: " +  userData['badges']  + " <button class='btn btn-primary' onclick='updateDisplayName()'> Change Name </button>";
+          });
+  } else {
+    // No user is signed in
+    window.alert("No user is signed in. Please sign in.");
+    localStorage.removeItem("UserPresent");
+    window.location = "/EndermanWeb/UserAccount/SignIn/";
+  }
+});
+function validateInput(input) {
+  const regex = /^[a-zA-Z0-9@+\-]+$/;
+  return regex.test(input);
+}
+function updateDisplayName() {
+  const displayName = prompt("Please enter your new name you want");
+  if(displayName == null){
+    window.alert("Name is not changed");
+    return
+  }
+  if(validateInput(displayName)){
+    const user = firebase.auth().currentUser;
+  user.updateProfile({
+    displayName: displayName
+  })
+    .then(() => {
+      window.alert("Display name updated successfully.");
+    })
+    .catch((error) => {
+      window.alert("Failed to update display name. Please try again later.");
+      console.error("Error updating display name:", error);
+    });
+  } else {
+    alert("Use valid symbols for name such as @,+,-");
+  }
+}
+
+function resetPassword() {
+  const user = firebase.auth().currentUser;
+  const email = user.email;
+  firebase.auth().sendPasswordResetEmail(email)
+    .then(() => {
+      window.alert("Password reset email sent. Please check your email to reset your password.");
+    })
+    .catch((error) => {
+      window.alert("Failed to send password reset email. Please make sure the email is valid and try again.");
+      console.error("Error sending password reset email:", error);
+    });
+}
+function signout() {
+  const confirmed = window.confirm("Are you sure you want to sign out?");
+  if (!confirmed) {
+    return;
+  }
+  firebase.auth().signOut()
+    .then(() => {
+      localStorage.removeItem("UserPresent");
+      localStorage.clear();
+      window.alert("Signed out successfully!");
+      window.location = "/EndermanWeb/UserAccount/SignIn/";
+    })
+    .catch((error) => {
+      console.error("Error signing out:", error);
+    });
+}
+
+mobilenav = false
+function showorhidemobilenav(){
+  if(mobilenav == false){
+      document.getElementById("topnav_mobile").classList.remove('hidden')
+      mobilenav = true;
+  }
+  else if(mobilenav == true){
+      document.getElementById("topnav_mobile").className = "mobile_nav hidden";
+      mobilenav = false;
+  }
+}
+var w = document.documentElement.clientWidth || window.innerWidth;
+if (w <= 765) {
+  document.getElementById("topnav").className = "hidden";
+  document.getElementById("mobile_nav_button").className = "mobile_nav_button";
+} else {
+  document.getElementById("topnav").className = "topnav desktop";
+}
+window.addEventListener('resize', function() {
+  const  w = document.documentElement.clientWidth || window.innerWidth;
+  if (w <= 765) {
+  document.getElementById("topnav").className = "topnav desktop";
+  document.getElementById("mobile_nav_button").className = "mobile_nav_button";
+  } else {
+  document.getElementById("topnav").className = "topnav desktop desknavloaded";
+  document.getElementById("mobile_nav_button").className = "hidden";
+  }
+});
+var topnav = document.querySelector('#topnav');
+topnav.classList.add('desknavloaded');

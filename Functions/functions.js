@@ -1,1 +1,25 @@
-const _0x36c646=_0x1816;(function(_0x55ad92,_0x993005){const _0x211f18=_0x1816,_0x13e184=_0x55ad92();while(!![]){try{const _0x282c1d=parseInt(_0x211f18(0x115))/0x1+parseInt(_0x211f18(0x108))/0x2+parseInt(_0x211f18(0x10e))/0x3*(parseInt(_0x211f18(0x110))/0x4)+-parseInt(_0x211f18(0x109))/0x5+-parseInt(_0x211f18(0x107))/0x6*(-parseInt(_0x211f18(0x101))/0x7)+-parseInt(_0x211f18(0x10b))/0x8*(parseInt(_0x211f18(0x105))/0x9)+-parseInt(_0x211f18(0x104))/0xa*(parseInt(_0x211f18(0x113))/0xb);if(_0x282c1d===_0x993005)break;else _0x13e184['push'](_0x13e184['shift']());}catch(_0x23bd01){_0x13e184['push'](_0x13e184['shift']());}}}(_0x48bc,0x60b0f));function _0x48bc(){const _0x595377=['268RoNfvR','location','classicchat-cfb87.firebaseapp.com','3573581WFvlGV','481166683980','334793XUXAaQ','/EndermanWeb/Youtube/','AIzaSyBAJgNXiQ7j0-Jly8hwtkhnSSuKPgQhZj0','37597UUAtsZ','open','https://classicchat-cfb87-default-rtdb.firebaseio.com','10fSvAZC','117kkpNUk','database','834ktadsk','110482vcXcfc','3691515UnEUdp','1:481166683980:web:a865253f257369395329e9','245480FGnxfO','height=600,width=800,','classicchat-cfb87','32307vqHIov','/EndermanWeb/Community/'];_0x48bc=function(){return _0x595377;};return _0x48bc();}const firebaseConfig={'apiKey':_0x36c646(0x100),'authDomain':_0x36c646(0x112),'databaseURL':_0x36c646(0x103),'projectId':_0x36c646(0x10d),'storageBucket':'classicchat-cfb87.appspot.com','messagingSenderId':_0x36c646(0x114),'appId':_0x36c646(0x10a)};firebase['initializeApp'](firebaseConfig);const database=firebase[_0x36c646(0x106)]();function homeWeb(){const _0x30379b=_0x36c646;window[_0x30379b(0x111)]='/EndermanWeb/';}function classicChatWeb(){const _0x1522ce=_0x36c646;window[_0x1522ce(0x111)]='/EndermanWeb/ClassicChat/';}function _0x1816(_0x588955,_0x4beb9c){const _0x48bc08=_0x48bc();return _0x1816=function(_0x18165e,_0x54e0da){_0x18165e=_0x18165e-0x100;let _0x4bf767=_0x48bc08[_0x18165e];return _0x4bf767;},_0x1816(_0x588955,_0x4beb9c);}function youtubeWeb(){const _0x32ab82=_0x36c646;window[_0x32ab82(0x111)]=_0x32ab82(0x116);}function community(){const _0x4d2eca=_0x36c646;window[_0x4d2eca(0x111)]=_0x4d2eca(0x10f);}function PopUp(_0x144d6d){const _0x1fdce5=_0x36c646;popupWindow=window[_0x1fdce5(0x102)](_0x144d6d,'popUpWindow',_0x1fdce5(0x10c));}
+const firebaseConfig = {
+    apiKey: "AIzaSyBAJgNXiQ7j0-Jly8hwtkhnSSuKPgQhZj0",
+    authDomain: "classicchat-cfb87.firebaseapp.com",
+    databaseURL: "https://classicchat-cfb87-default-rtdb.firebaseio.com",
+    projectId: "classicchat-cfb87",
+    storageBucket: "classicchat-cfb87.appspot.com",
+    messagingSenderId: "481166683980",
+    appId: "1:481166683980:web:a865253f257369395329e9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const database = firebase.database();
+function homeWeb(){
+    window.location="/EndermanWeb/"
+}
+function classicChatWeb(){
+    window.location="/EndermanWeb/ClassicChat/"
+}
+function youtubeWeb(){
+    window.location="/EndermanWeb/Youtube/"
+}
+function PopUp(url){
+    popupWindow = window.open(url,'popUpWindow','height=600,width=800,');
+}
+

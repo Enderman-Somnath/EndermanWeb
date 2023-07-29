@@ -1,1 +1,66 @@
-function _0x5c9b(_0x4da523,_0x1d326a){const _0x527f7b=_0x527f();return _0x5c9b=function(_0x5c9bdd,_0x2562bf){_0x5c9bdd=_0x5c9bdd-0x9a;let _0x3e54f1=_0x527f7b[_0x5c9bdd];return _0x3e54f1;},_0x5c9b(_0x4da523,_0x1d326a);}const _0x4c1701=_0x5c9b;(function(_0x27c7c9,_0x17cd0e){const _0x12482e=_0x5c9b,_0x32d1c7=_0x27c7c9();while(!![]){try{const _0x2f389f=parseInt(_0x12482e(0xc4))/0x1*(-parseInt(_0x12482e(0xbe))/0x2)+-parseInt(_0x12482e(0xb6))/0x3*(-parseInt(_0x12482e(0xc6))/0x4)+parseInt(_0x12482e(0xc1))/0x5+parseInt(_0x12482e(0xb8))/0x6*(parseInt(_0x12482e(0xc3))/0x7)+parseInt(_0x12482e(0xab))/0x8+parseInt(_0x12482e(0xa3))/0x9*(parseInt(_0x12482e(0xae))/0xa)+-parseInt(_0x12482e(0xc7))/0xb;if(_0x2f389f===_0x17cd0e)break;else _0x32d1c7['push'](_0x32d1c7['shift']());}catch(_0x2110af){_0x32d1c7['push'](_0x32d1c7['shift']());}}}(_0x527f,0xef44f),localStorage['setItem'](_0x4c1701(0xb7),'/EndermanWeb/UserAccount/SignIn/'));function _0x527f(){const _0x468038=['230wtkYjo','/EndermanWeb/UserAccount','location','Incorrect\x20password.\x20Please\x20try\x20again.','auth/user-not-found','auth','Please\x20type\x20your\x20email\x20to\x20send\x20password\x20reset\x20email.','User\x20signed\x20in:','18AhgpdF','WhereIsUser','84QBfVVV','mobile_nav_button','user','signInWithEmailAndPassword','Email','auth/invalid-email','62eRwXpf','error','auth/wrong-password','750880hVvJiz','topnav_mobile','162057yvEdmG','355pJVCKu','className','978888OBjaze','32336029QQOMWT','code','topnav\x20desktop','Password\x20reset\x20email\x20sent.\x20Please\x20check\x20your\x20email\x20to\x20reset\x20your\x20password.','Error\x20signing\x20in:','Password\x20reset\x20not\x20sent','log','Error\x20sending\x20password\x20reset\x20email:','catch','The\x20email\x20address\x20entered\x20is\x20not\x20valid\x20or\x20the\x20user\x20does\x20not\x20exist.\x20Please\x20check\x20your\x20email\x20or\x20create\x20a\x20new\x20account.','UserPresent','clientWidth','setItem','innerWidth','44397KNEKCd','mobile_nav\x20hidden','documentElement','password','value','topnav','message','then','14996880qOyseU','alert','getElementById'];_0x527f=function(){return _0x468038;};return _0x527f();}function signInWithEmailPassword(){const _0x2035fd=_0x4c1701,_0x7237de=document['getElementById'](_0x2035fd(0xbc))[_0x2035fd(0xa7)],_0x2d3ffc=document[_0x2035fd(0xad)](_0x2035fd(0xa6))[_0x2035fd(0xa7)];firebase['auth']()[_0x2035fd(0xbb)](_0x7237de,_0x2d3ffc)[_0x2035fd(0xaa)](_0x187459=>{const _0x42ce0b=_0x2035fd,_0x1d326a=_0x187459[_0x42ce0b(0xba)];console[_0x42ce0b(0x9b)](_0x42ce0b(0xb5),_0x1d326a),localStorage[_0x42ce0b(0xa1)](_0x42ce0b(0x9f),!![]),window[_0x42ce0b(0xb0)]=_0x42ce0b(0xaf);})[_0x2035fd(0x9d)](_0xd6e9=>{const _0x360545=_0x2035fd,_0x131e72=_0xd6e9[_0x360545(0xc8)],_0x3bd0b4=_0xd6e9[_0x360545(0xa9)];console[_0x360545(0xbf)](_0x360545(0xcb),_0x3bd0b4);if(_0x131e72===_0x360545(0xc0))window[_0x360545(0xac)](_0x360545(0xb1));else _0x131e72===_0x360545(0xb2)||_0x131e72===_0x360545(0xbd)?window[_0x360545(0xac)](_0x360545(0x9e)):window['alert'](_0x3bd0b4);});}function resetPassword(){const _0x5a64ad=_0x4c1701,_0x309c05=prompt(_0x5a64ad(0xb4));if(_0x309c05==null){alert(_0x5a64ad(0x9a));return;}firebase[_0x5a64ad(0xb3)]()['sendPasswordResetEmail'](_0x309c05)[_0x5a64ad(0xaa)](()=>{const _0x4e6a0a=_0x5a64ad;window[_0x4e6a0a(0xac)](_0x4e6a0a(0xca));})[_0x5a64ad(0x9d)](_0x3d9a9b=>{const _0x46b809=_0x5a64ad;window[_0x46b809(0xac)]('Failed\x20to\x20send\x20password\x20reset\x20email.\x20Please\x20make\x20sure\x20the\x20email\x20is\x20valid\x20and\x20it\x20exists\x20on\x20the\x20website'),console[_0x46b809(0xbf)](_0x46b809(0x9c),_0x3d9a9b);});}var w=document[_0x4c1701(0xa5)][_0x4c1701(0xa0)]||window[_0x4c1701(0xa2)];w<=0x1e0?(document[_0x4c1701(0xad)](_0x4c1701(0xa8))[_0x4c1701(0xc5)]='hidden',document['getElementById'](_0x4c1701(0xb9))[_0x4c1701(0xc5)]='mobile_nav_button'):document[_0x4c1701(0xad)](_0x4c1701(0xa8))[_0x4c1701(0xc5)]=_0x4c1701(0xc9);mobilenav=![];function showorhidemobilenav(){const _0x1f8e00=_0x4c1701;if(mobilenav==![])document['getElementById'](_0x1f8e00(0xc2))[_0x1f8e00(0xc5)]='mobile_nav',mobilenav=!![];else mobilenav==!![]&&(document[_0x1f8e00(0xad)](_0x1f8e00(0xc2))['className']=_0x1f8e00(0xa4),mobilenav=![]);}
+localStorage.setItem("WhereIsUser","/EndermanWeb/UserAccount/SignIn/");
+function signInWithEmailPassword() {
+  const email = document.getElementById("Email").value;
+  const password = document.getElementById("password").value;
+
+  firebase.auth().signInWithEmailAndPassword(email, password)
+    .then((userCredential) => {
+      // User sign-in successful
+      const user = userCredential.user;
+      console.log("User signed in:", user);
+
+      // Set UserPresent in local storage
+      localStorage.setItem("UserPresent", true);
+
+      // Redirect to user account page
+      window.location = "/EndermanWeb/UserAccount";
+    })
+    .catch((error) => {
+      // User sign-in failed
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.error("Error signing in:", errorMessage);
+
+      // Handle specific error cases
+      if (errorCode === "auth/wrong-password") {
+        window.alert("Incorrect password. Please try again.");
+      } else if (errorCode === "auth/user-not-found" || errorCode === "auth/invalid-email") {
+        window.alert("The email address entered is not valid or the user does not exist. Please check your email or create a new account.");
+      } else {
+        window.alert(errorMessage);
+      }
+    });
+}
+function resetPassword() {
+  const email = prompt("Please type your email to send password reset email.");
+  if(email == null) {
+    alert("Password reset not sent");
+    return
+  }
+  firebase.auth().sendPasswordResetEmail(email)
+    .then(() => {
+      window.alert("Password reset email sent. Please check your email to reset your password.");
+    })
+    .catch((error) => {
+      window.alert("Failed to send password reset email. Please make sure the email is valid and it exists on the website");
+      console.error("Error sending password reset email:", error);
+    });
+}
+var w = document.documentElement.clientWidth || window.innerWidth;
+    if (w <= 480) {
+    document.getElementById("topnav").className = "hidden";
+    document.getElementById("mobile_nav_button").className = "mobile_nav_button";
+    } else {
+    document.getElementById("topnav").className = "topnav desktop";
+    }
+    mobilenav = false
+    function showorhidemobilenav(){
+    if(mobilenav == false){
+      document.getElementById("topnav_mobile").className = "mobile_nav";
+      mobilenav = true;
+    }
+    else if(mobilenav == true){
+      document.getElementById("topnav_mobile").className = "mobile_nav hidden";
+      mobilenav = false;
+    }
+    }
