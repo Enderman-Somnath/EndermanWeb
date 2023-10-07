@@ -6,6 +6,7 @@
     margin-left: 10px;
     margin-right: 10px;
     transition: all 1s ease;
+    word-break: break-all;
 }
 .ytChannelButton{
     list-style: none;
@@ -21,6 +22,7 @@
     margin-bottom: 10;
     cursor: pointer;
     transition: background 0.5s;
+    word-break: break-all;
 }
 .ytChannelLabel{
     color: white;

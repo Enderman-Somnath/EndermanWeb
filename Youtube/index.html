@@ -15,19 +15,19 @@
 <body>
     <!--Desktop-->
     <div id="topnav" class="topnav desktop">
-        <a href="#home" onclick="homeWeb()"> <i class="bi bi-house-door-fill"></i> Home</a>
-        <a href="#chat" onclick="classicChatWeb()"> <i class="bi bi-chat-left-fill"></i> Chat</a>
-        <a href="#youtube" onclick="youtubeWeb()"> <i class="bi bi-youtube"></i> Youtube Channels </a>
-        <button class="btn btn-primary" id="account" onclick="window.location = '/EndermanWeb/UserAccount/'"><i class="bi bi-person-circle"></i> Loading</button>
-        <a href="#about" onclick="PopUp('/EndermanWeb/aboutEndermanweb.html')" class="split"> <i class="bi bi-info-circle-fill"></i> About </a>
+        <button onclick="homeWeb()"> <i class="bi bi-house-door-fill"></i> Home</button>
+        <button onclick="classicChatWeb()"> <i class="bi bi-chat-left-fill"></i> Chat</button>
+        <button onclick="youtubeWeb()"> <i class="bi bi-youtube"></i> Youtube Channels </button>
+        <button class="btn btn-primary account" id="account" onclick="window.location = '/EndermanWeb/UserAccount/'"><i class="bi bi-person-circle"></i> Loading</button>
+        <button onclick="PopUp('/EndermanWeb/aboutEndermanweb.html')" class="split"> <i class="bi bi-info-circle-fill"></i> About </button>
     </div>
     <!--Mobile-->
     <div id="topnav_mobile" class="mobile_nav hidden">
-        <li class="curves"><a href="#home" onclick="homeWeb()"> <i class="bi bi-house-door-fill"></i> Home</a></li>
-        <li class="curves"><a href="#chat" onclick="classicChatWeb()"> <i class="bi bi-chat-left-fill"></i> Chat</a></li>
-        <li class="curves"><a href="#youtube" onclick="youtubeWeb()"> <i class="bi bi-youtube"></i> Youtube Channels </a></li>
-        <li class="curves"><a href="#account" onclick="window.location = '/EndermanWeb/UserAccount/'"> <i class="bi bi-person"></i>  Account </a></li>
-        <li class="curves"><a href="#about" onclick="PopUp('/EndermanWeb/aboutEndermanweb.html')"> <i class="bi bi-info-circle-fill"></i> About </a></li>
+        <button href="#home" onclick="homeWeb()"> <i class="bi bi-house-door-fill"></i> Home</button>
+        <button href="#chat" onclick="classicChatWeb()"> <i class="bi bi-chat-left-fill"></i> Chat</button>
+        <button href="#youtube" onclick="youtubeWeb()"> <i class="bi bi-youtube"></i> Youtube Channels </button>
+        <button href="#account" onclick="window.location = '/EndermanWeb/UserAccount/'"> <i class="bi bi-person"></i>  Account </button>
+        <button href="#about" onclick="PopUp('/EndermanWeb/aboutEndermanweb.html')"> <i class="bi bi-info-circle-fill"></i> About </button>
     </div>
     <a class="hover_mobile_nav_button"><button id="mobile_nav_button" class="mobile_nav_button hidden" onclick="showorhidemobilenav()">
         ☰ Navigation

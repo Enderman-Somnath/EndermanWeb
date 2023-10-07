@@ -25,7 +25,7 @@ html{
     justify-content: space-between; /* Align items with space between */
   }
   
-  .topnav a {
+  .topnav button {
     background-color: rgba(0, 0, 0, 0.39);
     color: #f2f2f2;
     text-align: center;
@@ -36,20 +36,29 @@ html{
     border-radius: 10px;
     margin-right: 5px;
     transition: all 0.2s ease;
+    border: 0px;
   }
   
-  .topnav a:hover {
+  .topnav button:hover {
     background-color: rgb(112, 14, 192);
   }
   
-  .topnav a.split {
+  .topnav button.split {
     background-color: #6c33a3;
     background-image: linear-gradient(316deg, #6c33a3 0%, #8241b8 74%);
     margin-left: auto;
     margin-left: 5px;
     margin-right: 0px;
   }
-  
+  .topnav button.account {
+    background-color: #0077c7;
+    margin-left: auto;
+    margin-left: 5px;
+    margin-right: 0px;
+  }
+  .topnav button.account:hover{
+    background-color: #005892;
+  }
   #account {
     margin-left: auto; /* Push the account element to the right */
   }
@@ -119,17 +128,21 @@ html{
       opacity: 1;
     }
   }
-  .mobile_nav a{
+  .mobile_nav button{
   text-decoration: none;
   color: white;
   font-weight: bolder;
+  background-color: #00000075;
+  border: 0px;
   transition: color 0.5s ease;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+  word-break: break-all;
   }
-  .mobile_nav a:hover{
-    color: rgb(67, 67, 255);
-  }
-  .mobile_nav li{
-    margin-top: 5%;
+  .mobile_nav button:hover{
+    background-color: rgb(34, 34, 34);
   }
   .hidden{
     display: none;
@@ -182,13 +195,14 @@ html{
 .skeleton{
   opacity: .7;
   animation: skeleton-loading 1s linear infinite alternate;
+  border-radius: 15px;
 }
 
 .skeleton-text{
   width: 100%;
   height: .5rem;
   margin-bottom: .25rem;
-  border-radius: .125rem;
+  border-radius: 15px;
 }
 
 .skeleton-text:last-child{

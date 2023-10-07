@@ -4,16 +4,42 @@
   text-align: center;
   padding: 10px;
   border-radius: 20px;
-  height: fit-content;
-  width: fit-content;
-  position: fixed;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  overflow: auto;
+  margin-top: 20px;
 }
 .userinfo label{
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.342);
   border-radius: 20px;
   margin: 5px;
+  width: 100%;
+  margin-top: auto;
+  word-break: break-all;
+}
+.purple{
+  background-color: rgba(0, 0, 0, 0.507);
+  padding: 20px;
+  margin: 5px;
+  border: 0px;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+  color: white;
+}
+.purple:hover{
+  background-color: rgb(26, 26, 26);
+}
+.red{
+  background-color: rgb(182, 9, 9);
+  color:white;
+  padding: 20px;
+  margin: 5px;
+  border: 0px;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+.red:hover{
+  background-color: rgb(168, 10, 10);
+}
+.textANIMATE{
+  display:inline-block
 }
