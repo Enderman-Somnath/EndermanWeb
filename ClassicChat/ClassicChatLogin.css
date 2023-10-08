@@ -1,5 +1,6 @@
 #CLASSICCHAT{
   transition: all 1s ease;
+  margin-bottom: 15px;
 }
 #inputChatID{
   background-color: #000000af;
