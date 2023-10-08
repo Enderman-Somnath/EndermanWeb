@@ -119,6 +119,7 @@ html{
     overflow: auto;
     z-index: 1;
     animation: fadein 0.2s;
+    margin-top: 20px;
   }
   @keyframes fadein {
     from{
@@ -135,11 +136,11 @@ html{
   background-color: #00000075;
   border: 0px;
   transition: color 0.5s ease;
-  margin-top: 10px;
-  padding: 10px;
+  margin: 20px;
+  padding: 28px;
   border-radius: 15px;
   transition: all 0.5s ease;
-  word-break: break-all;
+  word-break:break-all;
   }
   .mobile_nav button:hover{
     background-color: rgb(34, 34, 34);
