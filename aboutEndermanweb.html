@@ -14,15 +14,27 @@
             background-repeat: no-repeat;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             word-break: break-all;
+            transition: all 0.5s ease;
         }
     </style>
     <body style="padding: 10px; overflow: auto;">
         <img src="EndermanWebBG.png" loading="lazy" style="position: absolute; object-fit: cover; height: 100%; width: 100%; top:0; left:0;">
         <div style="z-index: 1; background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(5px); margin-right: auto; border-radius: 20px; padding: 10px;">
-        <img src="icon.png" loading="lazy" style="height: 200px; background-color: rgba(0, 0, 0, 0.315); border-radius: 50px;"><h1 style="color: white;"> Site: EndermanWeb </h1>
+        <img src="icon.png" loading="lazy" style="height: 30%; background-color: rgba(0, 0, 0, 0.315); border-radius: 50px;"><h1 style="color: white;"> Site: EndermanWeb </h1>
         <p style="color: white; font-weight: bolder;"> Creator: Endermanhere-Somnath </p>
         <p style="color: white;"> Description: This is a website which is where you can chat and more coming soon! </p>
-        <p style="color: white; font-weight: bold;">EndermanWeb UI: <b>02</b>, Version: 02.02</p>
+        <p style="color: white; font-weight: bold;">EndermanWeb UI: <b>03</b>, Version: 3.0</p>
+        <br>
+        <p style="color: white; font-weight: bold;">My Other Sites</p>
+        <button style="background-color: rgba(0, 0, 0, 0.521); border-radius: 20px; padding: 20px; border:0px; color: white; cursor: pointer;" onclick="window.open('https://enderman-somnath.github.io/The-Website-of-Enderman/')"> My <b>First Website</b> </button>
+        <button style="background-color: rgba(0, 0, 0, 0.521); border-radius: 20px; padding: 20px; border:0px; color: white; cursor: pointer;" onclick="window.open('https://enderman-somnath.github.io/1.0Endermanweb/')"> <b>EndermanWeb 1.0</b> </button>
     </div>
     </body>
+    <script>
+    $("html").keyup(function(event) {
+    if (event.keyCode === 27) {
+        window.close()
+    }
+});
+    </script>
 </html>

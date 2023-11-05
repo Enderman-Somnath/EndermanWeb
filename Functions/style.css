@@ -94,16 +94,18 @@ html{
   .mobile_nav_button{
     position: fixed;
     bottom: 0%;
+    margin: 5px;
     background-color: #000000a9;
     backdrop-filter: blur(10px);
     border-width: 0px;
-    border-radius: 20px;
+    border-radius: 10px;
     color: white;
     padding: 10px;
     padding-top:5px;
     padding-bottom: 5px;
     z-index: 1;
     word-break: break-all;
+    transition: all ease 1s;
   }
   .hover_mobile_nav_button button:hover{
     background-color: #181818cc;
@@ -148,7 +150,6 @@ html{
   .hidden{
     display: none;
   }
-
     /* Custom Scrollbar */
 
   div::-webkit-scrollbar {
@@ -211,10 +212,17 @@ html{
   width: 80%;
 }
 @keyframes skeleton-loading {
-  0%{
+ 0%{
     background-color: hsl(200,20%,70%);
   }
   100%{
     background-color: hsl(200,20%,95%);
   }
+}
+.elementfull{
+  position: fixed;
+ width: 100%; 
+ height: 100%;
+ font-family: 50%;
+ text-align: center; 
 }

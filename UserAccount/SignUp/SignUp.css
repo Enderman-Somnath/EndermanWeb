@@ -4,78 +4,44 @@ body {
     color: #fff;
   }
 
-.topnav {
-    background-color: #000000a9;
-    backdrop-filter: blur(15px);
-    overflow: hidden;
-    border-radius: 20px;
-    list-style: none;
-    position: sticky;
-    margin-inline-start: 0.5%;
-    z-index: 1;
-}
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    size: 10;
-    border-radius: 20px;
-    transition: background 0.2s ease;
-}
+  div::-webkit-scrollbar {
+    width: 20px;
+  }
   
-.topnav a:hover {
-    background-color: rgb(112, 14, 192);
+  div::-webkit-scrollbar-track {
+    background-color: white;
     border-radius: 20px;
-}
-.curves{
-  border-radius: 20px;
-}
-.desktop{
-  position: fixed;
-  top: 10px;
-}
-.mobile_nav_button{
-  position: fixed;
-  bottom: 0%;
-  background-color: #000000a9;
-  backdrop-filter: blur(10px);
-  border-width: 0px;
-  border-radius: 20px;
-  color: white;
-  padding: 10px;
-  padding-top:5px;
-  padding-bottom: 5px;
-  z-index: 1;
-}
-.hover_mobile_nav_button button:hover{
-  background-color: #181818cc;
-}
-.mobile_nav{
-  position: fixed;
-  background-color: #000000a9;
-  backdrop-filter: blur(50px);
-  list-style: none;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  overflow: auto;
-  z-index: 1;
-}
-.mobile_nav a{
-text-decoration: none;
-color: white;
-font-weight: bolder;
-transition: color 0.5s ease;
-}
-.mobile_nav a:hover{
-  color: rgb(67, 67, 255);
-}
-.mobile_nav li{
-  margin-top: 5%;
-}
+  }
+  
+  div::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #0099ff, #2ee5dc);
+    border-radius: 20px;
+    border: 5px solid white;
+  }
+  
+  div::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #0d7bc4, #23aaa3);
+    border: 3px solid white;
+  }
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #0099ff, #2ee5dc);
+    border-radius: 20px;
+    border: 5px solid white;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #0d7bc4, #23aaa3);
+    border: 3px solid white;
+  }
 .hidden{
   display: none;
 }
@@ -86,14 +52,16 @@ transition: color 0.5s ease;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    transition: all 0.5s ease;
 }
 
 .signup {
     background-color: #2020208e;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-    padding: 40px;
+    padding: 32px;
     text-align: center;
     border-radius: 20px;
+    transition: all 0.5s ease;
 }
 
 .signup h2 {
@@ -104,23 +72,51 @@ transition: color 0.5s ease;
 }
 
 .input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 0px;
-    border-radius: 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #1b1b1bc2;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 0px;
+  border-radius: 15px;
+  font-size: 16px;
+  color: white;
+  background-color: #1b1b1bc2;
 }
-
 .button {
-    width: 50%;
-    padding: 10px;
-    background-color: #268d34;
-    color: #fff;
-    border: none;
-    border-radius: 15px;
-    font-size: 16px;
-    cursor: pointer;
+  width: 98%;
+  padding: 10px;
+  background-color: #006eff;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.button:hover{
+  background-color: #003f92;
+}
+.SignIN{
+  border-radius: 10px;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0.596);
+  color: white;
+  padding: 10px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+.SignIN:hover{
+  background-color: rgb(26, 26, 26);
+}
+.aboutEndermanweb{
+  border-radius: 10px;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0.596);
+  color: white;
+  padding: 10px;
+  transition: all 0.2s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+.aboutEndermanweb:hover{
+  background-color: rgb(26, 26, 26);
 }
