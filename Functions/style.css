@@ -69,7 +69,7 @@ html{
   
   .desktop {
     position: fixed;
-    top: -100; /* Adjust the vertical position as needed */
+    top: -100;
     left: 0;
     right: 0;
     transform: translateY(-50%); /* Center vertically */
