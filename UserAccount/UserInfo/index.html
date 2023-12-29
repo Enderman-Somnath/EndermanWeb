@@ -14,10 +14,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body style="color: #fff;">
+  <div id="context-menu">
+    <button onclick="PopUp('/EndermanWeb/aboutEndermanweb.html')"> About </button>
+</div>
 <div style="z-index: 0;">
   <img style="position: absolute; object-fit: cover; height: 100%; width: 100%; top:0; left:0; z-index: 0;" src="/EndermanWeb/EndermanWebBG.png">
   </div>
-<div style="z-index: 1; position:absolute; background-image: linear-gradient(to bottom right, #b63c78, #2c69e1); background-repeat: no-repeat; border-radius: 20px; padding: 5px; transition: all 0.5s ease; width: auto; height: auto;">
+<div style="z-index: 1; position:absolute; backdrop-filter: blur(10px); border-radius: 20px; padding: 5px; transition: all 0.5s ease; left: 0; top: 0; width: 100%; height: 100%; overflow: auto;">
             <div class="userinfo" id="userinfo">
               <h2>User Info</h2>
               <label id="Name" class="textANIMATE"> Name: <i>Loading...</i> </label> 

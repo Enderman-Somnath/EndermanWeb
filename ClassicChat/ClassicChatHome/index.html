@@ -15,24 +15,21 @@
     <body>
         <div id="CLASSICCHAT">
             <div id="ChatIcon" style="background-color: rgba(17, 17, 17, 0); color: white; border-radius: 20px; padding-top: 10px;">
-                <center><img id="ChatIcon" src="ChatIcon.png" loading="lazy" height="20%"></center>
+                <span><img id="ChatIcon" src="ChatIcon.png" loading="lazy" height="10%"><p style="font-family: 'Fredoka One'; src: url('FredokaOne-Regular.ttf'); letter-spacing: 5px;"> ClassicChat </p></span>
+                <button id="exit" class="btn btn-danger" style=" margin-bottom: 5px;" onclick="logout()"> Exit Room </button>
+                <i style="margin-left: 5px; margin-right: 5px;"></i> <button id="autoscroll" onclick="autoscroll()" class="btn btn-success" style=" margin-bottom: 5px;"> Auto Scroll Chat: On </button>
         </div>
         <div>
-            <center style="text-align: center; margin-bottom: 5px;">
-                <button id="ChatID" class="btn btn-primary" title="Click to copy" onclick="copyText()"></button>
-            </center>
-            <center>
-                <span> <button id="exit" class="btn btn-danger" style=" margin-bottom: 5px;" onclick="logout()"> Exit Room </button> <i style="margin-left: 5px; margin-right: 5px;"></i> <button id="autoscroll" onclick="autoscroll()" class="btn btn-success" style=" margin-bottom: 5px;"> Auto Scroll Chat: On </button> </span>
-            </center>
+                
             <div id="ChatViewer" style="overflow: auto; -ms-overflow-style: non">
                 <div class='skeleton'> <br></div><br> <div class='skeleton skeleton-text'></div> <div class='skeleton skeleton-text'></div> <div class='skeleton skeleton-text'></div>
             </div>
             <div id="MessagingElement">
-            <input id="msg" placeholder="Enter your message here">
-            <button id="send" onclick="send()"> <i class="bi bi-send"></i> Send </button>
+                <button id="ChatID" class="btn btn-primary" title="Click to copy" onclick="copyText()"></button>
+                <input id="msg" placeholder="Enter your message here">
+                <button id="send" onclick="send()"> <i class="bi bi-send"></i> Send </button>
         </div>
     </center>
-    <div id="sendingElement" style="position:relative; text-align: center; background-color: rgba(0, 0, 0, 0.61); border-radius: 20px;">
     </div>
     </body>
     <script src="/EndermanWeb/Functions/functions.js"></script>

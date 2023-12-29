@@ -1,14 +1,22 @@
 html{
-    background-color: #181818;
-    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
-    background-repeat: no-repeat;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   body{
-    background-color: #a4508b;
-    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    background-color:rgb(43, 43, 43);
+    background-image:
+    radial-gradient(at 40% 20%, hsla(34,100%,49%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, hsla(189,79%,43%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(354,2%,69%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(340,100%,51%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(266,100%,50%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(240,100%,50%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(266,100%,50%,1) 0px, transparent 50%);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
   }
   .topnav {
     background-color: #000000a9;
@@ -40,24 +48,29 @@ html{
   }
   
   .topnav button:hover {
-    background-color: rgb(112, 14, 192);
+    background-color:hsla(154,100%,37%,1);
+    background-image:
+    radial-gradient(at 80% 100%, hsla(240,100%,46%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(214,100%,50%,1) 0px, transparent 50%);
   }
   
   .topnav button.split {
-    background-color: #6c33a3;
-    background-image: linear-gradient(316deg, #6c33a3 0%, #8241b8 74%);
+    background-color:rgb(0, 92, 168);
+    background-image:
+    radial-gradient(at 80% 100%, hsla(240,100%,43%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(343,100%,37%,1) 0px, transparent 50%);
     margin-left: auto;
     margin-left: 5px;
     margin-right: 0px;
   }
   .topnav button.account {
-    background-color: #0077c7;
+    background-color: #00d370;
     margin-left: auto;
     margin-left: 5px;
     margin-right: 0px;
   }
   .topnav button.account:hover{
-    background-color: #005892;
+    background-color: #00aa5b;
   }
   #account {
     margin-left: auto; /* Push the account element to the right */
@@ -69,7 +82,7 @@ html{
   
   .desktop {
     position: fixed;
-    top: -100;
+    top: -100; /* Adjust the vertical position as needed */
     left: 0;
     right: 0;
     transform: translateY(-50%); /* Center vertically */
@@ -105,31 +118,27 @@ html{
     padding-bottom: 5px;
     z-index: 1;
     word-break: break-all;
-    transition: all ease 1s;
+    transition: all ease .2s;
   }
   .hover_mobile_nav_button button:hover{
     background-color: #181818cc;
   }
   .mobile_nav{
-    position: fixed;
+    display:none;
     background-color: #000000a9;
     backdrop-filter: blur(50px);
-    list-style: none;
     height: 100%;
     width: 100%;
+    left: 0;
+    top:0;
+    bottom: 0;
     text-align: center;
     overflow: auto;
     z-index: 1;
-    animation: fadein 0.2s;
-    margin-top: 20px;
-  }
-  @keyframes fadein {
-    from{
-      opacity: 0;
-    } 
-    to {
-      opacity: 1;
-    }
+    margin-left: 0px;
+    opacity: 0;
+    transition: all ease 0.2s;
+    position: fixed;
   }
   .mobile_nav button{
   text-decoration: none;
@@ -141,7 +150,7 @@ html{
   margin: 20px;
   padding: 28px;
   border-radius: 15px;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
   word-break:break-all;
   }
   .mobile_nav button:hover{
@@ -225,4 +234,37 @@ html{
  height: 100%;
  font-family: 50%;
  text-align: center; 
+}
+
+#context-menu{
+  background-color: rgba(80, 80, 80, 0.5);
+  backdrop-filter: blur(5px);
+  width: 20%;
+  height: fit-content;
+  border-radius: 20px;
+  position: absolute;
+  box-shadow: 5px 5px 50px 5px rgba(0, 0, 0, 0.507);
+  transition: .2s all ease;
+  opacity: 0;
+  display:none;
+  position: fixed;
+  z-index: 100;
+}
+#context-menu button{
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px;
+  color: white;
+  border-radius: 20px;
+  transition: .2s all ease;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+#context-menu button:hover{
+  background-color: rgba(240, 240, 240, 0.137);
+}
+#context-menu hr{
+  color: rgb(255, 255, 255);
+  margin: 0%;
 }
