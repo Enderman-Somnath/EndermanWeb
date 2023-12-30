@@ -17,7 +17,8 @@
             <div id="ChatIcon" style="background-color: rgba(17, 17, 17, 0); color: white; border-radius: 20px; padding-top: 10px;">
                 <span><img id="ChatIcon" src="ChatIcon.png" loading="lazy" height="10%"><p style="font-family: 'Fredoka One'; src: url('FredokaOne-Regular.ttf'); letter-spacing: 5px;"> ClassicChat </p></span>
                 <button id="exit" class="btn btn-danger" style=" margin-bottom: 5px;" onclick="logout()"> Exit Room </button>
-                <i style="margin-left: 5px; margin-right: 5px;"></i> <button id="autoscroll" onclick="autoscroll()" class="btn btn-success" style=" margin-bottom: 5px;"> Auto Scroll Chat: On </button>
+                <button id="autoscroll" onclick="autoscroll()" class="btn btn-success" style=" margin-bottom: 5px;"> Auto Scroll Chat: On </button>
+                <button id="ChatID" class="btn-primary" title="Click to copy" onclick="copyText()"></button>
         </div>
         <div>
                 
@@ -25,7 +26,6 @@
                 <div class='skeleton'> <br></div><br> <div class='skeleton skeleton-text'></div> <div class='skeleton skeleton-text'></div> <div class='skeleton skeleton-text'></div>
             </div>
             <div id="MessagingElement">
-                <button id="ChatID" class="btn btn-primary" title="Click to copy" onclick="copyText()"></button>
                 <input id="msg" placeholder="Enter your message here">
                 <button id="send" onclick="send()"> <i class="bi bi-send"></i> Send </button>
         </div>

@@ -174,3 +174,14 @@ div::-webkit-scrollbar {
       background-color: hsl(200,20%,95%);
     }
   }
+  .btn-primary{
+    background-color: #005ac9;
+    color:white;
+    border: 0px;
+    padding: 8px;
+    border-radius:15px;
+    transition: all ease 0.2s;
+  }
+  .btn-primary:hover{
+    background-color: #00479e;
+  }
