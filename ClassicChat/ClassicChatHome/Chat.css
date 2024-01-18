@@ -1,31 +1,90 @@
 body{
-    background-color: #a4508b;
-    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
-    background-repeat: no-repeat;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: linear-gradient(316deg, #6247aa 0%, #a594f9 74%);
+  background-repeat: no-repeat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-attachment: fixed;
   }
-#ChatIcon{
-    margin: 0 auto;
-    margin-left: 10px;
-    border-radius: 40px;
-}   
+
+#ClassicChat{
+  background-color: rgba(0,0,0,0.500);
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+}
+#infoandother{
+  display: flex;
+}
+#info{
+  padding: 15px;
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.500);
+  border-radius: 20px;
+  width: 100%;
+  transition: all ease 0.2s;
+  overflow: auto;
+}
+#info::-webkit-scrollbar{
+  display: none;
+}
+#info:hover{
+  background-color: rgba(134, 134, 134, 0.5);
+  cursor:pointer;
+}
+#other {
+  position: fixed;
+  background-color: rgba(11, 19, 26, 0.61);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  bottom: 0; 
+  text-align: center;
+  z-index: 100;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.2s;
+  overflow: auto;
+  overflow-x:hidden;
+}
+
+#other button{
+ background-color: rgba(0, 0, 0, 0.712);
+ border: 0px;
+ min-width: 98%;
+ border-radius: 15px;
+ padding: 20px;
+ font-size: x-large;
+ color: white;
+ transition: all ease 0.2s;
+ margin: 5px;
+}
+#other button.exit{
+  background-color: rgba(255, 0, 0, 0.322);
+  
+}
+#other button.exit:hover{
+  background-color: rgba(255, 97, 97, 0.322);
+  
+}
+#other button:hover{
+  background-color: rgba(122, 122, 122, 0.4);
+}
 #ChatViewer {
     flex: 1;
     color: white;
     background-color: rgba(0,   0, 0, 0.5);
-    padding: 20px 30px;
+    padding: 20px 20px;
     height: 54%;
     margin: 0 auto;
     backdrop-filter: blur(5px);
     border-radius: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
     overflow: scroll;
     word-break: break-word;
     max-width: 100%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: calc(100% - 162px);
   }
-.messagedata{
-    background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
+  .messagedata{
+    background-color: #7c009b;
     width: fit-content;
     padding: 10px;
     margin-top: 10px;
@@ -33,14 +92,14 @@ body{
     margin-right: auto;
 }
 .usermessagedata{
-    background-image: linear-gradient(315deg, #007ea7 0%, #80ced7 74%);
+    background-color: #004ec2;
     width: fit-content;
-    padding: 10px;
+    padding: 8px;
     margin-top: 10px;
-    border-radius: 20px;
+    border-radius: 15px;
     text-align: right;
     margin-left: auto;
-    color: rgba(0, 0, 0, 0.705);
+    color: rgba(255, 255, 255, 0.705);
 }
 .name{
     font-size: 22px;
@@ -66,100 +125,94 @@ body{
     font-size: 18px;
     margin-bottom: 0px;
 }
-div::-webkit-scrollbar {
-    width: 20px;
-  }
-  
-  div::-webkit-scrollbar-track {
-    background-color: white;
-    border-radius: 20px;
-  }
-  
-  div::-webkit-scrollbar-thumb {
-    background: linear-gradient(to right, #ff8a00, #e52e71);
-    border-radius: 20px;
-    border: 5px solid white;
-  }
-  
-  div::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to right, #c47317, #94234c);
-    border: 3px solid white;
-  }
 
-  ::-webkit-scrollbar {
-    width: 20px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-color: white;
-    border-radius: 20px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to right, #ff8a00, #e52e71);
-    border-radius: 20px;
-    border: 5px solid white;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to right, #c47317, #94234c);
-    border: 3px solid white;
-  }
-#CLASSICCHAT{
-    background-color: rgba(0, 0, 0, 0.5); 
-    color: white; 
-    border-radius: 15px; 
-    width: 99%; 
-    margin: 0 auto; 
-    margin-top: 8px;
-    margin-bottom: 5px;
+#MessagingElement {
+    display: flex;
+    align-items: center;
 }
-#MessagingElement{
-    background-color: rgba(0, 0, 0, 0.52);
-    margin: 0 auto;
-    margin-top: 5px;
-    text-align: center;
-    border-radius: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-    height: 50px;
-    padding-top: 6.8px;
-    padding-bottom: 6.8px;
-}
-#msg{
-    background-color: #0000005e;
-    border-radius: 10px;
+
+#msg {
+    background-color: rgba(0, 0, 0, 0.500);
     border: 0px;
-    width: 50%;
-    padding: 5px;
-    height: 36px;
+    padding: 16.6px;
+    font-size: large;
     color: white;
+    outline: none;
+    width: 100%; /*calc(100% - 52px);*/ /* Adjusted width to account for the width of the button and spacing */
 }
-#send{
-    background-color: #0070fa;
+.messagedata {
+  display: none; /* Initially hide all messages */
+}
+
+.messagedata.visible {
+  display: block; /* Show visible messages */
+}
+
+.vertical-line {
+  border-left: 2px solid #000; 
+}
+#send {
+    background-color: rgba(0, 0, 0, 0.500);
     border: 0px;
     color: white;
-    width: 80px;
-    height: 30px;
-    border-radius: 10px;
-    transition: background 0.5s;
+    padding: 22px;
+    cursor: pointer;
+    transition: all ease 0.2s;
 }
 #send:hover{
-    background-color: #005ac9;
+  background-color: rgba(50, 50, 50, 1);
+}
+div::-webkit-scrollbar {
+  width: 20px;
 }
 
+div::-webkit-scrollbar-track {
+  background-color: white;
+  border-radius: 20px;
+}
+
+div::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #ff8a00, #e52e71);
+  border-radius: 20px;
+  border: 5px solid white;
+}
+
+div::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to right, #c47317, #94234c);
+  border: 3px solid white;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #ff8a00, #e52e71);
+  border-radius: 20px;
+  border: 5px solid white;
+}
 /* Skeleton Loading */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to right, #c47317, #94234c);
+  border: 3px solid white;
+}
 
 .skeleton{
     opacity: .7;
     animation: skeleton-loading 1s linear infinite alternate;
+    border-radius: 20px;
   }
   
   .skeleton-text{
     width: 100%;
     height: .5rem;
     margin-bottom: .25rem;
-    border-radius: .125rem;
+    border-radius: 20px;
   }
   
   .skeleton-text:last-child{
@@ -185,3 +238,42 @@ div::-webkit-scrollbar {
   .btn-primary:hover{
     background-color: #00479e;
   }
+
+.hidden{
+  display: none;
+}
+
+#context-menu{
+  background-color: rgba(80, 80, 80, 0.5);
+  backdrop-filter: blur(5px);
+  width: 20%;
+  height: fit-content;
+  border-radius: 20px;
+  position: absolute;
+  box-shadow: 5px 5px 50px 5px rgba(0, 0, 0, 0.507);
+  transition: .2s all ease;
+  opacity: 0;
+  display:none;
+  position: fixed;
+  z-index: 100;
+}
+#context-menu button{
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px;
+  color: white;
+  border-radius: 20px;
+  transition: .2s all ease;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+#context-menu button:hover{
+  background-color: rgba(240, 240, 240, 0.137);
+}
+#context-menu hr{
+  color: rgb(255, 255, 255);
+  margin: 0%;
+}
+
+  

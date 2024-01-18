@@ -6,33 +6,49 @@
             <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
             <script src="https://www.gstatic.com/firebasejs/live/4.9/firebase.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js"></script>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
         </head>
     <body>
-        <div id="CLASSICCHAT">
-            <div id="ChatIcon" style="background-color: rgba(17, 17, 17, 0); color: white; border-radius: 20px; padding-top: 10px;">
-                <span><img id="ChatIcon" src="ChatIcon.png" loading="lazy" height="10%"><p style="font-family: 'Fredoka One'; src: url('FredokaOne-Regular.ttf'); letter-spacing: 5px;"> ClassicChat </p></span>
-                <button id="exit" class="btn btn-danger" style=" margin-bottom: 5px;" onclick="logout()"> Exit Room </button>
-                <button id="autoscroll" onclick="autoscroll()" class="btn btn-success" style=" margin-bottom: 5px;"> Auto Scroll Chat: On </button>
-                <button id="ChatID" class="btn-primary" title="Click to copy" onclick="copyText()"></button>
+    <div id="context-menu">
+        <button onclick="PopUp('/EndermanWeb/aboutEndermanweb.html')" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;"> About </button>
+        <hr>
+        <button class="exit" onclick="logout()" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;"><i class="bi bi-box-arrow-right"></i> Exit</button>
+        <hr>
+        <button onclick="copyText()" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;"><i class="bi bi-share"></i> Share Room</button>
+        <hr>
+        <button onclick="showother()" style="border-top-left-radius: 0px; border-top-right-radius: 0px;"><i class="bi bi-info-circle-fill"></i> Room Info</button>
+    </div>
+    <div id="ClassicChat">
+    <div id="infoandother">
+        <div id="info" onclick="showother()">
+            <h1 style="color: white; font-size: x-large; white-space: nowrap;" id="RoomID"> <div class='skeleton'> <br></div> </h1>
+            <p style="color:white; margin: 0px; white-space: nowrap;" id="CreatedBy"> <i class="skeleton skeleton-text" style="padding-left: 92%;"></i> </p>
         </div>
-        <div>
-                
-            <div id="ChatViewer" style="overflow: auto; -ms-overflow-style: non">
-                <div class='skeleton'> <br></div><br> <div class='skeleton skeleton-text'></div> <div class='skeleton skeleton-text'></div> <div class='skeleton skeleton-text'></div>
-            </div>
-            <div id="MessagingElement">
-                <input id="msg" placeholder="Enter your message here">
-                <button id="send" onclick="send()"> <i class="bi bi-send"></i> Send </button>
+        <div id="other" class="hidden">
+        <div style="padding: 15px;margin: 5px;background-color: rgba(0, 0, 0, 0.500);border-radius: 20px;">
+            <h1 style="color: white; font-size: x-large;" id="RoomID"> <div class='skeleton'> <br></div> </h1>
+            <p style="color:white; margin: 0px;" id="CreatedBy"> <i class="skeleton skeleton-text" style="padding-left: 92%;"></i> </p>
         </div>
-    </center>
+            <button class="exit" onclick="logout()"><i class="bi bi-box-arrow-right"></i> Exit</button>
+            <button onclick="copyText()"><i class="bi bi-share"></i> Share Room</button>
+            <button onclick="showother()"><i class="bi bi-arrow-return-left"></i> Back</button>
+        </div>
+    </div>
+        <div id="ChatViewer" style="overflow: auto; -ms-overflow-style: non">
+            <div class='skeleton'> <br></div><br> <div class='skeleton skeleton-text'></div> <div class='skeleton skeleton-text'></div> <div class='skeleton skeleton-text'></div>
+        </div>
+        <hr style="margin: 0px; color:white;">
+        <div id="MessagingElement">
+            <input id="msg" placeholder="Enter your message here">
+            <div class="vertical-line"></div>
+            <button id="send" onclick="send()"> <i class="bi bi-send"></i> </button>
+        </div>
     </div>
     </body>
     <script src="/EndermanWeb/Functions/functions.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
     <script src="Chat.js"></script>
     </html>
