@@ -48,7 +48,7 @@ html{
   }
   
   .topnav button:hover {
-    background-color:hsla(154,100%,37%,1);
+    background-color:rgb(135, 0, 189);
     background-image:
     radial-gradient(at 80% 100%, hsla(240,100%,46%,1) 0px, transparent 50%),
     radial-gradient(at 0% 0%, hsla(214,100%,50%,1) 0px, transparent 50%);
@@ -64,13 +64,13 @@ html{
     margin-right: 0px;
   }
   .topnav button.account {
-    background-color: #00d370;
+    background-color: #0031d3;
     margin-left: auto;
     margin-left: 5px;
     margin-right: 0px;
   }
   .topnav button.account:hover{
-    background-color: #00aa5b;
+    background-color: #aa0047;
   }
   #account {
     margin-left: auto; /* Push the account element to the right */
