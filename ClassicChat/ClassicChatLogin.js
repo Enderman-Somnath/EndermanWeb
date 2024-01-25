@@ -1,1 +1,156 @@
-const _0x42804b=_0x29a7;(function(_0xe07033,_0x3b43b5){const _0x1a1d76=_0x29a7,_0x333f45=_0xe07033();while(!![]){try{const _0x1dc9e0=-parseInt(_0x1a1d76(0xca))/0x1*(-parseInt(_0x1a1d76(0xe4))/0x2)+parseInt(_0x1a1d76(0xd5))/0x3+parseInt(_0x1a1d76(0xe0))/0x4+-parseInt(_0x1a1d76(0xc0))/0x5+-parseInt(_0x1a1d76(0xf3))/0x6*(-parseInt(_0x1a1d76(0xbf))/0x7)+parseInt(_0x1a1d76(0xf6))/0x8+parseInt(_0x1a1d76(0xc9))/0x9*(-parseInt(_0x1a1d76(0xd9))/0xa);if(_0x1dc9e0===_0x3b43b5)break;else _0x333f45['push'](_0x333f45['shift']());}catch(_0xf09871){_0x333f45['push'](_0x333f45['shift']());}}}(_0x1476,0xda2c2),localStorage[_0x42804b(0xbb)](_0x42804b(0xe5),_0x42804b(0xce)),firebase[_0x42804b(0xd4)]()[_0x42804b(0xb6)](_0x2dbd07=>{const _0x12ce6a=_0x42804b;_0x2dbd07&&(usersnamecchat=_0x2dbd07[_0x12ce6a(0xcd)]);}));function _0x1476(){const _0x412ed6=['update','add','Creating/Loading\x20room\x20with\x20ChatID:\x20','Creating\x20Room','onAuthStateChanged','#topnav','innerHTML','addEventListener','Loading\x20room\x20with\x20ChatID:\x20','setItem','ref','Joining\x20Room','test','533757DUGMuf','994935krmEOv','hidden','#inputChatID','style','...','get','classList','/ClassicChat/','className','18JeGmiN','3KQgYUK','clientWidth','value','displayName','/EndermanWeb/ClassicChat/','querySelector','innerWidth','mobile_nav_button','keyCode','Enter\x20Room/Create\x20Room(if\x20new)','auth','1270074OCPqyT','CLASSICCHAT','then','getElementById','17326650VbQYKB','UsernameCCHAT','inputChatID','log','keyup','database','child','6497144QzaUFV','location','onclick','/EndermanWeb/ClassicChat/ClassicChatHome/','554324Cmokng','WhereIsUser','link','search','desknavloaded','EnterChatID','documentElement','margin-top:\x2010px;','topnav\x20desktop','margin-top:\x2095px;','exists','RoomID','resize','topnav','Join\x20Room','96iwubru','Use\x20valid\x20symbols\x20like\x20\x27a-z\x27,\x27A-Z\x27,\x27-\x27,\x27+\x27,\x27!\x27,\x271-9\x27','Created\x20By\x20ClassicChat','3670440FtFEVO'];_0x1476=function(){return _0x412ed6;};return _0x1476();}function validateInput(_0x43dd56){const _0x2b4541=_0x42804b;var _0x468ff2=/^[a-zA-Z0-9@\-!]+$/;return _0x468ff2[_0x2b4541(0xbe)](_0x43dd56);}function checkRoomExists(_0xc99830){const _0x2fd3f3=_0x42804b;return firebase[_0x2fd3f3(0xde)]()[_0x2fd3f3(0xbc)](_0x2fd3f3(0xc7)+_0xc99830)['once'](_0x2fd3f3(0xcc))[_0x2fd3f3(0xd7)](_0x2a6566=>{const _0x448ea2=_0x2fd3f3;return _0x2a6566[_0x448ea2(0xee)]();});}function addUser(){const _0xe8dac0=_0x42804b;RoomID=document['getElementById'](_0xe8dac0(0xdb))[_0xe8dac0(0xcc)],checkRoomExists(RoomID)[_0xe8dac0(0xd7)](_0x17552f=>{const _0x182232=_0xe8dac0;_0x17552f?validateInput(RoomID)?(document[_0x182232(0xd8)](_0x182232(0xe9))[_0x182232(0xb8)]=_0x182232(0xbd),document[_0x182232(0xd8)](_0x182232(0xe9))[_0x182232(0xe2)]=null,console[_0x182232(0xdc)](_0x182232(0xba),RoomID),setTimeout(function(){const _0x4a04bd=_0x182232;localStorage['setItem'](_0x4a04bd(0xef),RoomID),localStorage['setItem']('UsernameCCHAT',usersnamecchat),window[_0x4a04bd(0xe1)]=_0x4a04bd(0xe3);},0x384)):alert('Use\x20valid\x20symbols\x20like\x20\x27a-z\x27,\x27A-Z\x27,\x27-\x27,\x27+\x27,\x27!\x27,\x271-9\x27'):validateInput(RoomID)?(document['getElementById'](_0x182232(0xe9))[_0x182232(0xb8)]=_0x182232(0xb5),document[_0x182232(0xd8)](_0x182232(0xe9))[_0x182232(0xe2)]=null,console['log']('Creating/Loading\x20room\x20with\x20ChatID:\x20',RoomID),firebase['database']()[_0x182232(0xbc)](_0x182232(0xc7))[_0x182232(0xdf)](RoomID)[_0x182232(0xf7)]({'Room(CHATID)':_0x182232(0xf5),'CREATEDBYUSER':usersnamecchat}),setTimeout(function(){const _0x407889=_0x182232;localStorage[_0x407889(0xbb)]('RoomID',RoomID),localStorage[_0x407889(0xbb)](_0x407889(0xda),usersnamecchat),window['location']=_0x407889(0xe3);},0x384)):alert('Use\x20valid\x20symbols\x20like\x20\x27a-z\x27,\x27A-Z\x27,\x27-\x27,\x27+\x27,\x27!\x27,\x271-9\x27');});}$(_0x42804b(0xc2))[_0x42804b(0xdd)](function(_0xbcddcf){const _0x36bb05=_0x42804b;_0xbcddcf[_0x36bb05(0xd2)]===0xd&&addUser();});const myKeysValues=window['location'][_0x42804b(0xe7)],urlParams=new URLSearchParams(myKeysValues),chatid=urlParams[_0x42804b(0xc5)]('id');console[_0x42804b(0xdc)](chatid);const islinktrue=urlParams[_0x42804b(0xc5)](_0x42804b(0xe6));console[_0x42804b(0xdc)](islinktrue);islinktrue==='true'&&checkRoomExists(chatid)['then'](_0x3880a0=>{const _0x23f7fe=_0x42804b;_0x3880a0?validateInput(chatid)?(document[_0x23f7fe(0xd8)](_0x23f7fe(0xe9))[_0x23f7fe(0xb8)]=_0x23f7fe(0xbd),document[_0x23f7fe(0xd8)](_0x23f7fe(0xe9))[_0x23f7fe(0xe2)]=null,console[_0x23f7fe(0xdc)]('Loading\x20room\x20with\x20ChatID:\x20',chatid),setTimeout(function(){const _0x5846d6=_0x23f7fe;localStorage[_0x5846d6(0xbb)](_0x5846d6(0xef),chatid),localStorage[_0x5846d6(0xbb)](_0x5846d6(0xda),usersnamecchat),window[_0x5846d6(0xe1)]=_0x5846d6(0xe3);},0x384)):alert(_0x23f7fe(0xf4)):validateInput(chatid)?(document['getElementById'](_0x23f7fe(0xe9))[_0x23f7fe(0xb8)]=_0x23f7fe(0xb5),document[_0x23f7fe(0xd8)](_0x23f7fe(0xe9))[_0x23f7fe(0xe2)]=null,console[_0x23f7fe(0xdc)](_0x23f7fe(0xf9),chatid),firebase[_0x23f7fe(0xde)]()['ref']('/ClassicChat/')['child'](chatid)[_0x23f7fe(0xf7)]({'Room(CHATID)':'Created\x20By\x20ClassicChat','CREATEDBYUSER':usersnamecchat}),setTimeout(function(){const _0x29fa7b=_0x23f7fe;localStorage['setItem']('RoomID',chatid),localStorage[_0x29fa7b(0xbb)]('UsernameCCHAT',usersnamecchat),window['location']=_0x29fa7b(0xe3);},0x384)):alert(_0x23f7fe(0xf4));});function checkforexistingroomoninput(_0x569d95){const _0x2ed651=_0x42804b,_0x1a6aed=document[_0x2ed651(0xd8)](_0x2ed651(0xe9));_0x1a6aed['innerHTML']=_0x2ed651(0xc4);if(_0x569d95['keyCode']===0xd)return;validateInput(document[_0x2ed651(0xd8)](_0x2ed651(0xdb))['value'])?checkRoomExists(document[_0x2ed651(0xd8)]('inputChatID')[_0x2ed651(0xcc)])[_0x2ed651(0xd7)](_0x487551=>{const _0x34aa6c=_0x2ed651;_0x487551?(_0x1a6aed[_0x34aa6c(0xb8)]=_0x34aa6c(0xf2),console[_0x34aa6c(0xdc)](document['getElementById'](_0x34aa6c(0xdb))['value'])):_0x1a6aed[_0x34aa6c(0xb8)]='Create\x20Room';}):document['getElementById'](_0x2ed651(0xdb))['value']==''&&(_0x1a6aed[_0x2ed651(0xb8)]=_0x2ed651(0xd3));}var w=document[_0x42804b(0xea)][_0x42804b(0xcb)]||window[_0x42804b(0xd0)];w<=0x2fd?(document['getElementById'](_0x42804b(0xf1))['className']=_0x42804b(0xc1),document['getElementById'](_0x42804b(0xd1))[_0x42804b(0xc8)]='mobile_nav_button',document[_0x42804b(0xd8)]('CLASSICCHAT')['style']=_0x42804b(0xeb)):(document['getElementById'](_0x42804b(0xf1))[_0x42804b(0xc8)]=_0x42804b(0xec),document[_0x42804b(0xd8)](_0x42804b(0xd6))[_0x42804b(0xc3)]=_0x42804b(0xed));window[_0x42804b(0xb9)](_0x42804b(0xf0),function(){const _0xd12c05=_0x42804b,_0xd2ad8d=document[_0xd12c05(0xea)][_0xd12c05(0xcb)]||window[_0xd12c05(0xd0)];_0xd2ad8d<=0x2fd?(document[_0xd12c05(0xd8)](_0xd12c05(0xf1))[_0xd12c05(0xc8)]=_0xd12c05(0xec),document[_0xd12c05(0xd8)](_0xd12c05(0xd1))['className']='mobile_nav_button',document[_0xd12c05(0xd8)](_0xd12c05(0xd6))[_0xd12c05(0xc3)]=_0xd12c05(0xeb)):(document[_0xd12c05(0xd8)]('topnav')[_0xd12c05(0xc8)]='topnav\x20desktop\x20desknavloaded',document[_0xd12c05(0xd8)](_0xd12c05(0xd1))[_0xd12c05(0xc8)]=_0xd12c05(0xc1),document['getElementById'](_0xd12c05(0xd6))[_0xd12c05(0xc3)]=_0xd12c05(0xed));});var topnav=document[_0x42804b(0xcf)](_0x42804b(0xb7));function _0x29a7(_0x2f51ef,_0x488e6f){const _0x147674=_0x1476();return _0x29a7=function(_0x29a709,_0x27994d){_0x29a709=_0x29a709-0xb5;let _0x402217=_0x147674[_0x29a709];return _0x402217;},_0x29a7(_0x2f51ef,_0x488e6f);}topnav[_0x42804b(0xc6)][_0x42804b(0xf8)](_0x42804b(0xe8));
+localStorage.setItem("WhereIsUser","/ClassicChat/");
+// Your web app's Firebase configuration
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    usersnamecchat = user.displayName;
+  }
+});
+function validateInput(input) {
+    // Regular expression pattern to allow specific symbols
+    var pattern = /^[a-zA-Z0-9@\-!]+$/;
+    
+    return pattern.test(input);
+  }
+  function checkRoomExists(roomID) {
+    return firebase
+      .database()
+      .ref("/ClassicChat/" + roomID)
+      .once("value")
+      .then((snapshot) => {
+        return snapshot.exists();
+      });
+  }
+    function addUser() {
+        RoomID = document.getElementById("inputChatID").value;
+        checkRoomExists(RoomID)
+      .then((exists) => {
+        if (exists) {
+            if(validateInput(RoomID)){
+                document.getElementById("EnterChatID").innerHTML="Joining Room"
+                document.getElementById("EnterChatID").onclick = null;
+                console.log("Loading room with ChatID: ",RoomID)
+                setTimeout(function(){
+                localStorage.setItem("RoomID", RoomID);
+                localStorage.setItem("UsernameCCHAT", usersnamecchat);
+                window.location = "/ClassicChat/ClassicChatHome/";
+              }, 900);
+            }
+            else{
+                alert("Use valid symbols like 'a-z','A-Z','-','+','!','1-9'")
+            }
+        } else {
+            if(validateInput(RoomID)){
+                document.getElementById("EnterChatID").innerHTML="Creating Room"
+                document.getElementById("EnterChatID").onclick = null;
+                console.log("Creating/Loading room with ChatID: ",RoomID)
+                firebase.database().ref("/ClassicChat/").child(RoomID).update({
+                    "Room(CHATID)" : "Created By ClassicChat",
+                    "CREATEDBYUSER": usersnamecchat,
+              });
+                setTimeout(function(){
+                localStorage.setItem("RoomID", RoomID);
+                localStorage.setItem("UsernameCCHAT", usersnamecchat);
+                window.location = "/ClassicChat/ClassicChatHome/";
+              }, 900);
+            }
+            else{
+                alert("Use valid symbols like 'a-z','A-Z','-','+','!','1-9'")
+            }
+        }}); 
+  }
+
+$("#inputChatID").keyup(function(event) {
+    if (event.keyCode === 13) {
+        addUser();
+    }
+});
+
+const myKeysValues = window.location.search;
+const urlParams = new URLSearchParams(myKeysValues);
+const chatid = urlParams.get('id')
+console.log(chatid);
+const islinktrue = urlParams.get('link')
+console.log(islinktrue)
+if(islinktrue === "true"){
+  checkRoomExists(chatid)
+  .then((exists) => {
+    if (exists) {
+        if(validateInput(chatid)){
+            document.getElementById("EnterChatID").innerHTML="Joining Room"
+            document.getElementById("EnterChatID").onclick = null;
+            console.log("Loading room with ChatID: ",chatid)
+            setTimeout(function(){
+            localStorage.setItem("RoomID", chatid);
+            localStorage.setItem("UsernameCCHAT", usersnamecchat);
+            window.location = "/ClassicChat/ClassicChatHome/";
+          }, 900);
+        }
+        else{
+            alert("Use valid symbols like 'a-z','A-Z','-','+','!','1-9'")
+        }
+    } else {
+        if(validateInput(chatid)){
+            document.getElementById("EnterChatID").innerHTML="Creating Room"
+            document.getElementById("EnterChatID").onclick = null;
+            console.log("Creating/Loading room with ChatID: ",chatid)
+            firebase.database().ref("/ClassicChat/").child(chatid).update({
+                "Room(CHATID)" : "Created By ClassicChat",
+                "CREATEDBYUSER": usersnamecchat,
+          });
+            setTimeout(function(){
+            localStorage.setItem("RoomID", chatid);
+            localStorage.setItem("UsernameCCHAT", usersnamecchat);
+            window.location = "/ClassicChat/ClassicChatHome/";
+          }, 900);
+        }
+        else{
+            alert("Use valid symbols like 'a-z','A-Z','-','+','!','1-9'")
+        }
+    }}); 
+}
+function checkforexistingroomoninput(event){
+  const button = document.getElementById("EnterChatID");
+  button.innerHTML = "...";
+  if (event.keyCode === 13) {
+    return;
+  }
+  if(validateInput(document.getElementById("inputChatID").value)){
+    checkRoomExists(document.getElementById("inputChatID").value)
+  .then((exists) => {
+    if (exists) {
+      button.innerHTML = "Join Room";
+  console.log(document.getElementById("inputChatID").value);
+    } else {
+      button.innerHTML = "Create Room";
+    }
+    });
+  } else {
+    if(document.getElementById("inputChatID").value == "") {
+      button.innerHTML = "Enter Room/Create Room(if new)";
+    }
+  }
+  }
+
+  var w = document.documentElement.clientWidth || window.innerWidth;
+  if (w <= 765) {
+    document.getElementById("topnav").className = "hidden";
+    document.getElementById("mobile_nav_button").className = "mobile_nav_button";
+    document.getElementById("CLASSICCHAT").style = "margin-top: 10px;"
+} else {
+    document.getElementById("topnav").className = "topnav desktop";
+    document.getElementById("CLASSICCHAT").style = "margin-top: 95px;"
+}
+window.addEventListener('resize', function() {
+  const w = document.documentElement.clientWidth || window.innerWidth;
+  if (w <= 765) {
+    document.getElementById("topnav").className = "topnav desktop";
+    document.getElementById("mobile_nav_button").className = "mobile_nav_button";
+    document.getElementById("CLASSICCHAT").style = "margin-top: 10px;"
+} else {
+    document.getElementById("topnav").className = "topnav desktop desknavloaded";
+    document.getElementById("mobile_nav_button").className = "hidden";
+    document.getElementById("CLASSICCHAT").style = "margin-top: 95px;"
+}
+});
+var topnav = document.querySelector('#topnav');
+topnav.classList.add('desknavloaded');

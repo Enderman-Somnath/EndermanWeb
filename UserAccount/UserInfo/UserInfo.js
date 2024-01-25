@@ -1,1 +1,82 @@
-const _0x111a31=_0x4943;function _0x4a4e(){const _0x43171f=['currentUser','displayName','4xkoNmG','UserPresent','5581177IDZeID','<button\x20style=\x27background-color:\x20rgb(12,\x2099,\x20199);\x20color:\x20white;\x20border:\x200px;\x20border-radius:\x2010px;\x20padding:\x2020px;\x27\x20id=\x27LOGIN\x27>','removeItem','LOGIN','Failed\x20to\x20update\x20display\x20name.\x20Please\x20try\x20again\x20later.','396395qPOezC','</button></div>','sendPasswordResetEmail','body','ref','4209606xrmYbD','test','Display\x20name\x20updated\x20successfully.','updateProfile','2708820COutYn','\x20<button\x20class=\x27btn\x20btn-primary\x27\x20onclick=\x27updateDisplayName()\x27>\x20Change\x20Name\x20</button>','69365tJvxWP','setItem','once','alert','Error\x20updating\x20display\x20name:','8GgncEm','querySelector','textContent','getElementById','/EndermanWeb/UserAccount/UserInfo/','163820hLJIVN','Name\x20is\x20not\x20changed','Error\x20sending\x20password\x20reset\x20email:','catch','Failed\x20to\x20send\x20password\x20reset\x20email.\x20Please\x20make\x20sure\x20the\x20email\x20is\x20valid\x20and\x20try\x20again.','val','847ELalhe','Login\x20to\x20your\x20account\x20to\x20continue','Password\x20reset\x20email\x20sent.\x20Please\x20check\x20your\x20email\x20to\x20reset\x20your\x20password.','5643rFHQuw','</h1>','/EndermanWeb/UserAccount/SignIn/','email','WhereIsUser','value','uid','innerHTML','Name:\x20','Email','confirm','signOut','then','160TvADGs','Use\x20valid\x20symbols\x20for\x20name\x20such\x20as\x20@,+,-','Login\x20now','onAuthStateChanged','auth','Name','Error\x20signing\x20out:','Please\x20enter\x20your\x20new\x20name\x20you\x20want','location','User\x20UID:\x20','Signed\x20out\x20successfully!','error','<p>',',\x20\x20Badges:\x20','/USERS/','database','Login!','onclick'];_0x4a4e=function(){return _0x43171f;};return _0x4a4e();}(function(_0x1dd4fe,_0x468843){const _0x4330ba=_0x4943,_0x22b8e2=_0x1dd4fe();while(!![]){try{const _0x208813=-parseInt(_0x4330ba(0x132))/0x1+-parseInt(_0x4330ba(0x117))/0x2*(parseInt(_0x4330ba(0x10a))/0x3)+parseInt(_0x4330ba(0x12b))/0x4*(-parseInt(_0x4330ba(0x13d))/0x5)+-parseInt(_0x4330ba(0x13b))/0x6+parseInt(_0x4330ba(0x12d))/0x7+-parseInt(_0x4330ba(0xfc))/0x8*(parseInt(_0x4330ba(0x137))/0x9)+parseInt(_0x4330ba(0x101))/0xa*(parseInt(_0x4330ba(0x107))/0xb);if(_0x208813===_0x468843)break;else _0x22b8e2['push'](_0x22b8e2['shift']());}catch(_0x4abae2){_0x22b8e2['push'](_0x22b8e2['shift']());}}}(_0x4a4e,0x8d4d5),localStorage[_0x111a31(0xf8)](_0x111a31(0x10e),_0x111a31(0x100)),firebase[_0x111a31(0x11b)]()[_0x111a31(0x11a)](_0x2829fc=>{const _0xef05=_0x111a31;if(_0x2829fc){const _0x1d27e8=document[_0xef05(0xff)](_0xef05(0x11c)),_0x580429=document[_0xef05(0xff)](_0xef05(0x113)),_0x3ca545=document[_0xef05(0xff)](_0xef05(0x110));_0x1d27e8[_0xef05(0xfe)]=_0xef05(0x112)+_0x2829fc[_0xef05(0x12a)],_0x580429[_0xef05(0xfe)]='Email:\x20'+_0x2829fc[_0xef05(0x10d)],_0x3ca545['textContent']=_0xef05(0x120)+_0x2829fc['uid'],firebase[_0xef05(0x126)]()[_0xef05(0x136)](_0xef05(0x125))['child'](_0x2829fc[_0xef05(0x110)])[_0xef05(0xf9)](_0xef05(0x10f))[_0xef05(0x116)](_0x280e6b=>{const _0x4f361a=_0xef05,_0x34f203=_0x280e6b[_0x4f361a(0x106)]();_0x1d27e8['innerHTML']+=_0x4f361a(0x124)+_0x34f203['badges']+_0x4f361a(0x13c);});}else body=document[_0xef05(0xfd)](_0xef05(0x135)),body[_0xef05(0x111)]='<div\x20style=\x27color:white;\x20text-align:\x20center;\x20background-color:\x20rgba(0,\x200,\x200,\x200.514);\x20border-radius:\x2020px;\x20padding:\x2010px;\x20padding-top:auto;\x20padding-bottom:auto;\x20width:\x20100%;\x20height:\x20100%;\x20\x20word-break:break-all;\x20overflow:auto;\x27>'+'<h1\x20style=\x27font-size:\x20medium;\x27>'+_0xef05(0x127)+_0xef05(0x10b)+_0xef05(0x123)+_0xef05(0x108)+'</p>'+_0xef05(0x12e)+_0xef05(0x119)+_0xef05(0x133),document[_0xef05(0xff)](_0xef05(0x130))[_0xef05(0x128)]=function(){const _0x24c13d=_0xef05;window[_0x24c13d(0x11f)]=_0x24c13d(0x10c);},localStorage[_0xef05(0x12f)](_0xef05(0x12c));}));function validateInput(_0x14dc7b){const _0xc85c9b=_0x111a31,_0x2e65bb=/^[a-zA-Z0-9@+\-]+$/;return _0x2e65bb[_0xc85c9b(0x138)](_0x14dc7b);}function _0x4943(_0x4f6e28,_0x13a758){const _0x4a4e39=_0x4a4e();return _0x4943=function(_0x49430e,_0x1a2f74){_0x49430e=_0x49430e-0xf8;let _0x287bdb=_0x4a4e39[_0x49430e];return _0x287bdb;},_0x4943(_0x4f6e28,_0x13a758);}function updateDisplayName(){const _0x122b99=_0x111a31,_0x573999=prompt(_0x122b99(0x11e));if(_0x573999==null){window['alert'](_0x122b99(0x102));return;}if(validateInput(_0x573999)){const _0x297020=firebase[_0x122b99(0x11b)]()[_0x122b99(0x129)];_0x297020[_0x122b99(0x13a)]({'displayName':_0x573999})[_0x122b99(0x116)](()=>{const _0x148d50=_0x122b99;window[_0x148d50(0xfa)](_0x148d50(0x139));})[_0x122b99(0x104)](_0x47b0a7=>{const _0x316e49=_0x122b99;window[_0x316e49(0xfa)](_0x316e49(0x131)),console['error'](_0x316e49(0xfb),_0x47b0a7);});}else alert(_0x122b99(0x118));}function resetPassword(){const _0x329705=_0x111a31,_0x20b583=firebase['auth']()[_0x329705(0x129)],_0x545ffd=_0x20b583['email'];firebase[_0x329705(0x11b)]()[_0x329705(0x134)](_0x545ffd)['then'](()=>{const _0x182328=_0x329705;window[_0x182328(0xfa)](_0x182328(0x109));})[_0x329705(0x104)](_0x14ef63=>{const _0x484250=_0x329705;window[_0x484250(0xfa)](_0x484250(0x105)),console['error'](_0x484250(0x103),_0x14ef63);});}function signout(){const _0x2477ed=_0x111a31,_0x22e78e=window[_0x2477ed(0x114)]('Are\x20you\x20sure\x20you\x20want\x20to\x20sign\x20out?');if(!_0x22e78e)return;firebase['auth']()[_0x2477ed(0x115)]()[_0x2477ed(0x116)](()=>{const _0x366074=_0x2477ed;localStorage['removeItem'](_0x366074(0x12c)),localStorage['clear'](),window[_0x366074(0xfa)](_0x366074(0x121)),window[_0x366074(0x11f)]=_0x366074(0x10c);})[_0x2477ed(0x104)](_0x12374d=>{const _0x22cf13=_0x2477ed;console[_0x22cf13(0x122)](_0x22cf13(0x11d),_0x12374d);});}
+localStorage.setItem("WhereIsUser","/UserAccount/UserInfo/");
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    // User is signed in
+    const nameElement = document.getElementById("Name");
+    const emailElement = document.getElementById("Email");
+    const uidElement = document.getElementById("uid");
+    // Set user info in the labels
+    nameElement.textContent = "Name: " + user.displayName;
+    emailElement.textContent = "Email: " + user.email;
+    uidElement.textContent = "User UID: " + user.uid;
+    firebase.database().ref("/USERS/").child(user.uid).once('value')
+          .then((snapshot) => {
+            const userData = snapshot.val();
+            nameElement.innerHTML += ",  Badges: " +  userData['badges']  + " <button class='btn btn-primary' onclick='updateDisplayName()'> Change Name </button>";
+          });
+  } else {
+    // No user is signed in
+    body = document.querySelector("body");
+      body.innerHTML = "<div style='color:white; text-align: center; background-color: rgba(0, 0, 0, 0.514); border-radius: 20px; padding: 10px; padding-top:auto; padding-bottom:auto; width: 100%; height: 100%;  word-break:break-all; overflow:auto;'>" +
+      "<h1 style='font-size: medium;'>" + "Login!" + "</h1>" +
+      "<p>" + "Login to your account to continue" + "</p>" +
+      "<button style='background-color: rgb(12, 99, 199); color: white; border: 0px; border-radius: 10px; padding: 20px;' id='LOGIN'>" + "Login now" + "</button></div>"
+      document.getElementById("LOGIN").onclick = function(){window.location="/UserAccount/SignIn/"}
+      localStorage.removeItem("UserPresent");
+  }
+});
+function validateInput(input) {
+  const regex = /^[a-zA-Z0-9@+\-]+$/;
+  return regex.test(input);
+}
+function updateDisplayName() {
+  const displayName = prompt("Please enter your new name you want");
+  if(displayName == null){
+    window.alert("Name is not changed");
+    return
+  }
+  if(validateInput(displayName)){
+    const user = firebase.auth().currentUser;
+  user.updateProfile({
+    displayName: displayName
+  })
+    .then(() => {
+      window.alert("Display name updated successfully.");
+    })
+    .catch((error) => {
+      window.alert("Failed to update display name. Please try again later.");
+      console.error("Error updating display name:", error);
+    });
+  } else {
+    alert("Use valid symbols for name such as @,+,-");
+  }
+}
+
+function resetPassword() {
+  const user = firebase.auth().currentUser;
+  const email = user.email;
+  firebase.auth().sendPasswordResetEmail(email)
+    .then(() => {
+      window.alert("Password reset email sent. Please check your email to reset your password.");
+    })
+    .catch((error) => {
+      window.alert("Failed to send password reset email. Please make sure the email is valid and try again.");
+      console.error("Error sending password reset email:", error);
+    });
+}
+function signout() {
+  const confirmed = window.confirm("Are you sure you want to sign out?");
+  if (!confirmed) {
+    return;
+  }
+  firebase.auth().signOut()
+    .then(() => {
+      localStorage.removeItem("UserPresent");
+      localStorage.clear();
+      window.alert("Signed out successfully!");
+      window.location = "/UserAccount/SignIn/";
+    })
+    .catch((error) => {
+      console.error("Error signing out:", error);
+    });
+}

@@ -1,9 +1,9 @@
 <html>
     <head>
-        <link rel="icon" type="image/x-icon" href="/EndermanWeb/icon2.png">
+        <link rel="icon" type="image/x-icon" href="/icon2.png">
         <title> Youtube Channels </title>
         <link rel="stylesheet" href="youtube.css">
-        <link rel="stylesheet" href="/EndermanWeb/Functions/style.css">
+        <link rel="stylesheet" href="/Functions/style.css">
             <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
             <script src="https://www.gstatic.com/firebasejs/live/4.9/firebase.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -14,7 +14,7 @@
     </head>
 <body>
     <div id="context-menu">
-        <button onclick="PopUp('/EndermanWeb/aboutEndermanweb.html')"> About </button>
+        <button onclick="PopUp('/aboutEndermanweb.html')"> About </button>
     </div>
     <!--Desktop-->
     <div id="topnav" class="topnav desktop">
@@ -23,8 +23,8 @@
         <button onclick="youtubeWeb()"> <i class="bi bi-youtube"></i> Youtube Channels </button>
         <button onclick="FunWeb()"> <i class="bi bi-dice-5-fill"></i> For Fun </button>
         <button onclick="PopUp('https://enderman-somnath.github.io/Search/')"> <i class="bi bi-search"></i> WebSearch </button>
-        <button class="btn btn-primary account" id="account" onclick="window.location = '/EndermanWeb/UserAccount/'"><i class="bi bi-person-circle"></i> Loading</button>
-        <button onclick="PopUp('/EndermanWeb/aboutEndermanweb.html')" class="split"> <i class="bi bi-info-circle-fill"></i> About </button>
+        <button class="btn btn-primary account" id="account" onclick="window.location = '/UserAccount/'"><i class="bi bi-person-circle"></i> Loading</button>
+        <button onclick="PopUp('/aboutEndermanweb.html')" class="split"> <i class="bi bi-info-circle-fill"></i> About </button>
     </div>
     <!--Mobile-->
     <div id="topnav_mobile" class="mobile_nav hidden">
@@ -33,13 +33,13 @@
         <button onclick="youtubeWeb()"> <i class="bi bi-youtube"></i> Youtube Channels </button>
         <button onclick="FunWeb()"> <i class="bi bi-dice-5-fill"></i> For Fun </button>
         <button onclick="PopUp('https://enderman-somnath.github.io/Search/')"> <i class="bi bi-search"></i> WebSearch </button>
-        <button onclick="window.location = '/EndermanWeb/UserAccount/'"> <i class="bi bi-person"></i>  Account </button>
-        <button onclick="PopUp('/EndermanWeb/aboutEndermanweb.html')"> <i class="bi bi-info-circle-fill"></i> About </button>
+        <button onclick="window.location = '/UserAccount/'"> <i class="bi bi-person"></i>  Account </button>
+        <button onclick="PopUp('/aboutEndermanweb.html')"> <i class="bi bi-info-circle-fill"></i> About </button>
     </div>
     <a class="hover_mobile_nav_button"><button id="mobile_nav_button" class="mobile_nav_button hidden" onclick="showorhidemobilenav()"> <i class="bi bi-list"></i> Navigation
     </button></a>
         <div id="youtube" class="curves">
-        <h1 style="color:white; font-size: 20px; padding-top: 10px; font-family: 'Fredoka One'; src: url('/EndermanWeb/FredokaOne-Regular.ttf'); letter-spacing: 5px;"> Our Youtube Channels</h1>
+        <h1 style="color:white; font-size: 20px; padding-top: 10px; font-family: 'Fredoka One'; src: url('/FredokaOne-Regular.ttf'); letter-spacing: 5px;"> Our Youtube Channels</h1>
         <button onclick="PopUp('https://www.youtube.com/channel/UCZOyFmeeolWlFqVEXNUxACQ')" class="ytChannelButton">Endermanhere(Me)</button>
         <br>
         <button onclick="PopUp('https://twitter.com/Endermanhere')" class="ytChannelButton">Endermanhere(Me,on twitter)</button>        
@@ -48,8 +48,8 @@
         <br>
         <button onclick="PopUp('https://www.youtube.com/@TrainYourBrain212')" class="ytChannelButton">TrainYourBrain(Anshuman, CoMe ON EvErYone) :)</button>
         </div>
-        <script src="/EndermanWeb/Functions/functions.js"></script>
-        <script src="/EndermanWeb/UserAccount/UserInfo/GetUserDataDynamically.js"></script>
+        <script src="/Functions/functions.js"></script>
+        <script src="/UserAccount/UserInfo/GetUserDataDynamically.js"></script>
         <script src="youtube.js"></script>
 </body>
 </html>

@@ -1,1 +1,76 @@
-function _0x58c6(_0x550643,_0x36c817){const _0x2bfcec=_0x2bfc();return _0x58c6=function(_0x58c601,_0x194e91){_0x58c601=_0x58c601-0x7b;let _0x5501c8=_0x2bfcec[_0x58c601];return _0x5501c8;},_0x58c6(_0x550643,_0x36c817);}const _0x42eb93=_0x58c6;function _0x2bfc(){const _0xd852df=['/EndermanWeb/Youtube/','94410fBZAOr','/EndermanWeb/Fun/','1:481166683980:web:a865253f257369395329e9','preventDefault','location','innerHTML','<i\x20class=\x27bi\x20bi-list\x27></i>\x20Navigation','2721ZKFZYK','/EndermanWeb/','3764PWeoNb','/EndermanWeb/ClassicChat/','17230QhGshd','#topnav_mobile','20537AQXXtO','#context-menu','addEventListener','classicchat-cfb87.appspot.com','none','7597136RBjvfw','block','opacity','display','510mYMxBd','click','<i\x20class=\x27bi\x20bi-x-lg\x27></i>\x20Close','3609334tKBaMd','top','height=600,width=800,','popUpWindow','AIzaSyBAJgNXiQ7j0-Jly8hwtkhnSSuKPgQhZj0','7410384QXToxK','left','1jwoFJO','12030935aHwPmg','style','clientY','querySelector','classicchat-cfb87','clientX'];_0x2bfc=function(){return _0xd852df;};return _0x2bfc();}(function(_0x2e590a,_0x151740){const _0x3edc9e=_0x58c6,_0x44cd22=_0x2e590a();while(!![]){try{const _0x3ea646=-parseInt(_0x3edc9e(0x7c))/0x1*(-parseInt(_0x3edc9e(0x9d))/0x2)+parseInt(_0x3edc9e(0x8b))/0x3*(-parseInt(_0x3edc9e(0x8d))/0x4)+-parseInt(_0x3edc9e(0x9a))/0x5*(parseInt(_0x3edc9e(0x84))/0x6)+-parseInt(_0x3edc9e(0x7d))/0x7+parseInt(_0x3edc9e(0x96))/0x8+-parseInt(_0x3edc9e(0xa2))/0x9+-parseInt(_0x3edc9e(0x8f))/0xa*(-parseInt(_0x3edc9e(0x91))/0xb);if(_0x3ea646===_0x151740)break;else _0x44cd22['push'](_0x44cd22['shift']());}catch(_0x2330dd){_0x44cd22['push'](_0x44cd22['shift']());}}}(_0x2bfc,0xecf74));const firebaseConfig={'apiKey':_0x42eb93(0xa1),'authDomain':'classicchat-cfb87.firebaseapp.com','databaseURL':'https://classicchat-cfb87-default-rtdb.firebaseio.com','projectId':_0x42eb93(0x81),'storageBucket':_0x42eb93(0x94),'messagingSenderId':'481166683980','appId':_0x42eb93(0x86)};firebase['initializeApp'](firebaseConfig);const database=firebase['database']();function homeWeb(){const _0x2bb2c7=_0x42eb93;window[_0x2bb2c7(0x88)]=_0x2bb2c7(0x8c);}function classicChatWeb(){const _0x33b54f=_0x42eb93;window['location']=_0x33b54f(0x8e);}function youtubeWeb(){const _0x1091dd=_0x42eb93;window[_0x1091dd(0x88)]=_0x1091dd(0x83);}function PopUp(_0x18c8e4){const _0x35c4db=_0x42eb93;popupWindow=window['open'](_0x18c8e4,_0x35c4db(0xa0),_0x35c4db(0x9f));}function FunWeb(){const _0x328829=_0x42eb93;window[_0x328829(0x88)]=_0x328829(0x85);}mobilenav=![],mobilenavid=document[_0x42eb93(0x80)](_0x42eb93(0x90)),mobilenavbuttonid=document[_0x42eb93(0x80)]('#mobile_nav_button');function showorhidemobilenav(){const _0x243b82=_0x42eb93;if(mobilenav==![])mobilenavid[_0x243b82(0x7e)][_0x243b82(0x99)]=_0x243b82(0x97),setTimeout(function(){const _0x102fbd=_0x243b82;mobilenavid[_0x102fbd(0x7e)][_0x102fbd(0x98)]=0x1;},0xc8),mobilenav=!![],mobilenavbuttonid[_0x243b82(0x89)]=_0x243b82(0x9c);else mobilenav==!![]&&(setTimeout(function(){const _0x38ac41=_0x243b82;mobilenavid[_0x38ac41(0x7e)][_0x38ac41(0x99)]=_0x38ac41(0x95);},0xc8),mobilenavid[_0x243b82(0x7e)][_0x243b82(0x98)]=0x0,mobilenav=![],mobilenavbuttonid[_0x243b82(0x89)]=_0x243b82(0x8a));}const contextmenu=document[_0x42eb93(0x80)](_0x42eb93(0x92));document[_0x42eb93(0x93)]('contextmenu',_0x5f3ca5=>{const _0x10b1bd=_0x42eb93;contextmenu[_0x10b1bd(0x7e)][_0x10b1bd(0x98)]=0x0,contextmenu['style'][_0x10b1bd(0x99)]=_0x10b1bd(0x95),_0x5f3ca5[_0x10b1bd(0x87)](),contextmenu['style'][_0x10b1bd(0x9e)]=_0x5f3ca5[_0x10b1bd(0x7f)]+'px',contextmenu['style'][_0x10b1bd(0x7b)]=_0x5f3ca5[_0x10b1bd(0x82)]+'px',contextmenu['style'][_0x10b1bd(0x99)]=_0x10b1bd(0x97),setTimeout(function(){const _0x5982e6=_0x10b1bd;;contextmenu[_0x5982e6(0x7e)][_0x5982e6(0x98)]=0x1;},0xc8);}),document[_0x42eb93(0x93)](_0x42eb93(0x9b),()=>{const _0x3edfe5=_0x42eb93;contextmenu['style'][_0x3edfe5(0x98)]=0x0,setTimeout(function(){const _0x233aab=_0x3edfe5;contextmenu['style'][_0x233aab(0x99)]=_0x233aab(0x95);},0xc8);});
+const firebaseConfig = {
+    apiKey: "AIzaSyBAJgNXiQ7j0-Jly8hwtkhnSSuKPgQhZj0",
+    authDomain: "classicchat-cfb87.firebaseapp.com",
+    databaseURL: "https://classicchat-cfb87-default-rtdb.firebaseio.com",
+    projectId: "classicchat-cfb87",
+    storageBucket: "classicchat-cfb87.appspot.com",
+    messagingSenderId: "481166683980",
+    appId: "1:481166683980:web:a865253f257369395329e9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const database = firebase.database();
+
+  var secretPassword = "My1People2In3This4Website5Are6The7Best9";
+
+  // Check secret password before performing any operations
+  function checkSecretPassword() {
+    database.ref('/secrets/websiteSecret').once('value')
+      .then(function(snapshot) {
+        var storedSecret = snapshot.val();
+        if (storedSecret === secretPassword) {
+        }
+      })
+  }
+  
+  // Call the function to check the secret password
+  checkSecretPassword();
+  
+function homeWeb(){
+    window.location="/"
+}
+function classicChatWeb(){
+    window.location="/ClassicChat/"
+}
+function youtubeWeb(){
+    window.location="/Youtube/"
+}
+function PopUp(url){
+    popupWindow = window.open(url,'popUpWindow','height=600,width=800,');
+}
+
+function FunWeb(){
+    window.location="/Fun/"
+}
+
+mobilenav = false
+mobilenavid = document.querySelector("#topnav_mobile")
+mobilenavbuttonid = document.querySelector("#mobile_nav_button")
+function showorhidemobilenav(){
+  if(mobilenav == false){
+      mobilenavid.style.display = "block";
+      setTimeout(function(){mobilenavid.style.opacity = 1;},200);
+      mobilenav = true;
+      mobilenavbuttonid.innerHTML = "<i class='bi bi-x-lg'></i> Close";
+  }
+  else if(mobilenav == true){
+    setTimeout(function(){mobilenavid.style.display = "none";},200);
+    mobilenavid.style.opacity = 0;
+    mobilenav = false;
+    mobilenavbuttonid.innerHTML = "<i class='bi bi-list'></i> Navigation";
+  }
+}
+
+const contextmenu = document.querySelector("#context-menu")
+
+document.addEventListener("contextmenu",e =>{
+    contextmenu.style.opacity=0
+    contextmenu.style.display = "none";
+    e.preventDefault();
+    contextmenu.style.top =  e.clientY + "px";
+    contextmenu.style.left = e.clientX + "px";
+    contextmenu.style.display = "block";
+    setTimeout(function(){;contextmenu.style.opacity = 1;},200)
+});
+
+document.addEventListener("click", () => {contextmenu.style.opacity=0;setTimeout(function(){contextmenu.style.display = "none"},200); });

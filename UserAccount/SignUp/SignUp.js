@@ -1,1 +1,98 @@
-function _0x33f2(_0x4c223c,_0x40eb55){const _0x5af5b7=_0x5af5();return _0x33f2=function(_0x33f2cc,_0x5964d9){_0x33f2cc=_0x33f2cc-0x191;let _0x2d86de=_0x5af5b7[_0x33f2cc];return _0x2d86de;},_0x33f2(_0x4c223c,_0x40eb55);}function _0x5af5(){const _0x569325=['auth/email-already-in-use','An\x20error\x20occurred\x20during\x20user\x20creation.\x20Make\x20sure\x20you\x20have\x20entered\x20a\x20valid\x20email/password.','style','not-allowed','onclick','length','error','innerText','1145AgACCB','1098566HDGTLx','Failed\x20to\x20send\x20verification\x20email.\x20Please\x20try\x20again\x20later.','Password\x20should\x20be\x20at\x20least\x206\x20characters\x20long.','Sign\x20Up','fetchSignInMethodsForEmail','Please\x20use\x20valid\x20symbols\x20for\x20Name:\x20\x27@\x27,\x20\x271-9\x27,\x20\x27-\x27,\x20\x27+\x27,\x20all\x20letters','test','log','setItem','Name','The\x20email\x20already\x20exists.\x20Please\x20choose\x20another\x20email.','pointer','value','createUserWithEmailAndPassword','597459aFzuNe','then','Error\x20checking\x20email\x20existence:','4764381yUFGNx','hidden','Error\x20creating\x20user:','sendEmailVerification','alert','ERRORDIV','/EndermanWeb/UserAccount/SignUp/','#password','catch','Error\x20updating\x20user\x20profile:','classList','updateProfile','7443810TlKFoM','17352464gngRrK','auth','4532JGUXgo','cursor','getElementById','WhereIsUser','code','location','signUP','699545ffxpet'];_0x5af5=function(){return _0x569325;};return _0x5af5();}const _0x34a2f6=_0x33f2;(function(_0x3709d6,_0x2d75ee){const _0xc45989=_0x33f2,_0x2e1745=_0x3709d6();while(!![]){try{const _0x4648d2=-parseInt(_0xc45989(0x193))/0x1+-parseInt(_0xc45989(0x1b6))/0x2+-parseInt(_0xc45989(0x196))/0x3+parseInt(_0xc45989(0x1a5))/0x4*(parseInt(_0xc45989(0x1b5))/0x5)+parseInt(_0xc45989(0x1a2))/0x6+-parseInt(_0xc45989(0x1ac))/0x7+parseInt(_0xc45989(0x1a3))/0x8;if(_0x4648d2===_0x2d75ee)break;else _0x2e1745['push'](_0x2e1745['shift']());}catch(_0x433176){_0x2e1745['push'](_0x2e1745['shift']());}}}(_0x5af5,0xcbb2a),localStorage[_0x34a2f6(0x1be)](_0x34a2f6(0x1a8),_0x34a2f6(0x19c)));function validateInput(_0x2b88bc){const _0x3dbd3b=_0x34a2f6,_0x3db6e4=/^[a-zA-Z0-9@+\-]+$/;return _0x3db6e4[_0x3dbd3b(0x1bc)](_0x2b88bc);}function validateEmail(_0x5d3bec){const _0x192908=_0x34a2f6,_0x5659f0=/^[a-zA-Z0-9.@]+$/;return console[_0x192908(0x1bd)](_0x5659f0[_0x192908(0x1bc)](_0x5d3bec)),_0x5659f0[_0x192908(0x1bc)](_0x5d3bec);}function SignUp(){const _0x2d2d3b=_0x34a2f6,_0xe04e40=document['getElementById']('Email')[_0x2d2d3b(0x191)],_0x6648fe=document[_0x2d2d3b(0x1a7)]('password')[_0x2d2d3b(0x191)],_0x57b987=document['getElementById'](_0x2d2d3b(0x1bf))[_0x2d2d3b(0x191)];if(_0x6648fe[_0x2d2d3b(0x1b2)]<0x6){window[_0x2d2d3b(0x19a)](_0x2d2d3b(0x1b8));return;}if(!validateInput(_0x57b987)){document[_0x2d2d3b(0x1a7)](_0x2d2d3b(0x19b))[_0x2d2d3b(0x1a0)]='',document[_0x2d2d3b(0x1a7)](_0x2d2d3b(0x19b))[_0x2d2d3b(0x1b4)]=_0x2d2d3b(0x1bb),setTimeout(function(){const _0xe01577=_0x2d2d3b;document[_0xe01577(0x1a7)](_0xe01577(0x19b))['classList']=_0xe01577(0x197);},0x1388),document[_0x2d2d3b(0x1a7)]('signUP')[_0x2d2d3b(0x1b1)]=function(){SignUp();},document['getElementById']('signUP')[_0x2d2d3b(0x1b4)]=_0x2d2d3b(0x1b9),document['getElementById'](_0x2d2d3b(0x1ab))[_0x2d2d3b(0x1af)][_0x2d2d3b(0x1a6)]='pointer';return;}const _0x35bf15=firebase[_0x2d2d3b(0x1a4)]();document['getElementById'](_0x2d2d3b(0x1ab))['onclick']=null,document[_0x2d2d3b(0x1a7)]('signUP')[_0x2d2d3b(0x1b4)]='Creating\x20User...',document['getElementById'](_0x2d2d3b(0x1ab))[_0x2d2d3b(0x1af)][_0x2d2d3b(0x1a6)]=_0x2d2d3b(0x1b0),_0x35bf15[_0x2d2d3b(0x192)](_0xe04e40,_0x6648fe)['then'](()=>{const _0x154a49=_0x35bf15['onAuthStateChanged'](_0x6946e3=>{const _0x29180d=_0x33f2;_0x6946e3&&(_0x154a49(),_0x6946e3[_0x29180d(0x1a1)]({'displayName':_0x57b987})[_0x29180d(0x194)](()=>{const _0x398ce3=_0x29180d;_0x6946e3[_0x398ce3(0x199)]()[_0x398ce3(0x194)](()=>{const _0x3014a1=_0x398ce3;window[_0x3014a1(0x19a)]('Verification\x20email\x20sent.\x20Please\x20check\x20your\x20email\x20to\x20verify\x20your\x20account.'),window[_0x3014a1(0x1aa)]='Verify/';})[_0x398ce3(0x19e)](_0x314340=>{const _0x5899d9=_0x398ce3;window[_0x5899d9(0x19a)](_0x5899d9(0x1b7)),console[_0x5899d9(0x1b3)]('Error\x20sending\x20verification\x20email:',_0x314340),document[_0x5899d9(0x1a7)]('signUP')[_0x5899d9(0x1b1)]=function(){SignUp();},document[_0x5899d9(0x1a7)](_0x5899d9(0x1ab))['innerText']=_0x5899d9(0x1b9),document[_0x5899d9(0x1a7)](_0x5899d9(0x1ab))[_0x5899d9(0x1af)][_0x5899d9(0x1a6)]='pointer';});})[_0x29180d(0x19e)](_0x197b75=>{const _0x176ac2=_0x29180d;window[_0x176ac2(0x19a)]('Failed\x20to\x20update\x20user\x20profile.\x20Please\x20try\x20again\x20later.'),console['error'](_0x176ac2(0x19f),_0x197b75),document['getElementById']('signUP')['onclick']=function(){SignUp();},document[_0x176ac2(0x1a7)](_0x176ac2(0x1ab))[_0x176ac2(0x1b4)]=_0x176ac2(0x1b9),document['getElementById']('signUP')['style'][_0x176ac2(0x1a6)]=_0x176ac2(0x1c1);}));});})['catch'](_0x148f23=>{const _0x5992e3=_0x2d2d3b;_0x148f23[_0x5992e3(0x1a9)]===_0x5992e3(0x1ad)?window['alert'](_0x5992e3(0x1c0)):(window['alert'](_0x5992e3(0x1ae)),console['error'](_0x5992e3(0x198),_0x148f23));});}function checkEmailExists(_0x59a9a3){const _0x2899fc=_0x34a2f6;return firebase[_0x2899fc(0x1a4)][_0x2899fc(0x1ba)](_0x59a9a3)[_0x2899fc(0x194)](_0x177874=>{const _0x417e5a=_0x2899fc;return _0x177874[_0x417e5a(0x1b2)]>0x0;})[_0x2899fc(0x19e)](_0x54a7ba=>{const _0x266899=_0x2899fc;console['error'](_0x266899(0x195),_0x54a7ba);throw _0x54a7ba;});}$(_0x34a2f6(0x19d))['keyup'](function(_0x3371e0){_0x3371e0['keyCode']===0xd&&SignUp();});
+localStorage.setItem("WhereIsUser","/UserAccount/SignUp/");
+function validateInput(input) {
+  const regex = /^[a-zA-Z0-9@+\-]+$/;
+  return regex.test(input);
+}
+function validateEmail(email) {
+  const allowedCharacters = /^[a-zA-Z0-9.@]+$/;
+  console.log(allowedCharacters.test(email))
+  return allowedCharacters.test(email);
+}
+function SignUp() {
+  const inputEmail = document.getElementById('Email').value;
+  const inputPassword = document.getElementById('password').value;
+  const inputName = document.getElementById('Name').value;
+  if (inputPassword.length < 6) {
+    window.alert('Password should be at least 6 characters long.');
+    return;
+  }
+
+  if (!validateInput(inputName)) {
+    document.getElementById("ERRORDIV").classList=""
+      document.getElementById("ERRORDIV").innerText="Please use valid symbols for Name: '@', '1-9', '-', '+', all letters";
+      setTimeout(function(){
+        document.getElementById("ERRORDIV").classList="hidden"
+      },5000);
+    document.getElementById("signUP").onclick = function() {SignUp()};
+    document.getElementById("signUP").innerText = "Sign Up";
+    document.getElementById("signUP").style.cursor = "pointer";
+    return;
+  }
+  const auth = firebase.auth();
+  document.getElementById("signUP").onclick = null;
+  document.getElementById("signUP").innerText = "Creating User...";
+  document.getElementById("signUP").style.cursor = "not-allowed";
+  auth.createUserWithEmailAndPassword(inputEmail, inputPassword)
+    .then(() => {
+      // Listen for changes in the user's authentication state
+      const unsubscribe = auth.onAuthStateChanged((user) => {
+        if (user) {
+          // User is authenticated
+          unsubscribe(); // Unsubscribe from further state changes
+
+          // Update user display name
+          user.updateProfile({
+            displayName: inputName,
+          })
+            .then(() => {
+              // Send email verification
+              user.sendEmailVerification()
+                .then(() => {
+                  window.alert('Verification email sent. Please check your email to verify your account.');
+                  window.location = 'Verify/';
+                })
+                .catch((error) => {
+                  window.alert('Failed to send verification email. Please try again later.');
+                  console.error('Error sending verification email:', error);
+                  document.getElementById("signUP").onclick = function() {SignUp()};
+                  document.getElementById("signUP").innerText = "Sign Up";
+                  document.getElementById("signUP").style.cursor = "pointer";
+                });
+            })
+            .catch((error) => {
+              window.alert('Failed to update user profile. Please try again later.');
+              console.error('Error updating user profile:', error);
+              document.getElementById("signUP").onclick = function() {SignUp()};
+              document.getElementById("signUP").innerText = "Sign Up";
+              document.getElementById("signUP").style.cursor = "pointer";
+            });
+        }
+      });
+    })
+    .catch((error) => {
+      if (error.code === 'auth/email-already-in-use') {
+        window.alert('The email already exists. Please choose another email.');
+      } else {
+        window.alert('An error occurred during user creation. Make sure you have entered a valid email/password.');
+        console.error('Error creating user:', error);
+      }
+    });
+}
+
+
+
+function checkEmailExists(email) {
+  return firebase.auth.fetchSignInMethodsForEmail(email)
+    .then((signInMethods) => {
+      return signInMethods.length > 0;
+    })
+    .catch((error) => {
+      console.error("Error checking email existence:", error);
+      throw error;
+    });
+}
+$("#password").keyup(function(event) {
+  if (event.keyCode === 13) {
+    SignUp();
+  }
+});

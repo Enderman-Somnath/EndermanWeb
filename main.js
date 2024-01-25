@@ -1,1 +1,76 @@
-const _0x4514db=_0x9f78;(function(_0x251847,_0x119d98){const _0x3b3ebc=_0x9f78,_0x1fc834=_0x251847();while(!![]){try{const _0x35879=parseInt(_0x3b3ebc(0x176))/0x1*(-parseInt(_0x3b3ebc(0x185))/0x2)+parseInt(_0x3b3ebc(0x189))/0x3+parseInt(_0x3b3ebc(0x16a))/0x4*(parseInt(_0x3b3ebc(0x17d))/0x5)+parseInt(_0x3b3ebc(0x173))/0x6*(-parseInt(_0x3b3ebc(0x175))/0x7)+-parseInt(_0x3b3ebc(0x150))/0x8+parseInt(_0x3b3ebc(0x15a))/0x9+parseInt(_0x3b3ebc(0x187))/0xa*(parseInt(_0x3b3ebc(0x15f))/0xb);if(_0x35879===_0x119d98)break;else _0x1fc834['push'](_0x1fc834['shift']());}catch(_0x7754f4){_0x1fc834['push'](_0x1fc834['shift']());}}}(_0x381e,0xd5278),localStorage[_0x4514db(0x168)](_0x4514db(0x153),_0x4514db(0x160)));function getData(){const _0xaead73=_0x4514db;firebase[_0xaead73(0x154)]()['ref'](_0xaead73(0x156))['on'](_0xaead73(0x162),function(_0x2dff64){const _0x2e48a6=_0xaead73;try{document['getElementById'](_0x2e48a6(0x18f))[_0x2e48a6(0x152)]='',_0x2dff64[_0x2e48a6(0x174)](function(_0x52fc07){const _0x1ecf8e=_0x2e48a6;childKey=_0x52fc07['key'],childData=_0x52fc07['val']();if(childKey!==_0x1ecf8e(0x18f)){firebase_message_id=childKey,message_data=childData,Name=message_data['Name'],message=message_data[_0x1ecf8e(0x16f)],name_with_tag='<div\x20class=\x27message\x27><h4\x20class=\x27Name\x27\x20style=\x27margin-left:\x205px;\x20margin-right:\x205px;\x20text-align:left;\x27>\x20By:\x20'+Name+'</h4>',message_with_tag=_0x1ecf8e(0x170)+message+'</h4></div>',gap=_0x1ecf8e(0x186),row=name_with_tag+message_with_tag+_0x1ecf8e(0x190),document['getElementById'](_0x1ecf8e(0x18f))['innerHTML']+=row;const _0x1c1d8e=document[_0x1ecf8e(0x18e)](_0x1ecf8e(0x18f));_0x1c1d8e[_0x1ecf8e(0x182)]=_0x1c1d8e[_0x1ecf8e(0x188)];}});}catch(_0x5cc824){console[_0x2e48a6(0x16c)]('Error\x20processing\x20data:',_0x5cc824),localStorage[_0x2e48a6(0x168)]('ErrorINFO',_0x2e48a6(0x15c)),document[_0x2e48a6(0x18e)]('Updates')[_0x2e48a6(0x152)]='<iframe\x20style=\x27height:\x20100%;\x20width:100%;\x27\x20src=\x27/EndermanWeb/AllErrorManager\x27></iframe>';}},function(_0x4a4b6a){const _0x40758e=_0xaead73;console[_0x40758e(0x16c)](_0x40758e(0x18b),_0x4a4b6a),localStorage[_0x40758e(0x168)]('ErrorINFO',_0x40758e(0x17b)),document[_0x40758e(0x18e)](_0x40758e(0x18f))[_0x40758e(0x152)]=_0x40758e(0x14e);});}firebase['auth']()['onAuthStateChanged'](_0x5c061a=>{const _0x168921=_0x4514db;_0x5c061a?(document[_0x168921(0x18e)](_0x168921(0x18c))['innerHTML']=_0x168921(0x15d)+_0x168921(0x17f),getData()):(URLLOGIN=_0x168921(0x165),document['getElementById'](_0x168921(0x18c))['innerHTML']=_0x168921(0x15d)+_0x168921(0x17e),document[_0x168921(0x18e)](_0x168921(0x18f))['innerHTML']=_0x168921(0x161)+_0x168921(0x18d)+_0x168921(0x169)+_0x168921(0x180)+_0x168921(0x184)+_0x168921(0x16e)+_0x168921(0x16b)+_0x168921(0x163)+_0x168921(0x178)+_0x168921(0x179),document['getElementById'](_0x168921(0x155))[_0x168921(0x18a)]=function(){const _0x394b40=_0x168921;window['location']=_0x394b40(0x14f);});});var w=document[_0x4514db(0x159)][_0x4514db(0x164)]||window[_0x4514db(0x167)];w<=0x2fd?(document['getElementById'](_0x4514db(0x17a))['className']=_0x4514db(0x177),document[_0x4514db(0x18e)]('mobile_nav_button')['className']='mobile_nav_button',document[_0x4514db(0x18e)](_0x4514db(0x17c))['style']='margin-top:\x2010px;'):(document[_0x4514db(0x18e)]('topnav')[_0x4514db(0x157)]='topnav\x20desktop',document[_0x4514db(0x18e)](_0x4514db(0x17c))[_0x4514db(0x172)]='margin-top:\x2095px;');function _0x381e(){const _0x24dd65=['margin-top:\x2010px;','style','222UCMMEo','forEach','200837XpgTQI','8nmlpRc','hidden','Login\x20now','</button>','topnav','Firebase\x20data\x20retrieval\x20failed','home','49070ysHZNp','Login','Account','</h1>','#topnav','scrollTop','margin-top:\x2095px;','<p>','200224DTJCzr','<h4\x20class=\x27gap\x27></h4>\x20<br>','20Ioyvam','scrollHeight','476421gRlaIV','onclick','Firebase\x20data\x20retrieval\x20failed:','account','<h1\x20style=\x27font-size:\x20medium;\x27>','getElementById','Updates','<br>','<iframe\x20style=\x27height:\x20100%;\x20width:100%;\x27\x20src=\x27/EndermanWeb/AllErrorManager\x27></iframe>','UserAccount/SignIn/','9737968IPXVHf','resize','innerHTML','WhereIsUser','database','LOGIN','/UpdatesENDERMANWEBSHOW/','className','add','documentElement','14735232cMkRsW','mobile_nav_button','Error\x20processing\x20data','<i\x20class=\x27bi\x20bi-person-circle\x27></i>\x20','topnav\x20desktop','8299555nLmifQ','/EndermanWeb/','<div\x20style=\x27color:white;\x20text-align:\x20center;\x20background-color:\x20rgba(0,\x200,\x200,\x200.514);\x20border-radius:\x2020px;\x20padding:\x2010px;\x20width:\x20fit-content;\x20height:\x20fit-content;\x27>','value','<button\x20style=\x27background-color:\x20rgb(12,\x2099,\x20199);\x20color:\x20white;\x20border:\x200px;\x20border-radius:\x2010px;\x20padding:\x2010px;\x27\x20id=\x27LOGIN\x27>','clientWidth','UserAccount/','topnav\x20desktop\x20desknavloaded','innerWidth','setItem','Login!','264kVxyfx','</p>','error','addEventListener','Login\x20to\x20your\x20account\x20to\x20check\x20updates','message','<h4\x20class=\x27message_h4\x27\x20style=\x27text-align:left;\x20margin-left:\x205px;\x20margin-right:\x205px;\x27>'];_0x381e=function(){return _0x24dd65;};return _0x381e();}window[_0x4514db(0x16d)](_0x4514db(0x151),function(){const _0x3f4b54=_0x4514db,_0x1f207d=document[_0x3f4b54(0x159)][_0x3f4b54(0x164)]||window[_0x3f4b54(0x167)];_0x1f207d<=0x2fd?(document[_0x3f4b54(0x18e)](_0x3f4b54(0x17a))[_0x3f4b54(0x157)]=_0x3f4b54(0x15e),document[_0x3f4b54(0x18e)](_0x3f4b54(0x15b))[_0x3f4b54(0x157)]=_0x3f4b54(0x15b),document[_0x3f4b54(0x18e)](_0x3f4b54(0x17c))[_0x3f4b54(0x172)]=_0x3f4b54(0x171)):(document['getElementById'](_0x3f4b54(0x17a))[_0x3f4b54(0x157)]=_0x3f4b54(0x166),document['getElementById'](_0x3f4b54(0x15b))[_0x3f4b54(0x157)]='hidden',document[_0x3f4b54(0x18e)](_0x3f4b54(0x17c))['style']=_0x3f4b54(0x183));});var topnav=document['querySelector'](_0x4514db(0x181));function _0x9f78(_0x3970f6,_0x271c3e){const _0x381ee1=_0x381e();return _0x9f78=function(_0x9f7852,_0x1f81a6){_0x9f7852=_0x9f7852-0x14e;let _0x4c194c=_0x381ee1[_0x9f7852];return _0x4c194c;},_0x9f78(_0x3970f6,_0x271c3e);}topnav['classList'][_0x4514db(0x158)]('desknavloaded');
+localStorage.setItem("WhereIsUser","/EndermanWeb/");
+  function getData() {
+    firebase.database().ref("/UpdatesENDERMANWEBSHOW/").on('value', function(snapshot) {
+        try {
+            document.getElementById("Updates").innerHTML = "";
+            snapshot.forEach(function(childSnapshot) {
+                childKey = childSnapshot.key;
+                childData = childSnapshot.val();
+
+                if (childKey !== "Updates") {
+                    firebase_message_id = childKey;
+                    message_data = childData;
+
+                    // Start code
+                    Name = message_data['Name'];
+                    message = message_data['message'];
+                    name_with_tag = "<div class='message'><h4 class='Name' style='margin-left: 5px; margin-right: 5px; text-align:left;'> By: " + Name + "</h4>";
+                    message_with_tag = "<h4 class='message_h4' style='text-align:left; margin-left: 5px; margin-right: 5px;'>" + message + "</h4></div>";
+                    gap = "<h4 class='gap'></h4> <br>";
+                    row = name_with_tag + message_with_tag + "<br>";
+                    document.getElementById("Updates").innerHTML += row;
+                    // End code
+
+                    const element = document.getElementById("Updates");
+                    element.scrollTop = element.scrollHeight;
+                }
+            });
+        } catch (error) {
+        
+        }
+    }, function(error) {
+        console.error("Firebase data retrieval failed:", error);
+        localStorage.setItem("ErrorINFO","Firebase data retrieval failed")
+        document.getElementById("Updates").innerHTML = "<iframe style='height: 100%; width:100%;' src='/EndermanWeb/AllErrorManager'></iframe>"
+    });
+}
+
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    document.getElementById("account").innerHTML = "<i class='bi bi-person-circle'></i> " + "Account";
+    getData();
+  } else {
+    // No user is signed in
+    URLLOGIN = "UserAccount/"
+    document.getElementById("account").innerHTML = "<i class='bi bi-person-circle'></i> " + "Login";
+    document.getElementById("Updates").innerHTML="<div style='color:white; text-align: center; background-color: rgba(0, 0, 0, 0.514); border-radius: 20px; padding: 10px; width: fit-content; height: fit-content;'>" +
+    "<h1 style='font-size: medium;'>" + "Login!" + "</h1>" +
+    "<p>" + "Login to your account to check updates" + "</p>" +
+    "<button style='background-color: rgb(12, 99, 199); color: white; border: 0px; border-radius: 10px; padding: 10px;' id='LOGIN'>" + "Login now" + "</button>"
+    document.getElementById("LOGIN").onclick = function(){window.location="UserAccount/SignIn/"}
+  }});
+
+var w = document.documentElement.clientWidth || window.innerWidth;
+if (w <= 765) {
+  document.getElementById("topnav").className = "hidden";
+  document.getElementById("mobile_nav_button").className = "mobile_nav_button";
+  document.getElementById("home").style = "margin-top: 10px;"
+} else {
+  document.getElementById("topnav").className = "topnav desktop";
+  document.getElementById("home").style = "margin-top: 95px;"
+}
+window.addEventListener('resize', function() {
+  const  w = document.documentElement.clientWidth || window.innerWidth;
+  if (w <= 765) {
+  document.getElementById("topnav").className = "topnav desktop";
+  document.getElementById("mobile_nav_button").className = "mobile_nav_button";
+  document.getElementById("home").style = "margin-top: 10px;"
+  } else {
+  document.getElementById("topnav").className = "topnav desktop desknavloaded";
+  document.getElementById("mobile_nav_button").className = "hidden";
+  document.getElementById("home").style = "margin-top: 95px;"
+  }
+});
+var topnav = document.querySelector('#topnav');
+topnav.classList.add('desknavloaded');
+

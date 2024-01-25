@@ -1,1 +1,202 @@
-function _0x5455(){const _0x6bb3e3=['9gvpdFn','<i\x20class=\x27bi\x20bi-clock\x27\x20title=\x27The\x20time\x20is\x20always\x20IST\x20at\x20all\x20places\x27></i>\x20<i>','trim','</button></div>','</p>','Error\x20decrypting\x20text:','<div\x20style=\x27color:white;\x20text-align:\x20center;\x20background-color:\x20rgba(0,\x200,\x200,\x200.514);\x20border-radius:\x2020px;\x20padding:\x2010px;\x20padding-top:auto;\x20padding-bottom:auto;\x20width:\x20100%;\x20height:\x20100%;\x20\x20word-break:break-all;\x20overflow:auto;\x27>','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x27usermessagedata\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h1\x20class=\x27userName\x27>','onAuthStateChanged','setItem','catch','visible','database','writeText','/ClassicChat/','abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890','UsernameCCHAT','Login\x20to\x20your\x20account\x20to\x20continue','getElementById','<p>','1966MHFeKn','keyCode','Utf8','hidden','#CreatedBy','\x20IST</i>','Unable\x20to\x20copy\x20text:\x20','length','add','auth','133fGftoA','Login!','#msg','style','</h1>','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x27time\x27>','querySelector','removeItem','removeChild','1870EEuyNG','child','LOGIN','body','2-digit','classList','Asia/Kolkata','message','getItem','/EndermanWeb/ClassicChat/ClassicChatHome/Chat.html','getElementsByClassName','toString','386YbTwtG','WhereIsUser','144564GfTSTu','displayName','<button\x20style=\x27background-color:\x20rgb(12,\x2099,\x20199);\x20color:\x20white;\x20border:\x200px;\x20border-radius:\x2010px;\x20padding:\x2020px;\x27\x20id=\x27LOGIN\x27>','decrypt','onclick','129CUoTrB','then','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x27messagedata\x27>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h1\x20class=\x27name\x27>','Created\x20By:\x20','58452glnSTy','#RoomID','random','uid','ChatViewer','952495MnSDlb','keyup','scrollTop','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','encrypt','/EndermanWeb/UserAccount/SignIn/','#other','4970510JtJiza','RoomID\x20link\x20copied\x20to\x20clipboard','error','237112OiVZXL','ref','opacity','4833468JCauUa','value','UserPresent','username','<h1\x20style=\x27font-size:\x20medium;\x27>','CREATEDBYUSER','encryptionkey','forEach','querySelectorAll','location','RoomID','innerHTML','firstChild','toLocaleString','clipboard','numeric','name','push','messagedata','/EndermanWeb/ClassicChat/'];_0x5455=function(){return _0x6bb3e3;};return _0x5455();}const _0x2f4980=_0x2e46;(function(_0x455bdd,_0x39a899){const _0x3e5f1d=_0x2e46,_0x1ee87c=_0x455bdd();while(!![]){try{const _0x56ca57=parseInt(_0x3e5f1d(0x1ae))/0x1*(-parseInt(_0x3e5f1d(0x18f))/0x2)+parseInt(_0x3e5f1d(0x1b5))/0x3*(-parseInt(_0x3e5f1d(0x1b9))/0x4)+parseInt(_0x3e5f1d(0x1be))/0x5+-parseInt(_0x3e5f1d(0x1cb))/0x6+parseInt(_0x3e5f1d(0x199))/0x7*(parseInt(_0x3e5f1d(0x1c8))/0x8)+parseInt(_0x3e5f1d(0x1df))/0x9*(-parseInt(_0x3e5f1d(0x1c5))/0xa)+-parseInt(_0x3e5f1d(0x1a2))/0xb*(-parseInt(_0x3e5f1d(0x1b0))/0xc);if(_0x56ca57===_0x39a899)break;else _0x1ee87c['push'](_0x1ee87c['shift']());}catch(_0x2ae466){_0x1ee87c['push'](_0x1ee87c['shift']());}}}(_0x5455,0x77ec4),localStorage[_0x2f4980(0x1e8)](_0x2f4980(0x1af),_0x2f4980(0x1ab)),firebase[_0x2f4980(0x198)]()[_0x2f4980(0x1e7)](_0x283bff=>{const _0x26a49b=_0x2f4980;_0x283bff?(thisuseruid=_0x283bff[_0x26a49b(0x1bc)],thisuserdisplayname=_0x283bff[_0x26a49b(0x1b1)]):(body=document[_0x26a49b(0x19f)](_0x26a49b(0x1a5)),body[_0x26a49b(0x1d6)]=_0x26a49b(0x1e5)+_0x26a49b(0x1cf)+_0x26a49b(0x19a)+_0x26a49b(0x19d)+_0x26a49b(0x18e)+_0x26a49b(0x18c)+_0x26a49b(0x1e3)+_0x26a49b(0x1b2)+'Login\x20now'+_0x26a49b(0x1e2),document[_0x26a49b(0x18d)](_0x26a49b(0x1a4))[_0x26a49b(0x1b4)]=function(){const _0x47aa29=_0x26a49b;window[_0x47aa29(0x1d4)]=_0x47aa29(0x1c3);},localStorage[_0x26a49b(0x1a0)](_0x26a49b(0x1cd)));}),RoomID=localStorage[_0x2f4980(0x1aa)](_0x2f4980(0x1d5)));function copyText(){const _0x76bf31=_0x2f4980;navigator[_0x76bf31(0x1d9)][_0x76bf31(0x1ec)]('https://enderman-somnath.github.io/EndermanWeb/ClassicChat/?id='+RoomID+'&link=true')[_0x76bf31(0x1b6)](function(){const _0x4d8f84=_0x76bf31;alert(_0x4d8f84(0x1c6));})[_0x76bf31(0x1e9)](function(_0x2f29c4){const _0xa65d0c=_0x76bf31;console['error'](_0xa65d0c(0x195),_0x2f29c4);});}function logout(){const _0x47e56a=_0x2f4980;localStorage['removeItem'](_0x47e56a(0x18b)),localStorage[_0x47e56a(0x1a0)](_0x47e56a(0x1d5)),window[_0x47e56a(0x1d4)]=_0x47e56a(0x1de);}function encryptText(_0xcc7c40,_0x3e98df){const _0xee262c=_0x2f4980,_0x2df57b=CryptoJS['AES'][_0xee262c(0x1c2)](_0xcc7c40,_0x3e98df)[_0xee262c(0x1ad)]();return _0x2df57b;}function decryptText(_0x3e0823,_0x222b54){const _0x20c6ea=_0x2f4980;try{const _0x286362=CryptoJS['AES'][_0x20c6ea(0x1b3)](_0x3e0823,_0x222b54),_0xd621bd=_0x286362[_0x20c6ea(0x1ad)](CryptoJS['enc'][_0x20c6ea(0x191)]);return _0xd621bd;}catch(_0x44a09a){return console['error'](_0x20c6ea(0x1e4),_0x44a09a),null;}}showothervar=0x0,other=document[_0x2f4980(0x19f)](_0x2f4980(0x1c4));function showother(){const _0x226b03=_0x2f4980;if(showothervar==0x0)other[_0x226b03(0x1a7)]='',setTimeout(function(){const _0x3554b5=_0x226b03;;other[_0x3554b5(0x19c)][_0x3554b5(0x1ca)]=0x1;},0xc8),showothervar=0x1;else showothervar==0x1&&(other[_0x226b03(0x19c)][_0x226b03(0x1ca)]=0x0,setTimeout(function(){const _0x1c9c64=_0x226b03;;other['classList']=_0x1c9c64(0x192);},0xc8),showothervar=0x0);}function generateRandomCharacters(_0x5d29e5){const _0x17460b=_0x2f4980;var _0x59f241=_0x17460b(0x18a),_0x5b1c8e='';while(_0x5b1c8e[_0x17460b(0x196)]<_0x5d29e5){var _0x3452ed=Math['floor'](Math[_0x17460b(0x1bb)]()*_0x59f241[_0x17460b(0x196)]);_0x5b1c8e+=_0x59f241['charAt'](_0x3452ed);}return _0x5b1c8e;}var formattedDateTime;function send(){const _0x4e87c4=_0x2f4980;encryptionkey=generateRandomCharacters(0x64),formattedDateTime=new Date()[_0x4e87c4(0x1d8)]('en-IN',{'timeZone':_0x4e87c4(0x1a8),'day':'numeric','month':'numeric','year':_0x4e87c4(0x1da),'hour':_0x4e87c4(0x1a6),'minute':_0x4e87c4(0x1a6),'second':'2-digit','hour12':![]}),msgInput=document[_0x4e87c4(0x18d)]('msg'),msgValue=msgInput[_0x4e87c4(0x1cc)][_0x4e87c4(0x1e1)]();if(msgValue==='')return;else{if(msgValue!==''){const _0x386866=String(RoomID);database[_0x4e87c4(0x1c9)](_0x4e87c4(0x189)+_0x386866+'/')[_0x4e87c4(0x1dc)]({'username':thisuseruid,'name':thisuserdisplayname,'message':encryptText(msgValue,encryptionkey),'time':_0x4e87c4(0x1e0)+formattedDateTime+_0x4e87c4(0x194),'encryptionkey':encryptionkey})['then'](()=>{setTimeout(function(){const _0x1a571e=_0x2e46;msgInput[_0x1a571e(0x1cc)]='';},0xa);})[_0x4e87c4(0x1e9)](_0x3b3ae4=>{const _0x130def=_0x4e87c4;console[_0x130def(0x1c7)]('Error\x20pushing\x20data:',_0x3b3ae4);});}}}firebase[_0x2f4980(0x1eb)]()[_0x2f4980(0x1c9)]('/ClassicChat/')[_0x2f4980(0x1a3)](RoomID)['once']('value')['then'](_0x561f2b=>{const _0x37473c=_0x2f4980,_0x309a3c=_0x561f2b['val'](),_0x836234=document['querySelectorAll'](_0x37473c(0x1ba));_0x836234['forEach'](_0x4a5ff0=>{const _0x413bad=_0x37473c;_0x4a5ff0[_0x413bad(0x1d6)]=RoomID;});const _0x5cfb17=document[_0x37473c(0x1d3)](_0x37473c(0x193));_0x5cfb17[_0x37473c(0x1d2)](_0x5b2e65=>{const _0xa861ea=_0x37473c;_0x5b2e65[_0xa861ea(0x1a1)](_0x5b2e65[_0xa861ea(0x1d7)]),_0x5b2e65[_0xa861ea(0x1d6)]=_0xa861ea(0x1b8)+_0x309a3c[_0xa861ea(0x1d0)];});});let maxVisibleMessages=0x14;function updateMessageVisibility(_0x2c29f3){const _0x1cf90d=_0x2f4980,_0x10c0e0=document[_0x1cf90d(0x18d)](_0x1cf90d(0x1bd));for(let _0x1d9716=0x0;_0x1d9716<_0x2c29f3[_0x1cf90d(0x196)];_0x1d9716++){_0x1d9716>=_0x2c29f3[_0x1cf90d(0x196)]-maxVisibleMessages?_0x2c29f3[_0x1d9716][_0x1cf90d(0x1a7)][_0x1cf90d(0x197)](_0x1cf90d(0x1ea)):_0x2c29f3[_0x1d9716][_0x1cf90d(0x1a7)]['remove']('visible');}}function getData(){const _0x50e623=_0x2f4980,_0x2e9e40=document[_0x50e623(0x18d)](_0x50e623(0x1bd));startvar=0x0,firebase[_0x50e623(0x1eb)]()[_0x50e623(0x1c9)](_0x50e623(0x189)+RoomID+'/')['on']('child_added',function(_0x49e8db){const _0x49bfdd=_0x50e623,_0xf0907b=_0x49e8db['val'](),_0x3d19f5=_0xf0907b[_0x49bfdd(0x1d1)],_0x3fda49=_0xf0907b[_0x49bfdd(0x1a9)],_0x30225b=_0xf0907b[_0x49bfdd(0x1db)],_0x55769a=_0xf0907b['time'],_0x1a03cb=_0xf0907b[_0x49bfdd(0x1ce)];if(_0x1a03cb){let _0xb3b69b='';if(_0x1a03cb==thisuseruid)_0xb3b69b=_0x49bfdd(0x1e6)+_0x30225b+'</h1>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x27usermessage\x27>'+decryptText(_0x3fda49,_0x3d19f5)+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x27userTime\x27>'+_0x55769a+_0x49bfdd(0x1c1);else _0x1a03cb!=thisuseruid&&(_0xb3b69b=_0x49bfdd(0x1b7)+_0x30225b+'</h1>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x27message\x27>'+decryptText(_0x3fda49,_0x3d19f5)+_0x49bfdd(0x19e)+_0x55769a+_0x49bfdd(0x1c1));startvar===0x0&&(_0x2e9e40[_0x49bfdd(0x1d6)]='',startvar=0x1);_0x2e9e40[_0x49bfdd(0x1d6)]+=_0xb3b69b;const _0x1c6565=_0x2e9e40[_0x49bfdd(0x1ac)](_0x49bfdd(0x1dd));updateMessageVisibility(_0x1c6565),_0x2e9e40[_0x49bfdd(0x1c0)]=_0x2e9e40['scrollHeight'];}});}function _0x2e46(_0x22428d,_0x3b6266){const _0x5455b3=_0x5455();return _0x2e46=function(_0x2e4621,_0x5c5777){_0x2e4621=_0x2e4621-0x189;let _0x1faf09=_0x5455b3[_0x2e4621];return _0x1faf09;},_0x2e46(_0x22428d,_0x3b6266);}getData(),$(_0x2f4980(0x19b))[_0x2f4980(0x1bf)](function(_0x4fe0d5){const _0x2be299=_0x2f4980;_0x4fe0d5[_0x2be299(0x190)]===0xd&&send();});
+localStorage.setItem("WhereIsUser","/ClassicChat/ClassicChatHome/Chat.html");
+firebase.auth().onAuthStateChanged((user) => {
+if (user) {
+  thisuseruid = user.uid;
+  thisuserdisplayname = user.displayName;
+} else {
+  body = document.querySelector("body");
+  body.innerHTML = "<div style='color:white; text-align: center; background-color: rgba(0, 0, 0, 0.514); border-radius: 20px; padding: 10px; padding-top:auto; padding-bottom:auto; width: 100%; height: 100%;  word-break:break-all; overflow:auto;'>" +
+  "<h1 style='font-size: medium;'>" + "Login!" + "</h1>" +
+  "<p>" + "Login to your account to continue" + "</p>" +
+  "<button style='background-color: rgb(12, 99, 199); color: white; border: 0px; border-radius: 10px; padding: 20px;' id='LOGIN'>" + "Login now" + "</button></div>"
+  document.getElementById("LOGIN").onclick = function(){window.location="/UserAccount/SignIn/"}
+  localStorage.removeItem("UserPresent");
+}
+});
+RoomID=localStorage.getItem("RoomID")
+function copyText() {
+  navigator.clipboard.writeText("https://enderman-somnath.github.io/ClassicChat/?id="+RoomID+"&link=true")
+  .then(function() {
+      alert("RoomID link copied to clipboard");
+  })
+  .catch(function(error) {
+      console.error("Unable to copy text: ", error);
+  });
+}
+function logout() {
+localStorage.removeItem("UsernameCCHAT");   
+localStorage.removeItem("RoomID");
+window.location = "/ClassicChat/";
+}
+// Function to encrypt text
+function encryptText(plaintext, key) {
+  const encrypted = CryptoJS.AES.encrypt(plaintext, key).toString();
+  return encrypted;
+}
+
+// Function to decrypt text
+function decryptText(ciphertext, key) {
+  try {
+      const decrypted = CryptoJS.AES.decrypt(ciphertext, key);
+      // Ensure that the decrypted data is valid UTF-8
+      const decryptedText = decrypted.toString(CryptoJS.enc.Utf8);
+      return decryptedText;
+  } catch (error) {
+      console.error("Error decrypting text:", error);
+      return null; // Handle decryption error gracefully
+  }
+}
+
+showothervar = 0
+other = document.querySelector("#other")
+function showother(){
+  if (showothervar == 0){
+    other.classList="";
+    setTimeout(function(){;other.style.opacity = 1;},200);
+    showothervar=1;
+  }
+  else if (showothervar == 1){
+    other.style.opacity = 0;
+    setTimeout(function(){;other.classList="hidden";},200);
+    showothervar=0;
+  }
+}
+
+
+
+function generateRandomCharacters(count) {
+    var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+    var randomCharacters = "";
+  
+    while (randomCharacters.length < count) {
+      var randomIndex = Math.floor(Math.random() * characters.length);
+      randomCharacters += characters.charAt(randomIndex);
+    }
+    return randomCharacters;
+  }
+  var formattedDateTime;
+  function send() {
+    encryptionkey = generateRandomCharacters(100);
+    formattedDateTime = new Date().toLocaleString('en-IN', {
+        timeZone: 'Asia/Kolkata',
+        day: 'numeric',
+        month: 'numeric',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+    });
+    msgInput = document.getElementById("msg");
+    msgValue = msgInput.value.trim();
+    if (msgValue === "") {
+        return;
+    } else if (msgValue !== "") {
+        // Assuming RoomID is obtained from somewhere, ensure it is a string
+        const sanitizedRoomID = String(RoomID);
+
+        // Construct the database reference using the sanitized RoomID
+        database.ref(`/ClassicChat/${sanitizedRoomID}/`).push({
+            username: thisuseruid,
+            name: thisuserdisplayname,
+            message: encryptText(msgValue, encryptionkey),
+            time: `<i class='bi bi-clock' title='The time is always IST at all places'></i> <i>${formattedDateTime} IST</i>`,
+            encryptionkey: encryptionkey
+        })
+        .then(() => {
+            setTimeout(function(){
+                msgInput.value = "";
+            },10)
+        })
+        .catch((error) => {
+            console.error('Error pushing data:', error);
+        });
+    }
+}
+firebase.database().ref("/ClassicChat/").child(RoomID).once('value')
+.then((snapshot) => {
+    const userData = snapshot.val();
+    const roomIDElements = document.querySelectorAll('#RoomID');
+    roomIDElements.forEach(element => {
+    element.innerHTML = RoomID;
+    });
+    const CreatedByElements = document.querySelectorAll('#CreatedBy');
+    CreatedByElements.forEach(element => {
+    element.removeChild(element.firstChild);
+    element.innerHTML = "Created By: " + userData['CREATEDBYUSER'];
+      });
+        });
+                        
+
+        let maxVisibleMessages = 20;
+
+        function updateMessageVisibility(messages) {
+            const chatViewer = document.getElementById("ChatViewer");
+        
+            for (let i = 0; i < messages.length; i++) {
+                if (i >= messages.length - maxVisibleMessages) {
+                    messages[i].classList.add("visible");
+                } else {
+                    messages[i].classList.remove("visible");
+                }
+            }
+        }
+        
+        function getData() {
+            const chatViewer = document.getElementById("ChatViewer");
+            startvar = 0
+        
+            firebase.database().ref(`/ClassicChat/${RoomID}/`).on('child_added', function(childSnapshot) {
+                const data = childSnapshot.val();
+                const encryptionKey = data.encryptionkey;
+                const message = data.message;
+                const name = data.name;
+                const time = data.time;
+                const username = data.username;
+        
+                if (username) {
+                    let chatHTML = '';
+                    if (username == thisuseruid) {
+                        chatHTML = `
+                            <div class='usermessagedata'>
+                                <h1 class='userName'>${name}</h1>
+                                <p class='usermessage'>${decryptText(message, encryptionKey)}</p>
+                                <p class='userTime'>${time}</p>
+                            </div>
+                        `;
+                    } else if (username != thisuseruid) {
+                        chatHTML = `
+                            <div class='messagedata'>
+                                <h1 class='name'>${name}</h1>
+                                <p class='message'>${decryptText(message, encryptionKey)}</p>
+                                <p class='time'>${time}</p>
+                            </div>
+                        `;
+                    }
+
+                    if(startvar === 0){
+                        chatViewer.innerHTML=""
+                        startvar = 1
+                    }
+                    chatViewer.innerHTML += chatHTML;
+                    const messages = chatViewer.getElementsByClassName("messagedata");
+                    updateMessageVisibility(messages); // Update message visibility after adding a new message
+                    chatViewer.scrollTop = chatViewer.scrollHeight; // Scroll to the bottom
+                }
+            });
+        }
+        
+        // Call the function to fetch and display messages
+        getData();
+        
+
+/* if (chatViewer.innerHTML === "") {
+  chatViewer.innerHTML = "There are no messages";
+} */
+/*getData();*/
+
+$("#msg").keyup(function(event) {
+    if (event.keyCode === 13) {
+        send();
+    }
+});

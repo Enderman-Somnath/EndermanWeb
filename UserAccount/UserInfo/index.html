@@ -1,9 +1,9 @@
 <html>
 <head>
-        <link rel="icon" type="image/x-icon" href="/EndermanWeb/icon2.png">
+        <link rel="icon" type="image/x-icon" href="/icon2.png">
         <title> Account info </title>
         <link rel="stylesheet" href="UserInfo.css">
-        <link rel="stylesheet" href="/EndermanWeb/Functions/style.css">
+        <link rel="stylesheet" href="/Functions/style.css">
         <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js"></script>
         <script src="https://www.gstatic.com/firebasejs/live/4.9/firebase.js"></script>
@@ -15,10 +15,10 @@
 </head>
 <body style="color: #fff;">
   <div id="context-menu">
-    <button onclick="PopUp('/EndermanWeb/aboutEndermanweb.html')"> About </button>
+    <button onclick="PopUp('/aboutEndermanweb.html')"> About </button>
 </div>
 <div style="z-index: 0;">
-  <img style="position: absolute; object-fit: cover; height: 100%; width: 100%; top:0; left:0; z-index: 0;" src="/EndermanWeb/EndermanWebBG.png">
+  <img style="position: absolute; object-fit: cover; height: 100%; width: 100%; top:0; left:0; z-index: 0;" src="/EndermanWebBG.png">
   </div>
 <div style="z-index: 1; position:absolute; backdrop-filter: blur(10px); border-radius: 20px; padding: 5px; transition: all 0.5s ease; left: 0; top: 0; width: 100%; height: 100%; overflow: auto;">
             <div class="userinfo" id="userinfo">
@@ -32,11 +32,11 @@
               <button class="btn btn-primary" onclick="resetPassword()">Reset Password</button>
             </div>
             <button  class="purple" onclick="homeWeb()"> <i class="bi bi-house-door-fill"></i> Home</button>
-            <button  class="purple" onclick="PopUp('/EndermanWeb/aboutEndermanweb.html')" class="split"> <i class="bi bi-info-circle-fill"></i> About </button>
+            <button  class="purple" onclick="PopUp('/aboutEndermanweb.html')" class="split"> <i class="bi bi-info-circle-fill"></i> About </button>
             <button  onclick="signout()" class="red"> <i class="bi bi-box-arrow-right"></i> Sign out </button>
           </div>
 </body>
-<script src="/EndermanWeb/Functions/functions.js"></script>
+<script src="/Functions/functions.js"></script>
 <script src="UserInfo.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
 </html>

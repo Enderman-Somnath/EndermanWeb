@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" type="image/x-icon" href="/EndermanWeb/icon2.png">
+    <link rel="icon" type="image/x-icon" href="/icon2.png">
         <title> Accounts: Sign Up </title>
         <link rel="stylesheet" href="SignUp.css">
         <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
@@ -19,9 +19,23 @@
         Verifying....
     </h1>
     </body>
-<script src="/EndermanWeb/Functions/functions.js"></script>
+<script src="/Functions/functions.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
 <script>
-var _0x177574=_0x9f25;(function(_0x4d88a0,_0x3d5329){var _0x16ea47=_0x9f25,_0x9783cc=_0x4d88a0();while(!![]){try{var _0x3f2aff=parseInt(_0x16ea47(0x17c))/0x1*(-parseInt(_0x16ea47(0x181))/0x2)+parseInt(_0x16ea47(0x177))/0x3*(parseInt(_0x16ea47(0x17a))/0x4)+-parseInt(_0x16ea47(0x172))/0x5*(-parseInt(_0x16ea47(0x16a))/0x6)+parseInt(_0x16ea47(0x173))/0x7*(-parseInt(_0x16ea47(0x17f))/0x8)+-parseInt(_0x16ea47(0x16e))/0x9+parseInt(_0x16ea47(0x179))/0xa+parseInt(_0x16ea47(0x17e))/0xb;if(_0x3f2aff===_0x3d5329)break;else _0x9783cc['push'](_0x9783cc['shift']());}catch(_0x48d6fe){_0x9783cc['push'](_0x9783cc['shift']());}}}(_0x239f,0x3a5dd),firebase[_0x177574(0x180)]()[_0x177574(0x182)](function(_0x18bc7e){var _0x33daf0=_0x177574;_0x18bc7e&&_0x18bc7e[_0x33daf0(0x16d)]?(firebase[_0x33daf0(0x16b)]()['ref']('/USERS/')['child'](_0x18bc7e[_0x33daf0(0x175)])[_0x33daf0(0x16f)]({'username':_0x18bc7e[_0x33daf0(0x175)],'email':_0x18bc7e[_0x33daf0(0x178)],'badges':''}),setTimeout(function(){var _0xa39f53=_0x33daf0;localStorage[_0xa39f53(0x16c)](_0xa39f53(0x171),!![]),window[_0xa39f53(0x17d)]['href']=_0xa39f53(0x183);},0xbb8)):document[_0x33daf0(0x17b)](_0x33daf0(0x170))[_0x33daf0(0x176)]=_0x33daf0(0x174);}));function _0x9f25(_0x449f85,_0x51d88f){var _0x239f03=_0x239f();return _0x9f25=function(_0x9f254,_0x6c3bb5){_0x9f254=_0x9f254-0x16a;var _0x4dbf29=_0x239f03[_0x9f254];return _0x4dbf29;},_0x9f25(_0x449f85,_0x51d88f);}function _0x239f(){var _0x377ad3=['243446bcuvSF','Verify\x20Account:\x20Go\x20to\x20your\x20inbox\x20to\x20check\x20for\x20a\x20verification\x20mail','uid','textContent','3DfMprK','email','206360VCEyAL','1654808xPLKGN','getElementById','391497MQBGoj','location','4650228oOvoge','24QpIwat','auth','2AYKKSM','onAuthStateChanged','/EndermanWeb/UserAccount/UserInfo/','69522hvDyPg','database','setItem','emailVerified','3081051NZnvPZ','update','verification-status','UserPresent','95MrFnBb'];_0x239f=function(){return _0x377ad3;};return _0x239f();}
+  firebase.auth().onAuthStateChanged(function(user) {
+  if (user && user.emailVerified) {
+    firebase.database().ref("/USERS/").child(user.uid).update({
+                username: user.uid,
+                email: user.email,
+                badges: "",
+              });
+  setTimeout(function(){
+    localStorage.setItem("UserPresent", true);
+    window.location.href = "/UserAccount/UserInfo/";
+  },3000)
+  } else {
+    document.getElementById("verification-status").textContent = "Verify Account: Go to your inbox to check for a verification mail";
+  }
+});
 </script>
 </html>
