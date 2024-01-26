@@ -22,20 +22,6 @@
 <script src="/Functions/functions.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
 <script>
-  firebase.auth().onAuthStateChanged(function(user) {
-  if (user && user.emailVerified) {
-    firebase.database().ref("/USERS/").child(user.uid).update({
-                username: user.uid,
-                email: user.email,
-                badges: "",
-              });
-  setTimeout(function(){
-    localStorage.setItem("UserPresent", true);
-    window.location.href = "/UserAccount/UserInfo/";
-  },3000)
-  } else {
-    document.getElementById("verification-status").textContent = "Verify Account: Go to your inbox to check for a verification mail";
-  }
-});
+function _0x3b14(_0x45197f,_0x16beb2){var _0x272958=_0x2729();return _0x3b14=function(_0x3b1485,_0x39d7fd){_0x3b1485=_0x3b1485-0x148;var _0x361355=_0x272958[_0x3b1485];return _0x361355;},_0x3b14(_0x45197f,_0x16beb2);}function _0x2729(){var _0x55b367=['422350auTnLq','getElementById','/USERS/','emailVerified','4690WyKfKI','4821426cVkmdf','UserPresent','332394WFQHPr','update','9254883YmRxeS','database','textContent','/UserAccount/UserInfo/','onAuthStateChanged','email','uid','2828nfzovV','4340hHbbTz','273USwCjG','ref','verification-status','32392wAHslM','171RSNotF','148QeHKaI','Verify\x20Account:\x20Go\x20to\x20your\x20inbox\x20to\x20check\x20for\x20a\x20verification\x20mail'];_0x2729=function(){return _0x55b367;};return _0x2729();}var _0x1d869c=_0x3b14;(function(_0x34fe0a,_0x12ba96){var _0x1c65d9=_0x3b14,_0x1fe917=_0x34fe0a();while(!![]){try{var _0x1d5c49=parseInt(_0x1c65d9(0x14b))/0x1*(parseInt(_0x1c65d9(0x15e))/0x2)+-parseInt(_0x1c65d9(0x154))/0x3+-parseInt(_0x1c65d9(0x15d))/0x4*(parseInt(_0x1c65d9(0x151))/0x5)+parseInt(_0x1c65d9(0x152))/0x6+parseInt(_0x1c65d9(0x15f))/0x7*(parseInt(_0x1c65d9(0x149))/0x8)+-parseInt(_0x1c65d9(0x14a))/0x9*(-parseInt(_0x1c65d9(0x14d))/0xa)+-parseInt(_0x1c65d9(0x156))/0xb;if(_0x1d5c49===_0x12ba96)break;else _0x1fe917['push'](_0x1fe917['shift']());}catch(_0x230991){_0x1fe917['push'](_0x1fe917['shift']());}}}(_0x2729,0x72b1e),firebase['auth']()[_0x1d869c(0x15a)](function(_0x29748a){var _0x43643f=_0x1d869c;_0x29748a&&_0x29748a[_0x43643f(0x150)]?(firebase[_0x43643f(0x157)]()[_0x43643f(0x160)](_0x43643f(0x14f))['child'](_0x29748a[_0x43643f(0x15c)])[_0x43643f(0x155)]({'username':_0x29748a[_0x43643f(0x15c)],'email':_0x29748a[_0x43643f(0x15b)],'badges':''}),setTimeout(function(){var _0x404187=_0x43643f;localStorage['setItem'](_0x404187(0x153),!![]),window['location']['href']=_0x404187(0x159);},0xbb8)):document[_0x43643f(0x14e)](_0x43643f(0x148))[_0x43643f(0x158)]=_0x43643f(0x14c);}));
 </script>
 </html>
