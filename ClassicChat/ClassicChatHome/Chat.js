@@ -15,7 +15,7 @@ if (user) {
 });
 RoomID=localStorage.getItem("RoomID")
 function copyText() {
-  navigator.clipboard.writeText("https://enderman-somnath.github.io/ClassicChat/?id="+RoomID+"&link=true")
+  navigator.clipboard.writeText("https://endermanweb.pages.dev/ClassicChat/?id="+RoomID+"&link=true")
   .then(function() {
       alert("RoomID link copied to clipboard");
   })
